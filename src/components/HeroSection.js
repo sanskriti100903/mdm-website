@@ -5,6 +5,7 @@ import { FaArrowRight, FaGlobe, FaShieldAlt, FaStar } from 'react-icons/fa';
 const HeroSection = () => {
   const [currentImage, setCurrentImage] = useState(0);
   const [imagesLoaded, setImagesLoaded] = useState(false);
+  const [isTransitioning, setIsTransitioning] = useState(false);
   
   // High-quality pulse and lentil images showcasing different varieties
   const heroImages = [
@@ -96,11 +97,37 @@ const HeroSection = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentImage((prev) => (prev + 1) % heroImages.length);
+      setIsTransitioning(true);
+      
+      // Start text fade out
+      setTimeout(() => {
+        setCurrentImage((prev) => (prev + 1) % heroImages.length);
+      }, 300); // Change content after fade out
+      
+      // Complete transition
+      setTimeout(() => {
+        setIsTransitioning(false);
+      }, 600); // Fade back in
+      
     }, 6000); // Increased to 6 seconds for better readability
 
     return () => clearInterval(interval);
   }, [heroImages.length]);
+
+  // Function to handle manual slide change with animation
+  const handleSlideChange = (index) => {
+    if (index !== currentImage) {
+      setIsTransitioning(true);
+      
+      setTimeout(() => {
+        setCurrentImage(index);
+      }, 300);
+      
+      setTimeout(() => {
+        setIsTransitioning(false);
+      }, 600);
+    }
+  };
 
   return (
     <section id="home" className="hero-section">
@@ -111,11 +138,13 @@ const HeroSection = () => {
             className={`hero-image ${index === currentImage ? 'active' : ''}`}
             style={{
               background: imagesLoaded 
-                ? `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(${heroImage.src})`
-                : `linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), ${heroImage.fallback}`,
-              backgroundSize: 'cover',
+                ? `linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.4)), url(${heroImage.src})`
+                : `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.3)), ${heroImage.fallback}`,
+              backgroundSize: '110%',
               backgroundPosition: 'center',
-              backgroundRepeat: 'no-repeat'
+              backgroundRepeat: 'no-repeat',
+              filter: 'blur(0.5px) brightness(0.9)',
+              animation: `backgroundZoom 15s ease-in-out infinite ${index * 2}s, backgroundShift 20s ease-in-out infinite ${index * 1.5}s`
             }}
             aria-label={heroImage.alt}
           />
@@ -139,15 +168,15 @@ const HeroSection = () => {
                 <FaStar className="ms-2" />
               </div>
               
-              <h1 className="hero-title mb-4">
+              <h1 className={`hero-title mb-4 ${isTransitioning ? 'text-transitioning' : 'text-visible'}`}>
                 {heroContent[currentImage].title}
               </h1>
               
-              <h2 className="hero-subtitle mb-4">
+              <h2 className={`hero-subtitle mb-4 ${isTransitioning ? 'text-transitioning' : 'text-visible'}`}>
                 {heroContent[currentImage].subtitle}
               </h2>
               
-              <p className="hero-description mb-5">
+              <p className={`hero-description mb-5 ${isTransitioning ? 'text-transitioning' : 'text-visible'}`}>
                 {heroContent[currentImage].description}
               </p>
               
@@ -196,7 +225,7 @@ const HeroSection = () => {
           <button
             key={index}
             className={`indicator ${index === currentImage ? 'active' : ''}`}
-            onClick={() => setCurrentImage(index)}
+            onClick={() => handleSlideChange(index)}
             aria-label={`Switch to ${heroImage.alt}`}
             title={heroImage.alt}
           />

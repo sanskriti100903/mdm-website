@@ -63,7 +63,7 @@ const Header = () => {
             <Nav.Link href="#certificates" onClick={handleNavClick} className="nav-item">
               Certificates
             </Nav.Link>
-            <Nav.Link href="#contact" onClick={handleNavClick} className="nav-item">
+            <Nav.Link href="#contact" onClick={handleNavClick} className="nav-item contact-btn">
               Contact Us
             </Nav.Link>
           </Nav>

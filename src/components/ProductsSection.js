@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
-import { FaArrowLeft, FaArrowRight, FaLeaf, FaStar } from 'react-icons/fa';
+import { FaLeaf, FaStar } from 'react-icons/fa';
 
 const ProductsSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isAutoPlaying, setIsAutoPlaying] = useState(true);
+  const [isTransitioning, setIsTransitioning] = useState(false);
   
   const products = [
     {
@@ -53,13 +55,39 @@ const ProductsSection = () => {
   const itemsPerPage = 4;
   const totalPages = Math.ceil(products.length / itemsPerPage);
 
-  const nextSlide = () => {
-    setCurrentIndex((prev) => (prev + 1) % totalPages);
+  // Auto-play functionality
+  useEffect(() => {
+    if (!isAutoPlaying) return;
+
+    const interval = setInterval(() => {
+      setIsTransitioning(true);
+      
+      setTimeout(() => {
+        setCurrentIndex((prev) => (prev + 1) % totalPages);
+      }, 300);
+      
+      setTimeout(() => {
+        setIsTransitioning(false);
+      }, 600);
+    }, 4000); // Change slide every 4 seconds
+
+    return () => clearInterval(interval);
+  }, [isAutoPlaying, totalPages]);
+
+
+  const goToSlide = (index) => {
+    if (isTransitioning || index === currentIndex) return;
+    
+    setIsTransitioning(true);
+    setTimeout(() => {
+      setCurrentIndex(index);
+    }, 300);
+    
+    setTimeout(() => {
+      setIsTransitioning(false);
+    }, 600);
   };
 
-  const prevSlide = () => {
-    setCurrentIndex((prev) => (prev - 1 + totalPages) % totalPages);
-  };
 
   const getCurrentProducts = () => {
     const start = currentIndex * itemsPerPage;
@@ -70,27 +98,24 @@ const ProductsSection = () => {
   return (
     <section id="products" className="products-section py-5">
       <Container>
-        <Row className="mb-5">
-          <Col lg={8} className="mx-auto text-center">
-            <div className="section-header">
-              <h2 className="section-title">
-                Our Premium Products
-                <span className="since-badge ms-3">Since 1989</span>
-              </h2>
-              <p className="section-description">
-                Discover our wide range of premium quality pulses, carefully sourced and processed 
-                to meet international standards. Each variety offers exceptional taste, nutrition, 
-                and quality that has made us a trusted name in the industry.
-              </p>
-            </div>
-          </Col>
-        </Row>
+        <div className="products-unified-container">
+          <div className="products-header text-center mb-4">
+            <h2 className="section-title">
+              Our Premium Products
+              <span className="since-badge ms-3">Since 1989</span>
+            </h2>
+            <p className="section-description">
+              Discover our wide range of premium quality pulses, carefully sourced and processed 
+              to meet international standards. Each variety offers exceptional taste, nutrition, 
+              and quality that has made us a trusted name in the industry.
+            </p>
+          </div>
 
-        <div className="products-carousel">
-          <Row className="products-grid g-2">
+          <div className="products-carousel">
+          <Row className={`products-grid g-2 ${isTransitioning ? 'transitioning' : 'visible'}`}>
             {getCurrentProducts().map((product, index) => (
               <Col lg={3} md={6} className="mb-3" key={`${currentIndex}-${index}`}>
-                <Card className="product-card h-100">
+                <Card className={`product-card h-100 ${isTransitioning ? 'card-transitioning' : 'card-visible'}`}>
                   <div className="product-image-container">
                     <Card.Img 
                       variant="top" 
@@ -130,26 +155,23 @@ const ProductsSection = () => {
             ))}
           </Row>
 
-          {/* Navigation Controls - Only Arrow Buttons */}
+          {/* Carousel Indicators */}
           {totalPages > 1 && (
-            <div className="carousel-controls d-flex justify-content-center align-items-center mt-4">
-              <Button 
-                variant="outline-primary" 
-                className="carousel-btn me-4"
-                onClick={prevSlide}
-              >
-                <FaArrowLeft />
-              </Button>
-              
-              <Button 
-                variant="outline-primary" 
-                className="carousel-btn ms-4"
-                onClick={nextSlide}
-              >
-                <FaArrowRight />
-              </Button>
+            <div className="carousel-controls">
+              <div className="carousel-indicators d-flex justify-content-center mt-4">
+                {Array.from({ length: totalPages }, (_, index) => (
+                  <button
+                    key={index}
+                    className={`indicator-dot ${index === currentIndex ? 'active' : ''}`}
+                    onClick={() => goToSlide(index)}
+                    disabled={isTransitioning}
+                    aria-label={`Go to slide ${index + 1}`}
+                  />
+                ))}
+              </div>
             </div>
           )}
+          </div>
         </div>
 
         {/* Quality Assurance Section */}
