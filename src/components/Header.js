@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Navbar, Nav, Container } from 'react-bootstrap';
+import { Navbar, Nav, Container, Button } from 'react-bootstrap';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import OptimizedLogo from './OptimizedLogo';
 
@@ -50,7 +50,7 @@ const Header = () => {
         </Navbar.Toggle>
         
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto">
+          <Nav className="ms-auto align-items-center">
             <Nav.Link href="#home" onClick={handleNavClick} className="nav-item">
               Home
             </Nav.Link>
@@ -63,9 +63,14 @@ const Header = () => {
             <Nav.Link href="#certificates" onClick={handleNavClick} className="nav-item">
               Certificates
             </Nav.Link>
-            <Nav.Link href="#contact" onClick={handleNavClick} className="nav-item">
+            <Button 
+              href="#contact" 
+              onClick={handleNavClick} 
+              className="contact-btn ms-2"
+              variant="outline-primary"
+            >
               Contact Us
-            </Nav.Link>
+            </Button>
           </Nav>
         </Navbar.Collapse>
       </Container>
