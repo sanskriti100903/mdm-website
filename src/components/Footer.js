@@ -23,12 +23,12 @@ const Footer = () => {
   };
 
   return (
-    <footer id="contact" className="footer-section">
+    <footer id="contact" className="footer-section-fullwidth">
       <div className="footer-main py-5">
-        <Container>
-          <Row>
+        <div className="footer-container">
+          <Row className="g-4">
             {/* Company Info */}
-            <Col lg={4} md={6} className="mb-4">
+            <Col lg={3} md={6} className="mb-4">
               <div className="footer-brand">
                 <OptimizedLogo 
                   height="60px" 
@@ -58,8 +58,34 @@ const Footer = () => {
               </div>
             </Col>
 
+            {/* Quick Links Menu */}
+            <Col lg={2} md={6} className="mb-4">
+              <h5 className="footer-title">Quick Links</h5>
+              <ul className="footer-menu">
+                <li><a href="#home" className="footer-menu-link">Home</a></li>
+                <li><a href="#products" className="footer-menu-link">Products</a></li>
+                <li><a href="#about" className="footer-menu-link">About Us</a></li>
+                <li><a href="#contact" className="footer-menu-link">Contact</a></li>
+                <li><a href="#quality" className="footer-menu-link">Quality</a></li>
+              </ul>
+            </Col>
+
+            {/* Products Menu */}
+            <Col lg={2} md={6} className="mb-4">
+              <h5 className="footer-title">Our Products</h5>
+              <ul className="footer-menu">
+                <li><a href="#" className="footer-menu-link">Toor Dal</a></li>
+                <li><a href="#" className="footer-menu-link">Moong Dal</a></li>
+                <li><a href="#" className="footer-menu-link">Chana Dal</a></li>
+                <li><a href="#" className="footer-menu-link">Urad Dal</a></li>
+                <li><a href="#" className="footer-menu-link">Kabuli Chana</a></li>
+                <li><a href="#" className="footer-menu-link">Masoor Dal</a></li>
+                <li><a href="#" className="footer-menu-link">Rajma</a></li>
+              </ul>
+            </Col>
+
             {/* Contact Information */}
-            <Col lg={4} md={6} className="mb-4">
+            <Col lg={3} md={6} className="mb-4">
               <h5 className="footer-title">Contact Information</h5>
               
               {/* Phone Numbers */}
@@ -127,18 +153,18 @@ const Footer = () => {
             </Col>
 
             {/* Addresses */}
-            <Col lg={4} md={12} className="mb-4">
+            <Col lg={2} md={12} className="mb-4">
               <h5 className="footer-title">Our Locations</h5>
               
               {/* Office Address */}
               <div className="address-item mb-4">
                 <h6 className="address-title">
                   <FaMapMarkerAlt className="me-2" />
-                  Office Address
+                  Office
                 </h6>
                 <p className="address-text">
                   23/2, Sajan Nagar, Chitwad Road<br/>
-                  Indore, Madhya Pradesh - 452001<br/>
+                  Indore, MP - 452001<br/>
                   India
                 </p>
               </div>
@@ -147,18 +173,17 @@ const Footer = () => {
               <div className="address-item">
                 <h6 className="address-title">
                   <FaMapMarkerAlt className="me-2" />
-                  Factory Address
+                  Factory
                 </h6>
                 <p className="address-text">
-                  10, Gajanand Industrial Park 8 Mill<br/>
-                  Nemawar Road, Ashrawad Buzurg<br/>
-                  Indore, Madhya Pradesh - 452016<br/>
-                  India
+                  10, Gajanand Industrial Park<br/>
+                  Nemawar Road, Ashrawad<br/>
+                  Indore, MP - 452016
                 </p>
               </div>
             </Col>
           </Row>
-        </Container>
+        </div>
       </div>
 
       {/* Map Section */}
@@ -186,7 +211,7 @@ const Footer = () => {
 
       {/* Footer Bottom */}
       <div className="footer-bottom py-3">
-        <Container>
+        <div className="footer-container">
           <Row className="align-items-center">
             <Col md={6}>
               <p className="copyright-text mb-0">
@@ -199,7 +224,7 @@ const Footer = () => {
               </p>
             </Col>
           </Row>
-        </Container>
+        </div>
       </div>
     </footer>
   );
