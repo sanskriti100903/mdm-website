@@ -32,22 +32,22 @@ const HeroSection = () => {
 
   const heroContent = [
     {
-      title: "Since 1989 — Serving Trust in Every Grain",
+      title: "Built on Quality, Backed by Trust",
       subtitle: "Heritage of Quality, Legacy of Trust",
       description: "Exporting the finest quality pulses worldwide with unmatched standards and unwavering commitment to excellence."
     },
     {
-      title: "Global Quality. Indian Legacy",
+      title: "Built on Quality, Backed by Trust",
       subtitle: "Meeting Global Standards",
       description: "Bridging traditional Indian heritage with international quality standards, delivering excellence across continents."
     },
     {
-      title: "35+ Years of Trust. One Name — MDM Group",
+      title: "India's Pride, Trusted Worldwide",
       subtitle: "Since 1989, Nourishing the World",
       description: "Three and a half decades of consistent quality, reliability, and trust in premium pulse exports."
     },
     {
-      title: "Since 1989, Nourishing the World with Quality Pulses",
+      title: "India's Pride, Trusted Worldwide",
       subtitle: "Heritage of Quality, Legacy of Trust",
       description: "From the heart of India to tables worldwide, ensuring premium nutrition and authentic taste in every grain."
     }
@@ -133,15 +133,11 @@ const HeroSection = () => {
         <Row className="align-items-center min-vh-100">
           <Col lg={8} md={10} className="mx-auto text-center">
             <div className="hero-text-content">
-              <h1 className="hero-title mb-4">
+              <h1 className="hero-title-enhanced mb-5">
                 {heroContent[currentImage].title}
               </h1>
               
-              <h2 className="hero-subtitle mb-4">
-                {heroContent[currentImage].subtitle}
-              </h2>
-              
-              <p className="hero-description mb-5">
+              <p className="hero-description-enhanced mb-5">
                 {heroContent[currentImage].description}
               </p>
               
@@ -175,7 +171,7 @@ const HeroSection = () => {
                 <Button variant="primary" size="lg" className="me-3 mb-3 cta-button">
                   Explore Products <FaArrowRight className="ms-2" />
                 </Button>
-                <Button variant="outline-light" size="lg" className="mb-3">
+                <Button variant="outline-light" size="lg" className="mb-3 contact-button">
                   Contact Us
                 </Button>
               </div>

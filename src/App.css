@@ -257,7 +257,7 @@ html {
   align-items: center;
   width: 100%;
   padding-left: 4rem;
-  padding-right: 5rem;
+  padding-right: 3rem;
   max-width: none;
 }
 
@@ -267,7 +267,7 @@ html {
 }
 
 .navbar-nav {
-  margin-right: -1rem;
+  margin-right: 0;
 }
 
 .custom-navbar.scrolled {
@@ -523,9 +523,33 @@ html {
   font-size: 1.2rem;
   color: #f8f9fa;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  line-height: 1.6;
   max-width: 600px;
   margin: 0 auto;
 }
+
+/* Enhanced Hero Styles */
+.hero-title-enhanced {
+  font-size: 4.5rem;
+  font-weight: 700;
+  color: white;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  margin-bottom: 2rem;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.hero-description-enhanced {
+  font-size: 1.3rem;
+  color: #f8f9fa;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+  line-height: 1.7;
+  max-width: 700px;
+  margin: 0 auto;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+}
+
 
 .hero-buttons {
   margin-bottom: 80px;
@@ -551,6 +575,12 @@ html {
 .feature-item h5 {
   font-weight: 600;
   margin-bottom: 0.5rem;
+  color: #ffc107;
+}
+
+.feature-item p {
+  color: #f8f9fa;
+  margin-bottom: 0;
 }
 
 .cta-button {
@@ -613,6 +643,39 @@ html {
   animation: ctaPulse 2s ease-in-out infinite;
 }
 
+/* Contact Button Styling */
+.contact-button {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(248, 250, 252, 0.8));
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  color: #15803d;
+  padding: 1rem 2.5rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(34, 197, 94, 0.2);
+  text-transform: uppercase;
+}
+
+.contact-button:hover {
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  border-color: #16a34a;
+  color: white;
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 15px 40px rgba(34, 197, 94, 0.4);
+}
+
+.contact-button:active {
+  transform: translateY(-2px) scale(1.02);
+}
+
+.contact-button:focus {
+  box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.3);
+}
+
 .hero-indicators {
   position: absolute;
   bottom: 30px;
@@ -651,38 +714,27 @@ html {
 }
 
 .section-header {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(240, 248, 245, 0.9) 100%);
+  background: transparent;
   padding: 2rem;
-  border-radius: 20px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-  backdrop-filter: blur(10px);
+  border-radius: 0;
+  box-shadow: none;
+  backdrop-filter: none;
 }
 
 .section-header-compact {
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(232, 245, 232, 0.9) 50%, rgba(245, 240, 248, 0.8) 100%);
+  background: transparent;
   padding: 2rem 2rem 1.5rem 2rem;
-  border-radius: 25px 25px 0 0;
-  box-shadow: 0 0 20px rgba(22, 163, 74, 0.1);
-  backdrop-filter: blur(15px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-bottom: none;
+  border-radius: 0;
+  box-shadow: none;
+  backdrop-filter: none;
+  border: none;
   position: relative;
+  margin-top: 2rem;
 }
 
-.section-header-compact::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60px;
-  height: 3px;
-  background: linear-gradient(90deg, #16a34a, #22c55e, #16a34a);
-  border-radius: 2px;
-}
 
 .section-title {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: bold;
   color: #15803d;
   margin-bottom: 1rem;
@@ -709,18 +761,30 @@ html {
 .products-carousel {
   position: relative;
   width: 100%;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(232, 245, 232, 0.9) 50%, rgba(245, 240, 248, 0.8) 100%);
-  padding: 1.5rem 2rem 2rem 2rem;
-  border-radius: 0 0 25px 25px;
-  box-shadow: 0 0 20px rgba(22, 163, 74, 0.1);
-  backdrop-filter: blur(15px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-top: none;
+  background: transparent;
+  padding: 0 2rem 2rem 2rem;
+  border-radius: 0;
+  box-shadow: none;
+  backdrop-filter: none;
+  border: none;
   margin-top: 0;
 }
 
+/* Unified Products Section Background */
+.products-section .container {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(232, 245, 232, 0.9) 50%, rgba(245, 240, 248, 0.8) 100%);
+  border-radius: 25px;
+  box-shadow: 0 0 20px rgba(22, 163, 74, 0.1);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  overflow: hidden;
+}
+
 .products-grid {
-  margin: 0 -10px;
+  margin: 1rem -10px;
 }
 
 .products-grid .col-lg-3,
@@ -826,8 +890,10 @@ html {
 
 .carousel-indicators {
   display: flex;
-  gap: 10px;
+  gap: 15px;
   align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
 }
 
 .indicator-dot {
@@ -1277,6 +1343,14 @@ html {
   width: 10px;
 }
 
+/* Footer menu text (non-clickable) */
+.footer-menu-text {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  transition: color 0.3s ease;
+}
+
 .contact-item {
   margin-bottom: 1.5rem;
 }
@@ -1371,7 +1445,7 @@ html {
 @media (max-width: 992px) {
   .custom-navbar .container {
     padding-left: 2rem;
-    padding-right: 3rem;
+    padding-right: 2rem;
   }
 }
 
@@ -1425,7 +1499,7 @@ html {
 @media (max-width: 768px) {
   .custom-navbar .container {
     padding-left: 1.5rem;
-    padding-right: 2rem;
+    padding-right: 1.5rem;
   }
 
   .brand-logo {
@@ -1435,9 +1509,17 @@ html {
   .hero-title {
     font-size: 2.5rem;
   }
+
+  .hero-title-enhanced {
+    font-size: 3rem;
+  }
   
   .hero-subtitle {
     font-size: 1.5rem;
+  }
+
+  .hero-description-enhanced {
+    font-size: 1.1rem;
   }
   
   .section-title {
@@ -1497,12 +1579,20 @@ html {
   .hero-title {
     font-size: 2rem;
   }
+
+  .hero-title-enhanced {
+    font-size: 2.2rem;
+  }
   
   .hero-subtitle {
     font-size: 1.2rem;
   }
   
   .hero-description {
+    font-size: 1rem;
+  }
+
+  .hero-description-enhanced {
     font-size: 1rem;
   }
   
