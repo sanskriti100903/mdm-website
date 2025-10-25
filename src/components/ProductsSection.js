@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import { Container, Row, Col, Card, Button } from 'react-bootstrap';
-import { FaArrowLeft, FaArrowRight, FaLeaf, FaStar } from 'react-icons/fa';
+import React, { useState, useEffect } from 'react';
+import { Container, Row, Col, Card } from 'react-bootstrap';
+import { FaLeaf, FaStar } from 'react-icons/fa';
 
 const ProductsSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -47,18 +47,59 @@ const ProductsSection = () => {
       image: "https://images.unsplash.com/photo-1578849278619-e73505e9610f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       description: "Premium quality Rajma beans, perfect for traditional recipes. Carefully selected and processed for best taste.",
       features: ["Premium Beans", "Traditional Taste", "Export Quality"]
+    },
+    {
+      name: "Jowar",
+      image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      description: "High-quality Jowar (Sorghum) grains, rich in fiber and gluten-free. Perfect for healthy and nutritious meals.",
+      features: ["Gluten-Free", "High Fiber", "Nutritious"]
+    },
+    {
+      name: "Bajra",
+      image: "https://images.unsplash.com/photo-1586201375761-83865001e31c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      description: "Premium Bajra (Pearl Millet) with excellent nutritional value. Rich in protein and essential minerals.",
+      features: ["High Protein", "Rich in Iron", "Mineral Rich"]
+    },
+    {
+      name: "Maize",
+      image: "https://images.unsplash.com/photo-1551754655-cd27e38d2076?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      description: "Fresh and premium quality Maize (Corn) kernels. Versatile grain perfect for various food preparations.",
+      features: ["Versatile", "Fresh Quality", "Export Grade"]
+    },
+    {
+      name: "Wheat",
+      image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      description: "Superior quality Wheat grains with high protein content. Carefully selected for optimal nutrition and taste.",
+      features: ["High Protein", "Premium Grade", "Nutritious"]
+    },
+    {
+      name: "Rice",
+      image: "https://images.unsplash.com/photo-1586201375761-83865001e31c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      description: "Premium quality Rice with excellent aroma and taste. Perfect for daily consumption and export markets.",
+      features: ["Aromatic", "Premium Quality", "Export Standard"]
+    },
+    {
+      name: "Lobia",
+      image: "https://images.unsplash.com/photo-1578849278619-e73505e9610f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      description: "High-quality Lobia (Black-eyed peas) with rich protein content. Excellent for traditional Indian recipes.",
+      features: ["High Protein", "Traditional", "Nutritious"]
     }
   ];
 
   const itemsPerPage = 4;
   const totalPages = Math.ceil(products.length / itemsPerPage);
 
-  const nextSlide = () => {
-    setCurrentIndex((prev) => (prev + 1) % totalPages);
-  };
+  // Auto-play carousel every 5 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % totalPages);
+    }, 5000);
 
-  const prevSlide = () => {
-    setCurrentIndex((prev) => (prev - 1 + totalPages) % totalPages);
+    return () => clearInterval(interval);
+  }, [totalPages]);
+
+  const goToSlide = (index) => {
+    setCurrentIndex(index);
   };
 
   const getCurrentProducts = () => {
@@ -68,7 +109,7 @@ const ProductsSection = () => {
   };
 
   return (
-    <section id="products" className="products-section py-5">
+    <section id="products" className="products-section">
       <Container>
         <Row className="mb-3">
           <Col lg={12} className="text-center">
@@ -112,57 +153,30 @@ const ProductsSection = () => {
                       {product.name}
                       <FaStar className="quality-star ms-2" />
                     </Card.Title>
-                    <Card.Text className="product-description flex-grow-1">
+                    <Card.Text className="product-description">
                       {product.description}
                     </Card.Text>
-                    <Button variant="outline-primary" className="mt-auto">
-                      Learn More
-                    </Button>
                   </Card.Body>
                 </Card>
               </Col>
             ))}
           </Row>
 
-          {/* Navigation Controls - Only Arrow Buttons */}
+          {/* Dot Indicators */}
           {totalPages > 1 && (
-            <div className="carousel-controls d-flex justify-content-center align-items-center mt-4">
-              <Button 
-                variant="outline-primary" 
-                className="carousel-btn me-4"
-                onClick={prevSlide}
-              >
-                <FaArrowLeft />
-              </Button>
-              
-              <Button 
-                variant="outline-primary" 
-                className="carousel-btn ms-4"
-                onClick={nextSlide}
-              >
-                <FaArrowRight />
-              </Button>
+            <div className="carousel-indicators d-flex justify-content-center align-items-center mt-4">
+              {Array.from({ length: totalPages }, (_, index) => (
+                <button
+                  key={index}
+                  className={`indicator-dot ${index === currentIndex ? 'active' : ''}`}
+                  onClick={() => goToSlide(index)}
+                  aria-label={`Go to slide ${index + 1}`}
+                />
+              ))}
             </div>
           )}
         </div>
 
-        {/* Quality Assurance Section */}
-        <Row className="mt-5 pt-5">
-          <Col lg={10} className="mx-auto text-center">
-            <div className="quality-section">
-              <h3 className="quality-title mb-4">
-                Premium Quality & Variety
-              </h3>
-              <p className="quality-description">
-                Our extensive range of pulses represents the finest quality available in the market. 
-                Each variety is carefully selected, processed using modern techniques, and packaged 
-                to preserve freshness and nutritional value. With over 35 years of experience since 1989, 
-                we ensure that every grain meets international export standards while maintaining 
-                the authentic taste and quality our customers trust.
-              </p>
-            </div>
-          </Col>
-        </Row>
       </Container>
     </section>
   );

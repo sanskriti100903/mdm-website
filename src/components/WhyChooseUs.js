@@ -65,19 +65,14 @@ const WhyChooseUs = () => {
   ];
 
   return (
-    <section id="why-choose-us" className="why-choose-section py-5">
+    <section id="why-choose-us" className="why-choose-section py-3">
       <Container>
-        <Row className="mb-5">
+        <Row className="mb-3">
           <Col lg={8} className="mx-auto text-center">
             <div className="section-header">
               <h2 className="section-title">
                 Why Choose MDM ?
               </h2>
-              <p className="section-description">
-                With over three decades of experience in the pulses industry, we have established 
-                ourselves as a trusted name in quality, reliability, and customer satisfaction. 
-                Here's what sets us apart from the competition.
-              </p>
             </div>
           </Col>
         </Row>
@@ -122,7 +117,7 @@ const WhyChooseUs = () => {
         </Row>
 
         {/* Trust Section */}
-        <Row className="mt-5 pt-5">
+        {/* <Row className="mt-5 pt-5">
           <Col lg={10} className="mx-auto">
             <div className="trust-section text-center">
               <h3 className="trust-title mb-4">
@@ -150,7 +145,7 @@ const WhyChooseUs = () => {
               </Row>
             </div>
           </Col>
-        </Row>
+        </Row> */}
       </Container>
     </section>
   );

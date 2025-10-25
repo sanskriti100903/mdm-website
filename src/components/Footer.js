@@ -27,39 +27,9 @@ const Footer = () => {
       <div className="footer-main py-5">
         <div className="footer-container">
           <Row className="g-4">
-            {/* Company Info */}
-            <Col lg={3} md={6} className="mb-4">
-              <div className="footer-brand">
-                <OptimizedLogo 
-                  height="60px" 
-                  className="footer-logo mb-3"
-                  showText={true}
-                  textSize="1.2rem"
-                  animate={false}
-                />
-                <p className="footer-description">
-                  Premium quality pulses exporter and retailer since 1989. 
-                  Trusted globally for our commitment to quality, safety, and customer satisfaction.
-                </p>
-                <div className="social-links">
-                  <a href="#" className="social-link">
-                    <FaFacebook />
-                  </a>
-                  <a href="#" className="social-link">
-                    <FaTwitter />
-                  </a>
-                  <a href="#" className="social-link">
-                    <FaLinkedin />
-                  </a>
-                  <a href="#" className="social-link">
-                    <FaInstagram />
-                  </a>
-                </div>
-              </div>
-            </Col>
 
             {/* Quick Links Menu */}
-            <Col lg={2} md={6} className="mb-4">
+            <Col lg={3} md={6} className="mb-4">
               <h5 className="footer-title">Quick Links</h5>
               <ul className="footer-menu">
                 <li><a href="#home" className="footer-menu-link">Home</a></li>
@@ -71,16 +41,16 @@ const Footer = () => {
             </Col>
 
             {/* Products Menu */}
-            <Col lg={2} md={6} className="mb-4">
+            <Col lg={3} md={6} className="mb-4">
               <h5 className="footer-title">Our Products</h5>
               <ul className="footer-menu">
-                <li><a href="#" className="footer-menu-link">Toor Dal</a></li>
-                <li><a href="#" className="footer-menu-link">Moong Dal</a></li>
-                <li><a href="#" className="footer-menu-link">Chana Dal</a></li>
-                <li><a href="#" className="footer-menu-link">Urad Dal</a></li>
-                <li><a href="#" className="footer-menu-link">Kabuli Chana</a></li>
-                <li><a href="#" className="footer-menu-link">Masoor Dal</a></li>
-                <li><a href="#" className="footer-menu-link">Rajma</a></li>
+                <li><span className="footer-menu-text">Toor Dal</span></li>
+                <li><span className="footer-menu-text">Moong Dal</span></li>
+                <li><span className="footer-menu-text">Chana Dal</span></li>
+                <li><span className="footer-menu-text">Urad Dal</span></li>
+                <li><span className="footer-menu-text">Kabuli Chana</span></li>
+                <li><span className="footer-menu-text">Masoor Dal</span></li>
+                <li><span className="footer-menu-text">Rajma</span></li>
               </ul>
             </Col>
 
@@ -153,7 +123,7 @@ const Footer = () => {
             </Col>
 
             {/* Addresses */}
-            <Col lg={2} md={12} className="mb-4">
+            <Col lg={3} md={12} className="mb-4">
               <h5 className="footer-title">Our Locations</h5>
               
               {/* Office Address */}
@@ -215,7 +185,7 @@ const Footer = () => {
           <Row className="align-items-center">
             <Col md={6}>
               <p className="copyright-text mb-0">
-                © 2024 MDM Group. All rights reserved. | Since 1989
+                © 2025 MDM Group. All rights reserved. | Since 1989
               </p>
             </Col>
             <Col md={6} className="text-md-end">
