@@ -120,13 +120,13 @@ html {
 
 .logo-img {
   transition: all 0.3s ease;
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1)) blur(0.5px);
-  opacity: 0.85;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+  opacity: 1;
 }
 
 .logo-img:hover {
   transform: scale(1.05);
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1)) blur(0px);
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
   opacity: 1;
 }
 
@@ -158,7 +158,7 @@ html {
 }
 
 .logo-text {
-  color: #1e3a8a;
+  color: #15803d;
   font-weight: 800;
   line-height: 1;
   text-shadow: 0 1px 3px rgba(44, 85, 48, 0.3);
@@ -166,10 +166,10 @@ html {
 }
 
 .since-text {
-  color: #1e40af;
+  color: #16a34a;
   font-weight: 700;
   line-height: 1;
-  text-shadow: 0 1px 2px rgba(30, 64, 175, 0.4);
+  text-shadow: 0 1px 2px rgba(22, 163, 74, 0.4);
   letter-spacing: 0.8px;
   text-transform: uppercase;
 }
@@ -178,7 +178,7 @@ html {
   position: absolute;
   bottom: -5px;
   right: -5px;
-  background: rgba(30, 64, 175, 0.9);
+  background: rgba(22, 163, 74, 0.9);
   color: white;
   padding: 2px 6px;
   border-radius: 10px;
@@ -193,12 +193,12 @@ html {
 /* Header specific logo styles */
 .header-logo .logo-img {
   max-height: 65px;
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1)) blur(0.8px);
-  opacity: 0.8;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+  opacity: 1;
 }
 
 .header-logo .logo-text {
-  color: #1e3a8a;
+  color: #15803d;
   font-size: 1.5rem;
   font-weight: 800;
   text-shadow: 0 2px 4px rgba(44, 85, 48, 0.3);
@@ -208,8 +208,8 @@ html {
 /* Footer specific logo styles */
 .footer-logo .logo-img {
   max-height: 60px;
-  filter: brightness(1.1) blur(0.6px);
-  opacity: 0.85;
+  filter: brightness(1.1);
+  opacity: 1;
 }
 
 .footer-logo .logo-text {
@@ -221,21 +221,21 @@ html {
 }
 
 .footer-logo .since-text {
-  color: #1e40af;
+  color: #16a34a;
   font-weight: 700;
-  text-shadow: 0 1px 4px rgba(30, 64, 175, 0.6);
+  text-shadow: 0 1px 4px rgba(22, 163, 74, 0.6);
   letter-spacing: 1.2px;
 }
 
 /* Showcase specific logo styles */
 .showcase-logo .logo-img {
   max-height: 120px;
-  filter: blur(1px);
-  opacity: 0.75;
+  filter: none;
+  opacity: 1;
 }
 
 .showcase-logo .logo-text {
-  color: #1e3a8a;
+  color: #15803d;
   font-size: 2rem;
   font-weight: 900;
   text-shadow: 0 3px 8px rgba(44, 85, 48, 0.4);
@@ -248,7 +248,7 @@ html {
   backdrop-filter: blur(15px);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-  border-bottom: 1px solid rgba(30, 64, 175, 0.1);
+  border-bottom: 1px solid rgba(22, 163, 74, 0.1);
 }
 
 .custom-navbar .container {
@@ -256,7 +256,7 @@ html {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding-left: 5rem;
+  padding-left: 4rem;
   padding-right: 5rem;
   max-width: none;
 }
@@ -274,7 +274,7 @@ html {
   background: rgba(255, 255, 255, 0.98);
   padding: 0.8rem 0;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
-  border-bottom: 1px solid rgba(30, 64, 175, 0.2);
+  border-bottom: 1px solid rgba(22, 163, 74, 0.2);
 }
 
 .brand-logo {
@@ -282,7 +282,7 @@ html {
   display: flex;
   align-items: center;
   position: relative;
-  margin-left: -1rem;
+  margin-left: -2rem;
 }
 
 .logo-brand-container {
@@ -304,7 +304,7 @@ html {
   font-family: 'Playfair Display', serif;
   font-size: 1.8rem;
   font-weight: 800;
-  color: #1e3a8a;
+  color: #14532d;
   margin: 0;
   line-height: 1;
   letter-spacing: 0.2px;
@@ -317,17 +317,17 @@ html {
   font-family: 'Poppins', sans-serif;
   font-size: 0.85rem;
   font-weight: 700;
-  color: #1e40af;
+  color: #16a34a;
   letter-spacing: 1.2px;
   text-transform: uppercase;
-  text-shadow: 0 1px 3px rgba(30, 64, 175, 0.4);
+  text-shadow: 0 1px 3px rgba(22, 163, 74, 0.4);
   position: relative;
   z-index: 3;
 }
 
 .nav-item {
   font-family: 'Poppins', sans-serif;
-  color: #1e3a8a !important;
+  color: #15803d !important;
   font-weight: 600;
   font-size: 1rem;
   margin: 0 0.5rem;
@@ -340,8 +340,8 @@ html {
 }
 
 .nav-item:hover {
-  color: #1e40af !important;
-  background: rgba(30, 64, 175, 0.1);
+  color: #16a34a !important;
+  background: rgba(22, 163, 74, 0.1);
 }
 
 .nav-item::after {
@@ -351,7 +351,7 @@ html {
   height: 2px;
   bottom: 0;
   left: 50%;
-  background: #1e40af;
+  background: #16a34a;
   transition: all 0.3s ease;
 }
 
@@ -361,31 +361,31 @@ html {
 }
 
 .custom-toggler {
-  border: 2px solid #1e40af;
+  border: 2px solid #16a34a;
   padding: 0.5rem 0.8rem;
   font-size: 1.2rem;
-  color: #1e40af;
+  color: #16a34a;
   border-radius: 10px;
   background: transparent;
   transition: all 0.3s ease;
 }
 
 .custom-toggler:hover {
-  background: #1e40af;
+  background: #16a34a;
   color: white;
   transform: scale(1.05);
-  box-shadow: 0 5px 15px rgba(30, 64, 175, 0.3);
+  box-shadow: 0 5px 15px rgba(22, 163, 74, 0.3);
 }
 
 .custom-toggler:focus {
-  box-shadow: 0 0 0 0.2rem rgba(30, 64, 175, 0.25);
+  box-shadow: 0 0 0 0.2rem rgba(22, 163, 74, 0.25);
 }
 
 /* Contact Button in Header */
 .contact-btn {
-  border: 2px solid #1e40af !important;
-  color: #1e40af !important;
-  background: transparent !important;
+  border: 2px solid #16a34a !important;
+  color: white !important;
+  background: #16a34a !important;
   padding: 0.5rem 1.5rem !important;
   border-radius: 25px !important;
   font-weight: 600 !important;
@@ -397,18 +397,31 @@ html {
   display: inline-flex !important;
   align-items: center !important;
   justify-content: center !important;
+  box-shadow: 0 2px 8px rgba(22, 163, 74, 0.3) !important;
 }
 
 .contact-btn:hover {
-  background: #1e40af !important;
+  background: #22c55e !important;
   color: white !important;
-  border-color: #1e40af !important;
-  transform: translateY(-2px) !important;
-  box-shadow: 0 4px 15px rgba(30, 64, 175, 0.3) !important;
+  border-color: #22c55e !important;
+  transform: translateY(-3px) scale(1.05) !important;
+  box-shadow: 0 6px 20px rgba(34, 197, 94, 0.5) !important;
+}
+
+.contact-btn:not(:hover) {
+  transition: all 0.3s ease !important;
+}
+
+.navbar .contact-btn:hover {
+  background: #22c55e !important;
+  color: white !important;
+  border-color: #22c55e !important;
+  transform: translateY(-3px) scale(1.05) !important;
+  box-shadow: 0 6px 20px rgba(34, 197, 94, 0.5) !important;
 }
 
 .contact-btn:focus {
-  box-shadow: 0 0 0 0.2rem rgba(30, 64, 175, 0.25) !important;
+  box-shadow: 0 0 0 0.2rem rgba(22, 163, 74, 0.25) !important;
 }
 
 .contact-btn:active {
@@ -471,6 +484,7 @@ html {
 
 .hero-text-content {
   animation: fadeInUp 1s ease-out;
+  margin-top: 140px;
 }
 
 .hero-badge {
@@ -540,14 +554,14 @@ html {
 }
 
 .cta-button {
-  background: linear-gradient(135deg, #1e40af, #3b82f6, #60a5fa);
+  background: linear-gradient(135deg, #16a34a, #22c55e, #4ade80);
   border: none;
   padding: 1rem 2.5rem;
   font-weight: 700;
   font-size: 1.1rem;
   border-radius: 50px;
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 8px 25px rgba(30, 64, 175, 0.4);
+  box-shadow: 0 8px 25px rgba(22, 163, 74, 0.4);
   color: white;
   text-transform: uppercase;
   letter-spacing: 1px;
@@ -570,8 +584,8 @@ html {
 
 .cta-button:hover {
   transform: translateY(-5px) scale(1.05);
-  box-shadow: 0 15px 40px rgba(30, 64, 175, 0.5);
-  background: linear-gradient(135deg, #3b82f6, #60a5fa, #93c5fd);
+  box-shadow: 0 15px 40px rgba(22, 163, 74, 0.5);
+  background: linear-gradient(135deg, #22c55e, #4ade80, #86efac);
 }
 
 .cta-button:hover::before {
@@ -585,13 +599,13 @@ html {
 /* Add pulsing animation to CTA button */
 @keyframes ctaPulse {
   0% {
-    box-shadow: 0 8px 25px rgba(30, 64, 175, 0.4);
+    box-shadow: 0 8px 25px rgba(22, 163, 74, 0.4);
   }
   50% {
-    box-shadow: 0 8px 25px rgba(30, 64, 175, 0.6), 0 0 0 10px rgba(30, 64, 175, 0.1);
+    box-shadow: 0 8px 25px rgba(22, 163, 74, 0.6), 0 0 0 10px rgba(22, 163, 74, 0.1);
   }
   100% {
-    box-shadow: 0 8px 25px rgba(30, 64, 175, 0.4);
+    box-shadow: 0 8px 25px rgba(22, 163, 74, 0.4);
   }
 }
 
@@ -644,16 +658,39 @@ html {
   backdrop-filter: blur(10px);
 }
 
+.section-header-compact {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(232, 245, 232, 0.9) 50%, rgba(245, 240, 248, 0.8) 100%);
+  padding: 2rem 2rem 1.5rem 2rem;
+  border-radius: 25px 25px 0 0;
+  box-shadow: 0 0 20px rgba(22, 163, 74, 0.1);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: none;
+  position: relative;
+}
+
+.section-header-compact::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #16a34a, #22c55e, #16a34a);
+  border-radius: 2px;
+}
+
 .section-title {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #1e3a8a;
+  color: #15803d;
   margin-bottom: 1rem;
   position: relative;
 }
 
 .since-badge {
-  background: linear-gradient(45deg, #1e40af, #3b82f6);
+  background: linear-gradient(45deg, #16a34a, #22c55e);
   color: white;
   padding: 0.3rem 1rem;
   border-radius: 20px;
@@ -672,12 +709,14 @@ html {
 .products-carousel {
   position: relative;
   width: 100%;
-  background: linear-gradient(135deg, rgba(255, 255, 255, 0.7) 0%, rgba(232, 245, 232, 0.8) 50%, rgba(245, 240, 248, 0.7) 100%);
-  padding: 2rem 1rem;
-  border-radius: 25px;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.8) 0%, rgba(232, 245, 232, 0.9) 50%, rgba(245, 240, 248, 0.8) 100%);
+  padding: 1.5rem 2rem 2rem 2rem;
+  border-radius: 0 0 25px 25px;
+  box-shadow: 0 0 20px rgba(22, 163, 74, 0.1);
   backdrop-filter: blur(15px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-top: none;
+  margin-top: 0;
 }
 
 .products-grid {
@@ -746,7 +785,7 @@ html {
 }
 
 .feature-badge {
-  background: rgba(30, 64, 175, 0.9);
+  background: rgba(22, 163, 74, 0.9);
   color: white;
   padding: 0.2rem 0.5rem;
   border-radius: 15px;
@@ -756,7 +795,7 @@ html {
 }
 
 .product-name {
-  color: #1e3a8a;
+  color: #15803d;
   font-weight: bold;
   display: flex;
   align-items: center;
@@ -795,14 +834,14 @@ html {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  border: 2px solid #1e40af;
+  border: 2px solid #16a34a;
   background: transparent;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 
 .indicator-dot.active {
-  background: #1e40af;
+  background: #16a34a;
   transform: scale(1.3);
 }
 
@@ -814,7 +853,7 @@ html {
 }
 
 .quality-title {
-  color: #1e3a8a;
+  color: #15803d;
   font-weight: bold;
 }
 
@@ -840,7 +879,7 @@ html {
 }
 
 .logo-text-showcase {
-  color: #1e3a8a;
+  color: #15803d;
   font-weight: 900;
   font-size: 2rem;
   margin: 0;
@@ -851,10 +890,10 @@ html {
 }
 
 .since-text-showcase {
-  color: #1e40af;
+  color: #16a34a;
   font-weight: 700;
   font-size: 1rem;
-  text-shadow: 0 2px 4px rgba(30, 64, 175, 0.5);
+  text-shadow: 0 2px 4px rgba(22, 163, 74, 0.5);
   letter-spacing: 1px;
   text-transform: uppercase;
   position: relative;
@@ -891,7 +930,7 @@ html {
 }
 
 .feature-title {
-  color: #1e3a8a;
+  color: #15803d;
   font-weight: bold;
   margin-bottom: 1rem;
 }
@@ -902,11 +941,11 @@ html {
 }
 
 .trust-section {
-  background: linear-gradient(135deg, #1e40af, #3b82f6);
+  background: linear-gradient(135deg, #16a34a, #22c55e);
   color: white;
   padding: 3rem;
   border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(30, 64, 175, 0.3);
+  box-shadow: 0 10px 30px rgba(22, 163, 74, 0.3);
 }
 
 .trust-title {
@@ -969,7 +1008,7 @@ html {
 
 .blog-image-fallback {
   height: 200px;
-  background: linear-gradient(135deg, #1e40af 0%, #3b82f6 50%, #17a2b8 100%);
+  background: linear-gradient(135deg, #16a34a 0%, #22c55e 50%, #17a2b8 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1014,7 +1053,7 @@ html {
 }
 
 .blog-category {
-  background: rgba(30, 64, 175, 0.9);
+  background: rgba(22, 163, 74, 0.9);
   color: white;
   padding: 0.3rem 0.8rem;
   border-radius: 20px;
@@ -1039,7 +1078,7 @@ html {
 }
 
 .blog-title {
-  color: #1e3a8a;
+  color: #15803d;
   font-weight: bold;
   font-size: 1.1rem;
   line-height: 1.3;
@@ -1076,7 +1115,7 @@ html {
 }
 
 .blog-cta-title {
-  color: #1e3a8a;
+  color: #15803d;
   font-weight: bold;
   margin-bottom: 1rem;
 }
@@ -1106,13 +1145,13 @@ html {
 }
 
 .blog-cta-logo .logo-text {
-  color: #1e3a8a;
+  color: #15803d;
   font-size: 1.5rem;
 }
 
 /* Footer Styles */
 .footer-section-fullwidth {
-  background: linear-gradient(135deg, #1e3a8a 0%, #1e3a22 100%);
+  background: linear-gradient(135deg, #15803d 0%, #1e3a22 100%);
   color: white;
   width: 100%;
   margin: 0;
@@ -1153,7 +1192,7 @@ html {
 }
 
 .footer-since-text {
-  color: #1e40af;
+  color: #16a34a;
   font-weight: 600;
 }
 
@@ -1183,7 +1222,7 @@ html {
 }
 
 .social-link:hover {
-  color: #1e40af;
+  color: #16a34a;
   background: white;
   transform: translateY(-3px);
 }
@@ -1243,7 +1282,7 @@ html {
 }
 
 .contact-subtitle {
-  color: #60a5fa !important;
+  color: #4ade80 !important;
   font-weight: 600;
   margin-bottom: 0.5rem;
   display: flex;
@@ -1269,7 +1308,7 @@ html {
 
 .whatsapp-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(30, 64, 175, 0.3);
+  box-shadow: 0 5px 15px rgba(22, 163, 74, 0.3);
 }
 
 .email-link {
@@ -1287,7 +1326,7 @@ html {
 }
 
 .address-title {
-  color: #60a5fa;
+  color: #4ade80;
   font-weight: 600;
   margin-bottom: 0.5rem;
   display: flex;
@@ -1305,7 +1344,7 @@ html {
 }
 
 .map-title {
-  color: #1e40af;
+  color: #16a34a;
   font-weight: bold;
 }
 
@@ -1326,6 +1365,14 @@ html {
 .tagline-text {
   color: #ffc107;
   font-weight: 600;
+}
+
+/* Header Responsive Styles */
+@media (max-width: 992px) {
+  .custom-navbar .container {
+    padding-left: 2rem;
+    padding-right: 3rem;
+  }
 }
 
 /* Footer Responsive Styles */
@@ -1376,6 +1423,15 @@ html {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .custom-navbar .container {
+    padding-left: 1.5rem;
+    padding-right: 2rem;
+  }
+
+  .brand-logo {
+    margin-left: -1rem;
+  }
+
   .hero-title {
     font-size: 2.5rem;
   }
@@ -1432,7 +1488,7 @@ html {
     font-size: 0.9rem;
   }
 
-  .hero-badge {
+  .hero-text-content {
     margin-top: 100px;
   }
 }
@@ -1485,7 +1541,7 @@ html {
     text-align: center;
   }
 
-  .hero-badge {
+  .hero-text-content {
     margin-top: 60px;
   }
 }

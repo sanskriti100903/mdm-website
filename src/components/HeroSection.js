@@ -133,12 +133,6 @@ const HeroSection = () => {
         <Row className="align-items-center min-vh-100">
           <Col lg={8} md={10} className="mx-auto text-center">
             <div className="hero-text-content">
-              <div className="hero-badge mb-4">
-                <FaStar className="me-2" />
-                <span>Since 1989 - Trusted Worldwide</span>
-                <FaStar className="ms-2" />
-              </div>
-              
               <h1 className="hero-title mb-4">
                 {heroContent[currentImage].title}
               </h1>

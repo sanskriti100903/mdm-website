@@ -70,18 +70,12 @@ const ProductsSection = () => {
   return (
     <section id="products" className="products-section py-5">
       <Container>
-        <Row className="mb-5">
-          <Col lg={8} className="mx-auto text-center">
-            <div className="section-header">
-              <h2 className="section-title">
+        <Row className="mb-3">
+          <Col lg={12} className="text-center">
+            <div className="section-header-compact">
+              <h2 className="section-title mb-0">
                 Our Premium Products
-                <span className="since-badge ms-3">Since 1989</span>
               </h2>
-              <p className="section-description">
-                Discover our wide range of premium quality pulses, carefully sourced and processed 
-                to meet international standards. Each variety offers exceptional taste, nutrition, 
-                and quality that has made us a trusted name in the industry.
-              </p>
             </div>
           </Col>
         </Row>
