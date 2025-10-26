@@ -1,5 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import { 
   FaMapMarkerAlt, 
   FaPhone, 
@@ -22,6 +23,33 @@ const Footer = () => {
     window.open(`tel:+91${number}`, '_self');
   };
 
+  const handleSectionNavClick = (sectionId) => {
+    // If we're not on the home page, navigate to home first then scroll to section
+    if (window.location.pathname !== '/') {
+      window.location.href = `/#${sectionId}`;
+    } else {
+      // If we're on the home page, scroll to the section
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
+
+  const handleHomeClick = () => {
+    // Scroll to top when home is clicked
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 50);
+  };
+
+  const handleContactClick = () => {
+    // Scroll to top when contact is clicked (after page loads)
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 100);
+  };
+
   return (
     <footer id="contact" className="footer-section-fullwidth">
       <div className="footer-main py-5">
@@ -32,11 +60,11 @@ const Footer = () => {
             <Col lg={3} md={6} className="mb-4">
               <h5 className="footer-title">Quick Links</h5>
               <ul className="footer-menu">
-                <li><a href="#home" className="footer-menu-link">Home</a></li>
-                <li><a href="#products" className="footer-menu-link">Products</a></li>
-                <li><a href="#about" className="footer-menu-link">About Us</a></li>
-                <li><a href="#contact" className="footer-menu-link">Contact</a></li>
-                <li><a href="#quality" className="footer-menu-link">Quality</a></li>
+                <li><Link to="/" className="footer-menu-link" onClick={handleHomeClick}>Home</Link></li>
+                <li><span onClick={() => handleSectionNavClick('products')} className="footer-menu-link" style={{cursor: 'pointer'}}>Products</span></li>
+                <li><span onClick={() => handleSectionNavClick('about')} className="footer-menu-link" style={{cursor: 'pointer'}}>About Us</span></li>
+                <li><Link to="/contact" className="footer-menu-link" onClick={handleContactClick}>Contact</Link></li>
+                <li><span onClick={() => handleSectionNavClick('quality')} className="footer-menu-link" style={{cursor: 'pointer'}}>Quality</span></li>
               </ul>
             </Col>
 

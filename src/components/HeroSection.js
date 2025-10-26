@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import { FaArrowRight, FaGlobe, FaShieldAlt, FaStar } from 'react-icons/fa';
 
 const HeroSection = () => {
@@ -171,7 +172,7 @@ const HeroSection = () => {
                 <Button variant="primary" size="lg" className="me-3 mb-3 cta-button">
                   Explore Products <FaArrowRight className="ms-2" />
                 </Button>
-                <Button variant="outline-light" size="lg" className="mb-3 contact-button">
+                <Button as={Link} to="/contact" variant="outline-light" size="lg" className="mb-3 contact-button">
                   Contact Us
                 </Button>
               </div>

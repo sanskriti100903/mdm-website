@@ -22,6 +22,20 @@ const Header = () => {
     setExpanded(false);
   };
 
+  const handleSectionNavClick = (sectionId) => {
+    setExpanded(false);
+    // If we're not on the home page, navigate to home first
+    if (window.location.pathname !== '/') {
+      window.location.href = `/#${sectionId}`;
+    } else {
+      // If we're on the home page, scroll to the section
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
+
   return (
     <Navbar 
       expand="lg" 
@@ -31,7 +45,7 @@ const Header = () => {
       onToggle={(expanded) => setExpanded(expanded)}
     >
       <Container>
-        <Navbar.Brand href="#home" className="brand-logo">
+        <Navbar.Brand as={Link} to="/" className="brand-logo">
           <div className="logo-brand-container">
             <OptimizedLogo 
               height="65px" 
@@ -52,16 +66,16 @@ const Header = () => {
         
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto align-items-center">
-            <Nav.Link href="#home" onClick={handleNavClick} className="nav-item">
+            <Nav.Link as={Link} to="/" onClick={handleNavClick} className="nav-item">
               Home
             </Nav.Link>
-            <Nav.Link href="#about" onClick={handleNavClick} className="nav-item">
+            <Nav.Link onClick={() => handleSectionNavClick('about')} className="nav-item" style={{cursor: 'pointer'}}>
               About Us
             </Nav.Link>
-            <Nav.Link href="#products" onClick={handleNavClick} className="nav-item">
+            <Nav.Link onClick={() => handleSectionNavClick('products')} className="nav-item" style={{cursor: 'pointer'}}>
               Products
             </Nav.Link>
-            <Nav.Link href="#certificates" onClick={handleNavClick} className="nav-item">
+            <Nav.Link onClick={() => handleSectionNavClick('certificates')} className="nav-item" style={{cursor: 'pointer'}}>
               Certificates
             </Nav.Link>
             <Button 

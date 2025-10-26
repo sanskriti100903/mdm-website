@@ -108,10 +108,6 @@ const ContactUs = () => {
           <Row className="justify-content-center text-center">
             <Col lg={8}>
               <h1 className="contact-hero-title">Contact Us</h1>
-              <p className="contact-hero-description">
-                Get in touch with us for premium quality pulses, rice, and wheat. 
-                We're here to serve your business needs with excellence.
-              </p>
             </Col>
           </Row>
         </Container>

@@ -1478,6 +1478,10 @@ html {
   position: relative;
 }
 
+.footer-menu-link:visited {
+  color: rgba(255, 255, 255, 0.8);
+}
+
 .footer-menu-link:hover {
   color: #ffc107;
   transform: translateX(5px);
@@ -1864,5 +1868,248 @@ html {
 
   .why-mdm-logo {
     max-height: 120px;
+  }
+}
+
+/* Contact Us Page Styles */
+.contact-us-page {
+  min-height: 100vh;
+}
+
+.contact-hero-section {
+  background: linear-gradient(135deg, #15803d 0%, #16a34a 50%, #22c55e 100%);
+  color: white;
+  padding: 8rem 0 4rem 0;
+  margin-top: 76px;
+}
+
+.contact-hero-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.contact-hero-description {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  opacity: 0.95;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-main-section {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, #f8fffe 0%, #ecfdf5 50%, #f0fdf4 100%);
+}
+
+.contact-form-card {
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(22, 163, 74, 0.1);
+  overflow: hidden;
+}
+
+.contact-form-header {
+  background: linear-gradient(135deg, #16a34a, #22c55e);
+  color: white;
+  padding: 1.5rem 2rem;
+  border-bottom: none;
+}
+
+.contact-form-header h3 {
+  font-weight: 700;
+  margin: 0;
+}
+
+.contact-form-label {
+  font-weight: 600;
+  color: #15803d;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.contact-form-input {
+  border: 2px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.contact-form-input:focus {
+  border-color: #16a34a;
+  box-shadow: 0 0 0 0.2rem rgba(22, 163, 74, 0.25);
+}
+
+.contact-submit-btn {
+  background: linear-gradient(135deg, #16a34a, #22c55e);
+  border: none;
+  padding: 1rem 3rem;
+  font-weight: 700;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(22, 163, 74, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.contact-submit-btn:hover {
+  background: linear-gradient(135deg, #22c55e, #4ade80);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(22, 163, 74, 0.4);
+}
+
+.contact-info-sidebar {
+  position: sticky;
+  top: 2rem;
+}
+
+.contact-info-card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(22, 163, 74, 0.1);
+  overflow: hidden;
+}
+
+.contact-info-header {
+  background: linear-gradient(135deg, #15803d, #16a34a);
+  color: white;
+  padding: 1rem 1.5rem;
+  border-bottom: none;
+}
+
+.contact-info-header h4 {
+  font-weight: 700;
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.contact-info-item {
+  border-bottom: 1px solid #f3f4f6;
+  padding-bottom: 1rem;
+}
+
+.contact-info-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.contact-info-subtitle {
+  color: #16a34a;
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+}
+
+.contact-info-content {
+  margin-left: 1.5rem;
+}
+
+.contact-info-link {
+  color: #15803d !important;
+  text-decoration: none !important;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.contact-info-link:hover {
+  color: #22c55e !important;
+  transform: translateX(3px);
+}
+
+.contact-whatsapp-btn {
+  border-radius: 20px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.contact-whatsapp-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(34, 197, 94, 0.3);
+}
+
+.contact-email-link {
+  color: #15803d;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.contact-email-link:hover {
+  color: #22c55e;
+  text-decoration: underline;
+}
+
+.contact-address-text {
+  color: #6b7280;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.contact-map-btn {
+  border-radius: 20px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border-color: #16a34a;
+  color: #16a34a;
+}
+
+.contact-map-btn:hover {
+  background: #16a34a;
+  border-color: #16a34a;
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(22, 163, 74, 0.3);
+}
+
+/* Contact Us Responsive Styles */
+@media (max-width: 768px) {
+  .contact-hero-section {
+    padding: 6rem 0 3rem 0;
+  }
+  
+  .contact-hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .contact-hero-description {
+    font-size: 1.1rem;
+  }
+  
+  .contact-main-section {
+    padding: 3rem 0;
+  }
+  
+  .contact-info-sidebar {
+    position: static;
+    margin-top: 2rem;
+  }
+  
+  .contact-submit-btn {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-hero-title {
+    font-size: 2rem;
+  }
+  
+  .contact-hero-description {
+    font-size: 1rem;
+  }
+  
+  .contact-form-header {
+    padding: 1rem 1.5rem;
+  }
+  
+  .contact-info-content {
+    margin-left: 1rem;
   }
 }
