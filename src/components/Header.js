@@ -72,7 +72,7 @@ const Header = () => {
             <Nav.Link onClick={() => handleSectionNavClick('about')} className="nav-item" style={{cursor: 'pointer'}}>
               About Us
             </Nav.Link>
-            <Nav.Link onClick={() => handleSectionNavClick('products')} className="nav-item" style={{cursor: 'pointer'}}>
+            <Nav.Link as={Link} to="/products" onClick={handleNavClick} className="nav-item">
               Products
             </Nav.Link>
             <Nav.Link onClick={() => handleSectionNavClick('certificates')} className="nav-item" style={{cursor: 'pointer'}}>

@@ -8,6 +8,7 @@ import WhyMDMSection from './components/WhyMDMSection';
 import ProductsSection from './components/ProductsSection';
 import WhyChooseUs from './components/WhyChooseUs';
 import ContactUs from './components/ContactUs';
+import Products from './components/Products';
 // import BlogSection from './components/BlogSection';
 import Footer from './components/Footer';
 
@@ -32,6 +33,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/contact" element={<ContactUs />} />
+        <Route path="/products" element={<Products />} />
       </Routes>
     </Router>
   );

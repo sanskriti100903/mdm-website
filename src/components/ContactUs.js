@@ -107,7 +107,7 @@ const ContactUs = () => {
         <Container>
           <Row className="justify-content-center text-center">
             <Col lg={8}>
-              <h1 className="contact-hero-title">Contact Us</h1>
+              <h1 className="contact-hero-title">Get in Touch</h1>
             </Col>
           </Row>
         </Container>
@@ -332,8 +332,7 @@ const ContactUs = () => {
                       <div className="contact-info-content">
                         <p className="contact-address-text mb-2">
                           23/2, Sajan Nagar, Chitwad Road<br/>
-                          Indore, MP - 452001<br/>
-                          India
+                          Indore, MP - 452001, India
                         </p>
                         <Button 
                           variant="outline-primary" 
@@ -359,15 +358,6 @@ const ContactUs = () => {
                           Nemawar Road, Ashrawad<br/>
                           Indore, MP - 452016
                         </p>
-                        <Button 
-                          variant="outline-primary" 
-                          size="sm"
-                          onClick={() => handleMapClick('10, Gajanand Industrial Park, Nemawar Road, Ashrawad, Indore, MP - 452016')}
-                          className="contact-map-btn"
-                        >
-                          <FaExternalLinkAlt className="me-1" />
-                          View on Map
-                        </Button>
                       </div>
                     </div>
                   </Card.Body>
