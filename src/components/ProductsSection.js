@@ -8,7 +8,7 @@ const ProductsSection = () => {
   const products = [
     {
       name: "Toor Dal",
-      image: "https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "/toor.jpg",
       description: "Premium quality Toor Dal, rich in protein and essential nutrients. Carefully processed to maintain natural taste and nutritional value.",
       features: ["High Protein", "Natural Processing", "Export Quality"]
     },
@@ -20,7 +20,7 @@ const ProductsSection = () => {
     },
     {
       name: "Chana Dal",
-      image: "https://images.unsplash.com/photo-1615485290382-441e4d049cb5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "/chana.jpg",
       description: "Golden yellow Chana Dal with authentic taste and aroma. Sourced from the finest farms and processed with care.",
       features: ["Rich in Protein", "Natural Color", "Farm Fresh"]
     },
@@ -32,7 +32,7 @@ const ProductsSection = () => {
     },
     {
       name: "Kabuli Chana",
-      image: "https://images.unsplash.com/photo-1586201375761-83865001e31c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "/kabuli.jpg",
       description: "Large, premium Kabuli Chana with excellent texture. Perfect for various culinary preparations worldwide.",
       features: ["Large Size", "Premium Quality", "Global Standards"]
     },
@@ -44,7 +44,7 @@ const ProductsSection = () => {
     },
     {
       name: "Rajma",
-      image: "https://images.unsplash.com/photo-1578849278619-e73505e9610f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "/rajma.jpg",
       description: "Premium quality Rajma beans, perfect for traditional recipes. Carefully selected and processed for best taste.",
       features: ["Premium Beans", "Traditional Taste", "Export Quality"]
     },
@@ -62,7 +62,7 @@ const ProductsSection = () => {
     },
     {
       name: "Maize",
-      image: "https://images.unsplash.com/photo-1551754655-cd27e38d2076?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "/corn.jpg",
       description: "Fresh and premium quality Maize (Corn) kernels. Versatile grain perfect for various food preparations.",
       features: ["Versatile", "Fresh Quality", "Export Grade"]
     },

@@ -923,6 +923,163 @@ html {
   font-weight: bold;
 }
 
+/* Why MDM Section */
+.why-mdm-section {
+  background: linear-gradient(135deg, #f8fffe 0%, #ecfdf5 50%, #f0fdf4 100%);
+  padding: 4rem 0 2rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.why-mdm-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 20% 50%, rgba(22, 163, 74, 0.05) 0%, transparent 50%),
+              radial-gradient(circle at 80% 50%, rgba(34, 197, 94, 0.05) 0%, transparent 50%);
+  z-index: 1;
+}
+
+.why-mdm-section .container {
+  position: relative;
+  z-index: 2;
+}
+
+.why-mdm-logo-container {
+  position: relative;
+  text-align: center;
+}
+
+.logo-wrapper {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+
+.why-mdm-logo {
+  max-height: 150px;
+  width: auto;
+  filter: drop-shadow(0 4px 12px rgba(22, 163, 74, 0.2));
+  transition: all 0.3s ease;
+  animation: float 4s ease-in-out infinite;
+}
+
+.why-mdm-logo:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 6px 20px rgba(22, 163, 74, 0.3));
+}
+
+.logo-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #16a34a, #22c55e);
+  color: white;
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(22, 163, 74, 0.3);
+  animation: float 4s ease-in-out infinite;
+}
+
+.placeholder-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #86efac;
+}
+
+.placeholder-text {
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+}
+
+.placeholder-since {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #86efac;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+
+.why-mdm-content {
+  padding-left: 2rem;
+}
+
+.welcome-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #15803d;
+  margin-bottom: 2rem;
+  position: relative;
+  text-shadow: 0 2px 4px rgba(21, 128, 61, 0.1);
+}
+
+.content-text {
+  margin-bottom: 2.5rem;
+}
+
+.lead-paragraph {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: #374151;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.description-paragraph {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #6b7280;
+  margin-bottom: 0;
+}
+
+.key-highlights {
+  display: flex;
+  gap: 0.8rem;
+  margin-top: 2rem;
+  flex-direction: row;
+}
+
+.highlight-item {
+  text-align: center;
+  padding: 0.7rem 0.5rem;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(22, 163, 74, 0.1);
+  transition: all 0.3s ease;
+  flex: 1;
+  border: 2px solid transparent;
+}
+
+.highlight-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(22, 163, 74, 0.2);
+  border-color: rgba(22, 163, 74, 0.2);
+}
+
+.highlight-number {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #16a34a;
+  margin-bottom: 0.2rem;
+  text-shadow: 0 2px 4px rgba(22, 163, 74, 0.2);
+}
+
+.highlight-text {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #15803d;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  line-height: 1.2;
+}
+
 /* Why Choose Us Section */
 .why-choose-section {
   background: white;
@@ -1573,6 +1730,35 @@ html {
   .hero-text-content {
     margin-top: 100px;
   }
+
+  /* Why MDM Section Responsive */
+  .why-mdm-section {
+    padding: 3rem 0;
+  }
+
+  .why-mdm-content {
+    padding-left: 1rem;
+    margin-top: 2rem;
+  }
+
+  .welcome-title {
+    font-size: 2rem;
+  }
+
+  .lead-paragraph {
+    font-size: 1.1rem;
+  }
+
+  .description-paragraph {
+    font-size: 1rem;
+  }
+
+  .key-highlights {
+    flex-direction: row;
+    gap: 0.6rem;
+    margin-top: 1.5rem;
+  }
+
 }
 
 @media (max-width: 576px) {
@@ -1633,5 +1819,50 @@ html {
 
   .hero-text-content {
     margin-top: 60px;
+  }
+
+  /* Why MDM Section Mobile Responsive */
+  .why-mdm-section {
+    padding: 2rem 0;
+  }
+
+  .why-mdm-content {
+    padding-left: 0;
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  .welcome-title {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .lead-paragraph {
+    font-size: 1rem;
+  }
+
+  .description-paragraph {
+    font-size: 0.95rem;
+  }
+
+  .key-highlights {
+    margin-top: 1.5rem;
+    gap: 0.5rem;
+  }
+
+  .highlight-item {
+    padding: 0.5rem 0.3rem;
+  }
+
+  .highlight-number {
+    font-size: 1.3rem;
+  }
+
+  .highlight-text {
+    font-size: 0.7rem;
+  }
+
+  .why-mdm-logo {
+    max-height: 120px;
   }
 }

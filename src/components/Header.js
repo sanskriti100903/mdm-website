@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Navbar, Nav, Container, Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import OptimizedLogo from './OptimizedLogo';
 
@@ -64,7 +65,8 @@ const Header = () => {
               Certificates
             </Nav.Link>
             <Button 
-              href="#contact" 
+              as={Link}
+              to="/contact" 
               onClick={handleNavClick} 
               className="contact-btn ms-2"
               variant="outline-primary"
