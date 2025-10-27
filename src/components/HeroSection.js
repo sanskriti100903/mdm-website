@@ -169,7 +169,7 @@ const HeroSection = () => {
               </div>
               
               <div className="hero-buttons">
-                <Button variant="primary" size="lg" className="me-3 mb-3 cta-button">
+                <Button as={Link} to="/products" variant="primary" size="lg" className="me-3 mb-3 cta-button">
                   Explore Products <FaArrowRight className="ms-2" />
                 </Button>
                 <Button as={Link} to="/contact" variant="outline-light" size="lg" className="mb-3 contact-button">

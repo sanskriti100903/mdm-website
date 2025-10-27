@@ -20,6 +20,8 @@ const Header = () => {
 
   const handleNavClick = () => {
     setExpanded(false);
+    // Scroll to top of the page
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const handleSectionNavClick = (sectionId) => {
@@ -36,6 +38,12 @@ const Header = () => {
     }
   };
 
+  const handleBrandClick = () => {
+    setExpanded(false);
+    // Scroll to top when brand/logo is clicked
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <Navbar 
       expand="lg" 
@@ -45,7 +53,7 @@ const Header = () => {
       onToggle={(expanded) => setExpanded(expanded)}
     >
       <Container>
-        <Navbar.Brand as={Link} to="/" className="brand-logo">
+        <Navbar.Brand as={Link} to="/" className="brand-logo" onClick={handleBrandClick}>
           <div className="logo-brand-container">
             <OptimizedLogo 
               height="65px" 
