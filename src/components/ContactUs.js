@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Container, Row, Col, Form, Button, Card, Alert } from 'react-bootstrap';
+import { Container, Row, Col, Form, Button, Card, Alert, Spinner } from 'react-bootstrap';
+import axios from 'axios';
 import { 
   FaMapMarkerAlt, 
   FaPhone, 
@@ -24,6 +25,7 @@ const ContactUs = () => {
   const [showAlert, setShowAlert] = useState(false);
   const [alertType, setAlertType] = useState('success');
   const [alertMessage, setAlertMessage] = useState('');
+  const [loading, setLoading] = useState(false);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -33,55 +35,52 @@ const ContactUs = () => {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
+    setLoading(true);
+    setShowAlert(false);
     
     // Basic validation
     if (!formData.name || !formData.email || !formData.customerType || !formData.phone || !formData.message) {
       setAlertType('danger');
       setAlertMessage('Please fill in all required fields.');
       setShowAlert(true);
+      setLoading(false);
       setTimeout(() => setShowAlert(false), 5000);
       return;
     }
 
-    // Email validation
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(formData.email)) {
+    try {
+      const response = await axios.post('http://localhost:5001/api/contact/submit', formData);
+      
+      if (response.data.success) {
+        setAlertType('success');
+        setAlertMessage(response.data.message);
+        setShowAlert(true);
+        
+        // Reset form
+        setFormData({
+          name: '',
+          email: '',
+          customerType: '',
+          phone: '',
+          message: ''
+        });
+      }
+    } catch (error) {
       setAlertType('danger');
-      setAlertMessage('Please enter a valid email address.');
+      if (error.response?.data?.message) {
+        setAlertMessage(error.response.data.message);
+      } else if (error.response?.data?.errors) {
+        setAlertMessage(error.response.data.errors.join(', '));
+      } else {
+        setAlertMessage('Failed to submit your message. Please check your connection and try again.');
+      }
       setShowAlert(true);
-      setTimeout(() => setShowAlert(false), 5000);
-      return;
+    } finally {
+      setLoading(false);
+      setTimeout(() => setShowAlert(false), 8000);
     }
-
-    // Phone validation
-    const phoneRegex = /^[0-9]{10}$/;
-    if (!phoneRegex.test(formData.phone.replace(/\D/g, '').slice(-10))) {
-      setAlertType('danger');
-      setAlertMessage('Please enter a valid 10-digit phone number.');
-      setShowAlert(true);
-      setTimeout(() => setShowAlert(false), 5000);
-      return;
-    }
-
-    // Simulate form submission
-    console.log('Form submitted:', formData);
-    
-    setAlertType('success');
-    setAlertMessage('Thank you for your message! We will get back to you soon.');
-    setShowAlert(true);
-    
-    // Reset form
-    setFormData({
-      name: '',
-      email: '',
-      customerType: '',
-      phone: '',
-      message: ''
-    });
-    
-    setTimeout(() => setShowAlert(false), 5000);
   };
 
   const handleWhatsAppClick = (number) => {
@@ -232,8 +231,25 @@ const ContactUs = () => {
                     </Row>
                     
                     <div className="text-center mt-4">
-                      <Button type="submit" className="contact-submit-btn">
-                        Send Message
+                      <Button 
+                        type="submit" 
+                        className="contact-submit-btn"
+                        disabled={loading}
+                      >
+                        {loading ? (
+                          <>
+                            <Spinner
+                              as="span"
+                              animation="border"
+                              size="sm"
+                              role="status"
+                              className="me-2"
+                            />
+                            Sending...
+                          </>
+                        ) : (
+                          'Send Message'
+                        )}
                       </Button>
                     </div>
                   </Form>
