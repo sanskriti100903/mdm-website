@@ -9,6 +9,8 @@ import ProductsSection from './components/ProductsSection';
 import WhyChooseUs from './components/WhyChooseUs';
 import ContactUs from './components/ContactUs';
 import Products from './components/Products';
+import AdminLogin from './components/AdminLogin';
+import AdminDashboard from './components/AdminDashboard';
 // import BlogSection from './components/BlogSection';
 import Footer from './components/Footer';
 
@@ -34,6 +36,8 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/products" element={<Products />} />
+        <Route path="/admin/login" element={<AdminLogin />} />
+        <Route path="/admin" element={<AdminDashboard />} />
       </Routes>
     </Router>
   );
