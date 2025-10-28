@@ -9,6 +9,7 @@ import ProductsSection from './components/ProductsSection';
 import WhyChooseUs from './components/WhyChooseUs';
 import ContactUs from './components/ContactUs';
 import Products from './components/Products';
+import AboutUs from './components/AboutUs';
 import AdminLogin from './components/AdminLogin';
 import AdminDashboard from './components/AdminDashboard';
 // import BlogSection from './components/BlogSection';
@@ -34,6 +35,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
+        <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/products" element={<Products />} />
         <Route path="/admin/login" element={<AdminLogin />} />
