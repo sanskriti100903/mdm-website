@@ -61,10 +61,10 @@ const Footer = () => {
               <h5 className="footer-title">Quick Links</h5>
               <ul className="footer-menu">
                 <li><Link to="/" className="footer-menu-link" onClick={handleHomeClick}>Home</Link></li>
+                <li><Link to="/about" className="footer-menu-link" onClick={handleHomeClick}>About Us</Link></li>
                 <li><Link to="/products" className="footer-menu-link" onClick={handleHomeClick}>Products</Link></li>
-                <li><span onClick={() => handleSectionNavClick('about')} className="footer-menu-link" style={{cursor: 'pointer'}}>About Us</span></li>
+                <li><Link to="/certifications" className="footer-menu-link" onClick={handleHomeClick}>Certifications</Link></li>
                 <li><Link to="/contact" className="footer-menu-link" onClick={handleContactClick}>Contact</Link></li>
-                <li><span onClick={() => handleSectionNavClick('quality')} className="footer-menu-link" style={{cursor: 'pointer'}}>Quality</span></li>
               </ul>
             </Col>
 

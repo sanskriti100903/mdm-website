@@ -1,4 +1,5 @@
 import React from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
 import Header from './Header';
 import Footer from './Footer';
 
@@ -6,37 +7,30 @@ const AboutUs = () => {
   const timelineData = [
     {
       year: "1960",
-      title: "The Beginning",
       description: "M/s Ramsahaya Pannalal established by proprietor Ramniwas Ji Agrawal in our home in Indore, India"
     },
     {
       year: "1979",
-      title: "New Firm Establishment",
       description: "Open a new firm \"Ramniwas Jagdishchandra\" and started milling pulses"
     },
     {
       year: "1996",
-      title: "First Manufacturing Plant",
       description: "Set up our first manufacturing plant in Indore"
     },
     {
       year: "2006",
-      title: "Second Manufacturing Unit",
       description: "Established our second manufacturing unit for milling unhusked pulses"
     },
     {
       year: "2018",
-      title: "Global Expansion",
       description: "From Indore to the globe – started exporting pulses"
     },
     {
       year: "2023",
-      title: "Fully Automatic Plant",
       description: "Established our third and fully automatic plant"
     },
     {
       year: "Now",
-      title: "Group of Companies",
       description: "Group of Companies: Ramniwas Jagdishchandra, R J Pulses, R J Agro Industries"
     }
   ];
@@ -72,18 +66,15 @@ const AboutUs = () => {
     <div className="about-us-page">
       <Header />
       
-      {/* Hero Section */}
-      <section className="about-hero-section">
-        <div className="container">
-          <div className="row">
-            <div className="col-12 text-center">
-              <h1 className="about-hero-title">About MDM Group</h1>
-              <p className="about-hero-subtitle">
-                Over six decades of excellence in pulse processing and agricultural innovation
-              </p>
-            </div>
-          </div>
-        </div>
+      {/* About Us Hero Section */}
+      <section className="products-hero-section">
+        <Container>
+          <Row className="justify-content-center text-center">
+            <Col lg={8}>
+              <h1 className="products-hero-title">About MDM Group</h1>
+            </Col>
+          </Row>
+        </Container>
       </section>
 
       {/* Timeline Section */}

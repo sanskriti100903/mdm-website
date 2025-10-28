@@ -2600,45 +2600,169 @@ html {
   min-height: 100vh;
 }
 
-/* About Hero Section */
-.about-hero-section {
-  background: linear-gradient(135deg, #15803d 0%, #16a34a 100%);
-  color: white;
-  padding: 120px 0 80px;
-  position: relative;
+/* Certification Page Styles */
+.certification-page {
+  min-height: 100vh;
+}
+
+/* Certifications Section */
+.certifications-section {
+  padding: 80px 0;
+  background: #f8f9fa;
+}
+
+.certifications-subtitle {
+  font-size: 1.2rem;
+  color: #6b7280;
+  max-width: 800px;
+  margin: 0 auto 2rem;
+  line-height: 1.6;
+}
+
+/* Certification Cards */
+.certification-card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(22, 163, 74, 0.1);
+  transition: all 0.3s ease;
+  background: white;
   overflow: hidden;
 }
 
-.about-hero-section::before {
+.certification-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(22, 163, 74, 0.2);
+}
+
+.certification-icon-container {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #15803d, #22c55e);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  position: relative;
+}
+
+.certification-icon-container::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="white" opacity="0.1"/><circle cx="75" cy="75" r="1" fill="white" opacity="0.1"/><circle cx="50" cy="10" r="0.5" fill="white" opacity="0.1"/><circle cx="20" cy="80" r="0.5" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+  top: -3px;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  background: linear-gradient(135deg, #15803d, #22c55e);
+  border-radius: 50%;
+  z-index: -1;
   opacity: 0.3;
 }
 
-.about-hero-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 3.5rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  position: relative;
-  z-index: 2;
+.certification-icon {
+  font-size: 2rem;
+  color: white;
 }
 
-.about-hero-subtitle {
-  font-size: 1.3rem;
-  font-weight: 400;
-  opacity: 0.95;
-  max-width: 600px;
-  margin: 0 auto;
-  position: relative;
-  z-index: 2;
+.certification-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #15803d;
+  margin-bottom: 0.5rem;
 }
+
+.certification-category {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #16a34a;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 0.25rem 0.75rem;
+  background: rgba(22, 163, 74, 0.1);
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.certification-description {
+  color: #6b7280;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-top: 1rem;
+}
+
+/* Trust Section */
+.certification-trust-section {
+  padding: 80px 0;
+  background: white;
+}
+
+.trust-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #15803d;
+  margin-bottom: 1.5rem;
+}
+
+.trust-description {
+  font-size: 1.1rem;
+  color: #6b7280;
+  line-height: 1.8;
+  margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .certifications-section {
+    padding: 60px 0;
+  }
+  
+  .certification-trust-section {
+    padding: 60px 0;
+  }
+  
+  .trust-title {
+    font-size: 2rem;
+  }
+  
+  .certification-icon-container {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .certification-icon {
+    font-size: 1.7rem;
+  }
+  
+  .certification-title {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .certifications-section {
+    padding: 40px 0;
+  }
+  
+  .certification-trust-section {
+    padding: 40px 0;
+  }
+  
+  .trust-title {
+    font-size: 1.8rem;
+  }
+  
+  .certifications-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .certification-card {
+    margin-bottom: 1rem;
+  }
+}
+
+
 
 /* Timeline Section */
 .timeline-section {
@@ -2838,7 +2962,6 @@ html {
 
 /* Leadership Team Section */
 .leadership-section {
-  padding: 100px 0;
   background: #f8fffe;
   position: relative;
 }
@@ -2973,13 +3096,6 @@ html {
 
 /* Timeline Responsive Styles */
 @media (max-width: 768px) {
-  .about-hero-title {
-    font-size: 2.5rem;
-  }
-  
-  .about-hero-subtitle {
-    font-size: 1.1rem;
-  }
   
   .timeline-title {
     font-size: 2.2rem;
@@ -3046,13 +3162,6 @@ html {
 }
 
 @media (max-width: 576px) {
-  .about-hero-section {
-    padding: 100px 0 60px;
-  }
-  
-  .about-hero-title {
-    font-size: 2rem;
-  }
   
   .timeline-section {
     padding: 60px 0;
