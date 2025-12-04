@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Container, Row, Col, Form, Button, Card, Alert, Spinner } from 'react-bootstrap';
+import { Container, Row, Col, Form, Button, Card, Alert, Spinner, InputGroup } from 'react-bootstrap';
 import axios from 'axios';
 import { 
   FaMapMarkerAlt, 
@@ -9,16 +9,19 @@ import {
   FaUser,
   FaBuilding,
   FaComments,
-  FaExternalLinkAlt
+  FaExternalLinkAlt,
+  FaGlobe
 } from 'react-icons/fa';
 import Header from './Header';
 import Footer from './Footer';
+import CountryCodeSelect from './CountryCodeSelect';
 
 const ContactUs = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     customerType: '',
+    countryCode: '+91',
     phone: '',
     message: ''
   });
@@ -41,7 +44,7 @@ const ContactUs = () => {
     setShowAlert(false);
     
     // Basic validation
-    if (!formData.name || !formData.email || !formData.customerType || !formData.phone || !formData.message) {
+    if (!formData.name || !formData.email || !formData.customerType || !formData.countryCode || !formData.phone || !formData.message) {
       setAlertType('danger');
       setAlertMessage('Please fill in all required fields.');
       setShowAlert(true);
@@ -63,6 +66,7 @@ const ContactUs = () => {
           name: '',
           email: '',
           customerType: '',
+          countryCode: '+91',
           phone: '',
           message: ''
         });
@@ -198,15 +202,26 @@ const ContactUs = () => {
                             <FaPhone className="me-2" />
                             Phone Number *
                           </Form.Label>
-                          <Form.Control
-                            type="tel"
-                            name="phone"
-                            value={formData.phone}
-                            onChange={handleInputChange}
-                            placeholder="Enter your phone number"
-                            className="contact-form-input"
-                            required
-                          />
+                          <InputGroup>
+                            <CountryCodeSelect
+                              value={formData.countryCode}
+                              onChange={handleInputChange}
+                              className="country-code-select"
+                            />
+                            <Form.Control
+                              type="tel"
+                              name="phone"
+                              value={formData.phone}
+                              onChange={handleInputChange}
+                              placeholder="Enter your phone number"
+                              className="contact-form-input"
+                              required
+                            />
+                          </InputGroup>
+                          <Form.Text className="text-muted small mt-1">
+                            <FaGlobe className="me-1" />
+                            Select your country code and enter phone number
+                          </Form.Text>
                         </Form.Group>
                       </Col>
                       

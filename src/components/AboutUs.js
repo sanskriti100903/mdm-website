@@ -6,61 +6,27 @@ import Footer from './Footer';
 const AboutUs = () => {
   const timelineData = [
     {
-      year: "1960",
-      description: "M/s Ramsahaya Pannalal established by proprietor Ramniwas Ji Agrawal in our home in Indore, India"
+      year: "1980",
+      description: "Manish Bansal established Manish Dall Mill, beginning our journey in pulse processing"
     },
     {
-      year: "1979",
-      description: "Open a new firm \"Ramniwas Jagdishchandra\" and started milling pulses"
+      year: "2002",
+      description: "Ashish Bansal founded Ashish Pulses, expanding our family business operations"
     },
     {
-      year: "1996",
-      description: "Set up our first manufacturing plant in Indore"
+      year: "2009",
+      description: "Keshav Bansal launched Keshav Pulses, further strengthening our market presence"
     },
     {
-      year: "2006",
-      description: "Established our second manufacturing unit for milling unhusked pulses"
+      year: "2012",
+      description: "Raghav Bansal established Raghav Pulses, continuing the family legacy in pulse industry"
     },
     {
-      year: "2018",
-      description: "From Indore to the globe – started exporting pulses"
-    },
-    {
-      year: "2023",
-      description: "Established our third and fully automatic plant"
-    },
-    {
-      year: "Now",
-      description: "Group of Companies: Ramniwas Jagdishchandra, R J Pulses, R J Agro Industries"
+      year: "2024",
+      description: "MDM Proteins Pvt Ltd founded, marking our expansion into protein processing and modern manufacturing"
     }
   ];
 
-  const leadershipTeam = [
-    {
-      name: "Ramniwas Ji Agrawal",
-      position: "Director",
-      image: "https://via.placeholder.com/300x300/15803d/ffffff?text=Director",
-      description: "Founder and visionary leader with over 60 years of experience in pulse processing industry."
-    },
-    {
-      name: "Jagdish Agrawal",
-      position: "Sub-Director",
-      image: "https://via.placeholder.com/300x300/16a34a/ffffff?text=Sub-Director",
-      description: "Strategic leader driving innovation and expansion in global markets."
-    },
-    {
-      name: "Rajesh Kumar",
-      position: "Head of Operations",
-      image: "https://via.placeholder.com/300x300/22c55e/ffffff?text=Head",
-      description: "Overseeing manufacturing operations and quality control across all facilities."
-    },
-    {
-      name: "Priya Sharma",
-      position: "Sub-Head Marketing",
-      image: "https://via.placeholder.com/300x300/4ade80/ffffff?text=Sub-Head",
-      description: "Leading marketing initiatives and brand development for global expansion."
-    }
-  ];
 
   return (
     <div className="about-us-page">
@@ -102,45 +68,6 @@ const AboutUs = () => {
         </div>
       </section>
 
-      {/* Leadership Team Section */}
-      <section className="leadership-section">
-        <div className="container">
-          <div className="row">
-            <div className="col-12">
-              <h2 className="leadership-title text-center mb-5">Our Leadership Team</h2>
-              <p className="leadership-subtitle text-center mb-5">
-                Meet the visionary leaders who drive our company's success and innovation
-              </p>
-            </div>
-          </div>
-          <div className="row">
-            {leadershipTeam.map((leader, index) => (
-              <div key={index} className="col-lg-3 col-md-6 col-sm-6 mb-4">
-                <div className="leadership-card">
-                  <div className="leadership-image-container">
-                    <img 
-                      src={leader.image} 
-                      alt={leader.name}
-                      className="leadership-image"
-                    />
-                    <div className="leadership-overlay">
-                      <div className="leadership-overlay-content">
-                        <h4 className="leadership-name">{leader.name}</h4>
-                        <p className="leadership-position">{leader.position}</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="leadership-info">
-                    <h4 className="leadership-card-name">{leader.name}</h4>
-                    <p className="leadership-card-position">{leader.position}</p>
-                    <p className="leadership-description">{leader.description}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Company Overview Section */}
       <section className="company-overview-section">

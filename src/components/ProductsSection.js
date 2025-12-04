@@ -14,7 +14,7 @@ const ProductsSection = () => {
     },
     {
       name: "Moong Dal",
-      image: "https://images.unsplash.com/photo-1559181567-c3190ca9959b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80", 
+      image: "/moong.jpg", 
       description: "Fresh and pure Moong Dal, perfect for daily cooking. Known for its digestibility and high nutritional content.",
       features: ["Easy to Digest", "Rich in Fiber", "Premium Grade"]
     },
@@ -56,7 +56,7 @@ const ProductsSection = () => {
     },
     {
       name: "Bajra",
-      image: "https://images.unsplash.com/photo-1586201375761-83865001e31c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "/bajra.jpg",
       description: "Premium Bajra (Pearl Millet) with excellent nutritional value. Rich in protein and essential minerals.",
       features: ["High Protein", "Rich in Iron", "Mineral Rich"]
     },

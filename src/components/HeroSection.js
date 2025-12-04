@@ -10,9 +10,9 @@ const HeroSection = () => {
   // High-quality pulse and lentil images showcasing different varieties
   const heroImages = [
     {
-      src: 'https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
+      src: '/hero1.jpg',
       fallback: 'radial-gradient(circle at 30% 70%, #FFD700 0%, #FFA500 30%, #FF8C00 60%, #FF7F50 100%)',
-      alt: 'Close-up of premium yellow lentils and beans'
+      alt: 'Premium quality mixed pulses and lentils'
     },
     {
       src: 'https://images.unsplash.com/photo-1610832958506-aa56368176cf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
@@ -114,7 +114,7 @@ const HeroSection = () => {
               background: imagesLoaded 
                 ? `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(${heroImage.src})`
                 : `linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), ${heroImage.fallback}`,
-              backgroundSize: 'cover',
+              backgroundSize: index === 0 ? 'cover' : 'contain', // Use 'cover' for hero1.jpg, 'contain' for others
               backgroundPosition: 'center',
               backgroundRepeat: 'no-repeat'
             }}
