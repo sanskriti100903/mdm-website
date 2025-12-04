@@ -80,7 +80,7 @@ const ProductsSection = () => {
     },
     {
       name: "Lobia",
-      image: "https://images.unsplash.com/photo-1578849278619-e73505e9610f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "/lobia.jpg",
       description: "High-quality Lobia (Black-eyed peas) with rich protein content. Excellent for traditional Indian recipes.",
       features: ["High Protein", "Traditional", "Nutritious"]
     }

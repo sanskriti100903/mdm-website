@@ -95,6 +95,14 @@ const Products = () => {
       category: "Grains"
     },
     {
+      name: "Lobia",
+      image: "/lobia.jpg",
+      varieties: ["Black-eyed Peas", "White Lobia", "Red Lobia"],
+      description: "High-quality Lobia (Black-eyed peas) with rich protein content. Excellent for traditional Indian recipes and nutritious meals.",
+      features: ["High Protein", "Traditional", "Nutritious"],
+      category: "Pulses"
+    },
+    {
       name: "Rice",
       image: "https://images.unsplash.com/photo-1586201375761-83865001e31c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       varieties: ["Basmati Rice", "Non-Basmati Rice", "Parboiled Rice"],

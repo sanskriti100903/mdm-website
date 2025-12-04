@@ -114,8 +114,8 @@ const HeroSection = () => {
               background: imagesLoaded 
                 ? `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(${heroImage.src})`
                 : `linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), ${heroImage.fallback}`,
-              backgroundSize: index === 0 ? 'cover' : 'contain', // Use 'cover' for hero1.jpg, 'contain' for others
-              backgroundPosition: 'center',
+              backgroundSize: index === 0 ? '100% auto' : 'cover', // Stretch width, auto height for hero1.jpg
+              backgroundPosition: index === 0 ? 'center top' : 'center',
               backgroundRepeat: 'no-repeat'
             }}
             aria-label={heroImage.alt}
