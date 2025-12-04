@@ -26,7 +26,7 @@ const ProductsSection = () => {
     },
     {
       name: "Urad Dal",
-      image: "https://images.unsplash.com/photo-1578849278619-e73505e9610f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "/urad.png",
       description: "Pure black Urad Dal, essential for South Indian cuisine. Maintains traditional taste and quality standards.",
       features: ["Traditional Quality", "Pure & Natural", "Export Standard"]
     },
@@ -38,7 +38,7 @@ const ProductsSection = () => {
     },
     {
       name: "Masoor Dal",
-      image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "/masoor.png",
       description: "Red Masoor Dal with rich color and taste. Quick cooking and highly nutritious for healthy meals.",
       features: ["Quick Cooking", "Rich in Iron", "Nutritious"]
     },
@@ -50,13 +50,13 @@ const ProductsSection = () => {
     },
     {
       name: "Jowar",
-      image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "/jowar.jpg",
       description: "High-quality Jowar (Sorghum) grains, rich in fiber and gluten-free. Perfect for healthy and nutritious meals.",
       features: ["Gluten-Free", "High Fiber", "Nutritious"]
     },
     {
       name: "Bajra",
-      image: "/bajra.jpg",
+      image: "/bajra.png",
       description: "Premium Bajra (Pearl Millet) with excellent nutritional value. Rich in protein and essential minerals.",
       features: ["High Protein", "Rich in Iron", "Mineral Rich"]
     },

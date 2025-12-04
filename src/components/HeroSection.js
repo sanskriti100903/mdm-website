@@ -109,13 +109,13 @@ const HeroSection = () => {
         {heroImages.map((heroImage, index) => (
           <div
             key={index}
-            className={`hero-image ${index === currentImage ? 'active' : ''}`}
+            className={`hero-image ${index === currentImage ? 'active' : ''} ${index === 0 ? 'hero-first' : ''}`}
             style={{
               background: imagesLoaded 
                 ? `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(${heroImage.src})`
                 : `linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), ${heroImage.fallback}`,
-              backgroundSize: index === 0 ? '100% auto' : 'cover', // Stretch width, auto height for hero1.jpg
-              backgroundPosition: index === 0 ? 'center top' : 'center',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
               backgroundRepeat: 'no-repeat'
             }}
             aria-label={heroImage.alt}

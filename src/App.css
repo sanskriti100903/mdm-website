@@ -460,6 +460,21 @@ html {
   opacity: 1;
 }
 
+/* Permanent fix for hero1 image - prevents zooming issues */
+.hero-image.hero-first {
+  background-size: 100% auto !important;
+  background-position: center top !important;
+  background-attachment: scroll !important;
+}
+
+/* Ensure hero1 displays properly on all screen sizes */
+@media (max-width: 768px) {
+  .hero-image.hero-first {
+    background-size: cover !important;
+    background-position: center center !important;
+  }
+}
+
 .hero-loading {
   position: absolute;
   top: 50%;
