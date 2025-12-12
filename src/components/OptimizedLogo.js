@@ -18,7 +18,7 @@ const OptimizedLogo = ({
       setLogoError(true);
       setLogoLoaded(true);
     };
-    img.src = '/assets/logo.png';
+    img.src = '/assets/logonew.png';
   }, []);
 
   if (!logoLoaded) {
@@ -46,7 +46,7 @@ const OptimizedLogo = ({
           </h3>
           {showText && (
             <span className="since-text" style={{ fontSize: `calc(${textSize} * 0.6)` }}>
-              Since 1989
+              Since 1980
             </span>
           )}
         </div>
@@ -58,8 +58,8 @@ const OptimizedLogo = ({
   return (
     <div className={`logo-container ${className} ${animate ? 'logo-animate' : ''}`}>
       <img 
-        src="/assets/logo.png" 
-        alt="MDM Group - Premium Quality Pulses Since 1989" 
+        src="/assets/logonew.png" 
+        alt="MDM Group Logos - Premium Quality Pulses Since 1980" 
         className="logo-img"
         style={{ 
           height, 

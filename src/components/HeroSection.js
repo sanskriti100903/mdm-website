@@ -15,12 +15,12 @@ const HeroSection = () => {
       alt: 'Premium quality mixed pulses and lentils'
     },
     {
-      src: 'https://images.unsplash.com/photo-1610832958506-aa56368176cf?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
+      src: '/hero2.jpg',
       fallback: 'radial-gradient(circle at 70% 30%, #8B4513 0%, #D2691E 30%, #CD853F 60%, #F4A460 100%)',
       alt: 'Variety of pulses and legumes in sacks and containers'
     },
     {
-      src: 'https://images.unsplash.com/photo-1586201375761-83865001e31c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
+      src: '/hero3.png',
       fallback: 'radial-gradient(circle at 50% 50%, #8B0000 0%, #DC143C 30%, #FF6347 60%, #FFA07A 100%)',
       alt: 'Different types of red beans and kidney beans'
     },
@@ -44,8 +44,8 @@ const HeroSection = () => {
     },
     {
       title: "India's Pride, Trusted Worldwide",
-      subtitle: "Since 1989, Nourishing the World",
-      description: "Three and a half decades of consistent quality, reliability, and trust in premium pulse exports."
+      subtitle: "Since 1980, Nourishing the World",
+      description: "Four and a half decades of consistent quality, reliability, and trust in premium pulse exports."
     },
     {
       title: "India's Pride, Trusted Worldwide",
@@ -161,8 +161,8 @@ const HeroSection = () => {
                   <Col md={4} className="mb-3">
                     <div className="feature-item">
                       <FaStar className="feature-icon" />
-                      <h5>35+ Years Legacy</h5>
-                      <p>Trusted since 1989</p>
+                      <h5>45+ Years Legacy</h5>
+                      <p>Trusted since 1980</p>
                     </div>
                   </Col>
                 </Row>

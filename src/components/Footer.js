@@ -213,7 +213,7 @@ const Footer = () => {
           <Row className="align-items-center">
             <Col md={6}>
               <p className="copyright-text mb-0">
-                © 2025 MDM Group. All rights reserved. | Since 1989
+                © 2025 MDM Group. All rights reserved. | Since 1980
               </p>
             </Col>
             <Col md={6} className="text-md-end">

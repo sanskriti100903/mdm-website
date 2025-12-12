@@ -8,7 +8,7 @@ const BlogSection = () => {
     {
       id: 1,
       title: "The Journey of Premium Pulses: From Farm to Global Markets",
-      excerpt: "Discover how MDM Group has been maintaining quality standards since 1989, ensuring every grain meets international export requirements.",
+      excerpt: "Discover how MDM Group has been maintaining quality standards since 1980, ensuring every grain meets international export requirements.",
       image: "/assets/blog-pulses-journey.jpg",
       date: "October 15, 2024",
       author: "MDM Group",
@@ -27,7 +27,7 @@ const BlogSection = () => {
     },
     {
       id: 3,
-      title: "35+ Years of Trust: Building Relationships Across Continents",
+      title: "45+ Years of Trust: Building Relationships Across Continents",
       excerpt: "The story of how MDM Group has built lasting relationships with customers worldwide through consistent quality and reliable service.",
       image: "/assets/blog-trust.jpg",
       date: "October 5, 2024",
@@ -45,7 +45,7 @@ const BlogSection = () => {
             <div className="section-header">
               <h2 className="section-title">
                 Latest from MDM Group
-                <span className="since-badge ms-3">Since 1989</span>
+                <span className="since-badge ms-3">Since 1980</span>
               </h2>
               <p className="section-description">
                 Stay updated with our latest insights, quality processes, and industry expertise. 
@@ -141,7 +141,7 @@ const BlogSection = () => {
               <h3 className="blog-cta-title">Stay Connected with MDM Group</h3>
               <p className="blog-cta-description">
                 Subscribe to our newsletter for the latest updates on quality processes, 
-                industry insights, and premium pulse innovations since 1989.
+                industry insights, and premium pulse innovations since 1980.
               </p>
               <Button variant="primary" size="lg" className="cta-button">
                 Subscribe Now

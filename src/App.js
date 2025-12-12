@@ -13,6 +13,7 @@ import AboutUs from './components/AboutUs';
 import Certification from './components/Certification';
 import AdminLogin from './components/AdminLogin';
 import AdminDashboard from './components/AdminDashboard';
+import FloatingActionButtons from './components/FloatingActionButtons';
 // import BlogSection from './components/BlogSection';
 import Footer from './components/Footer';
 
@@ -43,6 +44,7 @@ function App() {
         <Route path="/admin/login" element={<AdminLogin />} />
         <Route path="/admin" element={<AdminDashboard />} />
       </Routes>
+      <FloatingActionButtons />
     </Router>
   );
 }

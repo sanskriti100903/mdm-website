@@ -20,8 +20,8 @@ const WhyMDMSection = () => {
             <div className="why-mdm-logo-container">
               <div className="logo-wrapper">
                 <img 
-                  src="/assets/logo.png"
-                  alt="MDM Group Logo" 
+                  src="/assets/logonew.png"
+                  alt="MDM Group Logos" 
                   className="why-mdm-logo"
                   onError={(e) => {
                     e.target.style.display = 'none';
@@ -31,15 +31,19 @@ const WhyMDMSection = () => {
                 <div className="logo-placeholder" style={{display: 'none'}}>
                   <FaLeaf className="placeholder-icon" />
                   <span className="placeholder-text">MDM GROUP</span>
-                  <small className="placeholder-since">Since 1989</small>
+                  <small className="placeholder-since">Since 1980</small>
                 </div>
               </div>
               
               {/* Key Highlights - Below Logo */}
               <div className="key-highlights">
                 <div className="highlight-item">
-                  <div className="highlight-number">35+</div>
-                  <div className="highlight-text">Years of Excellence</div>
+                  <div className="highlight-number">45+</div>
+                  <div className="highlight-text">Years of Legacy</div>
+                </div>
+                <div className="highlight-item">
+                  <div className="highlight-number">100+</div>
+                  <div className="highlight-text">MT Production Capacity Per Day</div>
                 </div>
                 <div className="highlight-item">
                   <div className="highlight-number">100%</div>
@@ -58,7 +62,7 @@ const WhyMDMSection = () => {
             <div className="why-mdm-content">
               <div className="content-text">
                 <p className="lead-paragraph">
-                  With a legacy of excellence since 1989, MDM Group stands as a trusted manufacturer and exporter of premium pulses, rice, and wheat. From carefully selected farms to global markets, we ensure every grain meets the highest standards of purity, freshness, and quality.
+                  With a legacy of excellence since 1980, MDM Group stands as a trusted manufacturer and exporter of premium pulses, rice, and wheat. From carefully selected farms to global markets, we ensure every grain meets the highest standards of purity, freshness, and quality.
                 </p>
                 
                 <p className="description-paragraph">

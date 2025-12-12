@@ -58,8 +58,8 @@ const WhyChooseUs = () => {
     },
     {
       icon: FaAward,
-      title: "35+ Years Legacy",
-      description: "Since 1989, we've built a reputation for excellence, trust, and reliability in the pulses trading industry.",
+      title: "45+ Years Legacy",
+      description: "Since 1980, we've built a reputation for excellence, trust, and reliability in the pulses trading industry.",
       color: "#e83e8c"
     }
   ];
@@ -121,13 +121,13 @@ const WhyChooseUs = () => {
           <Col lg={10} className="mx-auto">
             <div className="trust-section text-center">
               <h3 className="trust-title mb-4">
-                Trusted by Customers Worldwide Since 1989
+                Trusted by Customers Worldwide Since 1980
               </h3>
               <Row>
                 <Col md={4} className="mb-3">
                   <div className="stat-item">
-                    <h4 className="stat-number">35+</h4>
-                    <p className="stat-label">Years of Excellence</p>
+                    <h4 className="stat-number">45+</h4>
+                    <p className="stat-label">Years of Legacy</p>
                   </div>
                 </Col>
                 <Col md={4} className="mb-3">
