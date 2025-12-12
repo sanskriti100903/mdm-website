@@ -116,6 +116,13 @@ const WhyChooseUs = () => {
           ))}
         </Row>
 
+        {/* And much more text */}
+        <Row className="mt-4">
+          <Col className="text-right">
+            <p className="and-much-more-text">and much more ...</p>
+          </Col>
+        </Row>
+
         {/* Trust Section */}
         {/* <Row className="mt-5 pt-5">
           <Col lg={10} className="mx-auto">

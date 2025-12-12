@@ -7,108 +7,124 @@ import Footer from './Footer';
 const Products = () => {
   const products = [
     {
-      name: "Toor Dal",
+      name: "Toor Dal (Pigeon Pea / Arhar Dal)",
       image: "/toor.jpg",
-      varieties: ["Desi Toor Dal", "Oily Toor Dal"],
-      description: "Premium quality Toor Dal, rich in protein and essential nutrients. Carefully processed to maintain natural taste and nutritional value.",
-      features: ["High Protein", "Natural Processing", "Export Quality"],
+      varieties: ["Desi Toor", "African Toor", "Sortexed Option"],
+      description: "Available in Desi Toor and African Toor, all grades and qualities. Sortexed option available.",
+      features: ["Desi & African", "All Grades", "Sortexed Available"],
       category: "Pulses"
     },
     {
-      name: "Moong Dal",
+      name: "Moong Dal (Green Gram / Mung Bean Split)",
       image: "/moong.jpg", 
-      varieties: ["Whole Moong", "Split Moong"],
-      description: "Fresh and pure Moong Dal, perfect for daily cooking. Known for its digestibility and high nutritional content.",
-      features: ["Easy to Digest", "Rich in Fiber", "Premium Grade"],
+      varieties: ["Mogar", "Skinned Split Moong", "Indian & Imported"],
+      description: "Available in Mogar and Skinned Split Moong. Indian + imported varieties in all qualities.",
+      features: ["Mogar Available", "Skinned Split", "Indian & Imported"],
       category: "Pulses"
     },
     {
-      name: "Chana Dal",
+      name: "Chana Dal (Split Bengal Gram / Chickpea Split)",
       image: "/chana.jpg",
-      varieties: ["Bengal Gram", "Roasted Chana"],
-      description: "Golden yellow Chana Dal with authentic taste and aroma. Sourced from the finest farms and processed with care.",
-      features: ["Rich in Protein", "Natural Color", "Farm Fresh"],
+      varieties: ["Consistent Grain Size", "All Qualities", "All Grades"],
+      description: "High-quality processed Chana Dal with consistent grain size. All qualities and grades available.",
+      features: ["Consistent Size", "All Qualities", "All Grades"],
       category: "Pulses"
     },
     {
       name: "Urad Dal",
       image: "/urad.png",
-      varieties: ["Black Urad", "Split Urad"],
-      description: "Pure black Urad Dal, essential for South Indian cuisine. Maintains traditional taste and quality standards.",
-      features: ["Traditional Quality", "Pure & Natural", "Export Standard"],
+      varieties: ["Gota", "White Split", "Black Split"],
+      description: "Premium Black Gram (Urad / Black Lentils) available in Gota, White Split, and Black Split varieties. Clean, consistent, and offered in all quality grades.",
+      features: ["Multiple Varieties", "Clean & Consistent", "All Quality Grades"],
       category: "Pulses"
     },
     {
-      name: "Kabuli Chana",
+      name: "Kabuli Chana (Chickpeas / Garbanzo Beans)",
       image: "/kabuli.jpg",
-      varieties: ["Large Kabuli", "Premium Kabuli"],
-      description: "Large, premium Kabuli Chana with excellent texture. Perfect for various culinary preparations worldwide.",
-      features: ["Large Size", "Premium Quality", "Global Standards"],
+      varieties: ["38/40 Count", "40/42 Count", "42/44 Count"],
+      description: "Available in all size counts (38/40, 40/42, 42/44, etc.). Premium Indian & imported qualities.",
+      features: ["All Size Counts", "Premium Quality", "Indian & Imported"],
       category: "Pulses"
     },
     {
-      name: "Masoor Dal",
+      name: "Masoor Dal (Red Lentils / Lens Culinaris)",
       image: "/masoor.png",
-      varieties: ["Red Masoor Dal", "Whole Masoor", "Split Masoor Dal"],
-      description: "Red Masoor Dal with rich color and taste. Quick cooking and highly nutritious for healthy meals. Excellent source of iron and protein.",
-      features: ["Quick Cooking", "Rich in Iron", "Nutritious"],
+      varieties: ["Whole Masoor", "Split Masoor", "Indian & Imported"],
+      description: "Whole and split varieties available—Indian & imported. Uniform grain, multiple quality options.",
+      features: ["Whole & Split", "Uniform Grain", "Multiple Quality Options"],
       category: "Pulses"
     },
     {
       name: "Rajma",
       image: "/rajma.jpg",
-      varieties: ["Red Kidney Beans", "White Rajma", "Jammu Rajma"],
-      description: "Premium quality Rajma beans, perfect for traditional recipes. Carefully selected and processed for best taste. Rich in protein and fiber.",
-      features: ["Premium Beans", "Traditional Taste", "Export Quality"],
+      varieties: ["Chitra", "Red", "Jammu"],
+      description: "High-quality Kidney Beans available in Chitra, Red, and Jammu variants. Uniform size, well-cleaned, and offered in all grades and qualities.",
+      features: ["Multiple Variants", "Uniform Size", "Well-Cleaned"],
       category: "Pulses"
     },
     {
-      name: "Jowar",
+      name: "Jowar (Sorghum)",
       image: "/jowar.jpg",
-      varieties: ["White Jowar", "Red Jowar", "Hybrid Jowar"],
-      description: "High-quality Jowar (Sorghum) grains, rich in fiber and gluten-free. Perfect for healthy and nutritious meals. Ancient grain with modern benefits.",
-      features: ["Gluten-Free", "High Fiber", "Nutritious"],
+      varieties: ["All Grades", "Flour Grade", "Industrial Use"],
+      description: "Machine-cleaned grains available in all grades. Suitable for flour and industrial use.",
+      features: ["Machine Cleaned", "All Grades", "Multi-Purpose"],
       category: "Grains"
     },
     {
-      name: "Bajra",
+      name: "Bajra (Pearl Millet)",
       image: "/bajra.png",
-      varieties: ["Pearl Millet", "Hybrid Bajra", "Traditional Bajra"],
-      description: "Premium Bajra (Pearl Millet) with excellent nutritional value. Rich in protein and essential minerals. Drought-resistant super grain.",
-      features: ["High Protein", "Rich in Iron", "Mineral Rich"],
+      varieties: ["Uniform Grain Size", "All Qualities", "Indian Quality"],
+      description: "High-quality Indian bajra with uniform grain size. All qualities available.",
+      features: ["Uniform Size", "Indian Quality", "All Qualities"],
       category: "Grains"
     },
     {
-      name: "Maize",
+      name: "Maize (Corn / Makka)",
       image: "/corn.jpg",
-      varieties: ["Yellow Maize", "White Maize", "Sweet Corn"],
-      description: "Fresh and premium quality Maize (Corn) kernels. Versatile grain perfect for various food preparations. High energy content grain.",
-      features: ["Versatile", "Fresh Quality", "Export Grade"],
+      varieties: ["Food Grade", "Feed Grade", "Industrial Grade"],
+      description: "Food-grade, feed-grade, and industrial maize available. Clean, machine-sorted, all quality options.",
+      features: ["Multi-Grade", "Machine Sorted", "All Quality Options"],
       category: "Grains"
     },
     {
-      name: "Wheat",
+      name: "Wheat (Gehu / Whole Wheat Grain)",
       image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      varieties: ["Durum Wheat", "Hard Wheat", "Soft Wheat"],
-      description: "Superior quality Wheat grains with high protein content. Carefully selected for optimal nutrition and taste. Staple grain for global consumption.",
-      features: ["High Protein", "Premium Grade", "Nutritious"],
+      varieties: ["Milling Grade", "Food Grade", "All Quality Specs"],
+      description: "Premium milling-grade and food-grade wheat. Available in all quality specifications.",
+      features: ["Milling Grade", "Food Grade", "All Specifications"],
       category: "Grains"
     },
     {
-      name: "Lobia",
+      name: "Chawla / Lobia (Black-Eyed Beans / Cowpeas)",
       image: "/lobia.jpg",
-      varieties: ["Black-eyed Peas", "White Lobia", "Red Lobia"],
-      description: "High-quality Lobia (Black-eyed peas) with rich protein content. Excellent for traditional Indian recipes and nutritious meals.",
-      features: ["High Protein", "Traditional", "Nutritious"],
+      varieties: ["Indian Quality", "Imported Quality", "All Grades"],
+      description: "High-quality Indian & imported black-eyed beans. All grades available.",
+      features: ["Indian & Imported", "All Grades", "High Quality"],
       category: "Pulses"
     },
     {
-      name: "Rice",
+      name: "Rice (Chawal / Oryza Sativa)",
       image: "https://images.unsplash.com/photo-1586201375761-83865001e31c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      varieties: ["Basmati Rice", "Non-Basmati Rice", "Parboiled Rice"],
-      description: "Premium quality Rice with excellent aroma and taste. Perfect for daily consumption and export markets. Long grain aromatic varieties available.",
-      features: ["Aromatic", "Premium Quality", "Export Standard"],
+      varieties: ["Basmati", "Non-Basmati", "Sona Masoori", "Broken Rice"],
+      description: "Basmati, Non-Basmati, Sona Masoori, and Broken Rice. Full range of qualities available.",
+      features: ["Full Range", "All Qualities", "Multiple Varieties"],
       category: "Grains"
+    },
+    {
+      name: "Soybean",
+      image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      varieties: ["Food Grade", "Oil Extraction", "Multiple Quality Grades"],
+      description: "High-protein soybeans, ideal for food and oil extraction. Available in multiple quality grades.",
+      features: ["High Protein", "Food & Oil Use", "Multiple Grades"],
+      category: "Grains"
+    },
+    {
+      name: "Desi Chana (Brown Chickpeas / Kala Chana)",
+      image: "/chana.jpg",
+      varieties: ["Machine Sorted", "Premium Grade", "Export Quality"],
+      description: "Clean, machine-sorted grains with consistent quality.",
+      features: ["Machine Sorted", "Consistent Quality", "Clean Grains"],
+      category: "Pulses"
     }
   ];
 

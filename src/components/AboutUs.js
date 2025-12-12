@@ -7,23 +7,31 @@ const AboutUs = () => {
   const timelineData = [
     {
       year: "1980",
-      description: "Manish Bansal established Manish Dall Mill, beginning our journey in pulse processing"
+      description: "Manish Dal Mill was established, marking the beginning of our family's journey in pulses processing under the leadership of Mr. Munnalal Bansal."
     },
     {
       year: "2002",
-      description: "Ashish Bansal founded Ashish Pulses, expanding our family business operations"
+      description: "With increasing market demand, Ashish Pulses was established by Mr. Munnalal Bansal, adding new product lines and enhancing our processing capacity."
     },
     {
       year: "2009",
-      description: "Keshav Bansal launched Keshav Pulses, further strengthening our market presence"
+      description: "Keshav Pulses was set up by Mr. Munnalal Bansal, further strengthening our presence in the domestic pulses market."
     },
     {
       year: "2012",
-      description: "Raghav Bansal established Raghav Pulses, continuing the family legacy in pulse industry"
+      description: "The next generation stepped forward with Raghav Pulses, founded by Mr. Manish Bansal & Mr. Ashish Bansal, introducing modern practices and upgraded infrastructure."
     },
     {
       year: "2024",
-      description: "MDM Proteins Pvt Ltd founded, marking our expansion into protein processing and modern manufacturing"
+      description: "MDM Proteins Pvt. Ltd. was established by Mr. Manish Bansal & Mr. Ashish Bansal, focusing on advanced technology and large-scale processing."
+    },
+    {
+      year: "2025",
+      description: "The company began exporting all pulses and grains globally, expanding its footprint across international markets."
+    },
+    {
+      year: "NOW",
+      description: "Group of Companies: Manish Dal Mill, Ashish Pulses, Keshav Pulses, Raghav Pulses, MDM Proteins Pvt. Ltd."
     }
   ];
 

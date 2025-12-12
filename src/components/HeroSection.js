@@ -25,7 +25,7 @@ const HeroSection = () => {
       alt: 'Different types of red beans and kidney beans'
     },
     {
-      src: 'https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80',
+      src: '/hero4.jpg',
       fallback: 'radial-gradient(circle at 40% 60%, #228B22 0%, #32CD32 30%, #90EE90 60%, #98FB98 100%)',
       alt: 'Glass jar filled with green lentils and mixed pulses'
     }
