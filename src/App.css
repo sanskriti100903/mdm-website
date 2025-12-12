@@ -460,16 +460,16 @@ html {
   opacity: 1;
 }
 
-/* Permanent fix for hero1 image - prevents zooming issues */
-.hero-image.hero-first {
+/* Permanent fix for all hero images - prevents zooming issues */
+.hero-image {
   background-size: 100% auto !important;
   background-position: center top !important;
   background-attachment: scroll !important;
 }
 
-/* Ensure hero1 displays properly on all screen sizes */
+/* Ensure all hero images display properly on all screen sizes */
 @media (max-width: 768px) {
-  .hero-image.hero-first {
+  .hero-image {
     background-size: cover !important;
     background-position: center center !important;
   }
@@ -552,6 +552,9 @@ html {
   margin-bottom: 2rem;
   line-height: 1.1;
   letter-spacing: -0.02em;
+  text-align: center;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
 }
 
 .hero-description-enhanced {
@@ -1682,12 +1685,18 @@ html {
     margin-left: -1rem;
   }
 
+  .hero-text-content {
+    margin-top: 180px;
+  }
+
   .hero-title {
     font-size: 2.5rem;
   }
 
   .hero-title-enhanced {
-    font-size: 3rem;
+    font-size: 2.8rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
   }
   
   .hero-subtitle {
@@ -1781,12 +1790,20 @@ html {
 }
 
 @media (max-width: 576px) {
+  .hero-text-content {
+    margin-top: 200px;
+  }
+
   .hero-title {
     font-size: 2rem;
   }
 
   .hero-title-enhanced {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+    text-align: center;
+    padding: 0 1rem;
   }
   
   .hero-subtitle {
@@ -1799,6 +1816,8 @@ html {
 
   .hero-description-enhanced {
     font-size: 1rem;
+    padding: 0 1rem;
+    text-align: center;
   }
   
   .section-title {

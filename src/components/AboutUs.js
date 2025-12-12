@@ -90,14 +90,11 @@ const AboutUs = () => {
             <div className="col-lg-6">
               <h2 className="section-title">Our Vision</h2>
               <p className="section-description">
-                To be the global leader in pulse processing, delivering premium quality products 
-                while maintaining sustainable practices and contributing to food security worldwide.
+                To become a globally recognized and trusted agro-processing group, known for quality, innovation, and a strong legacy built over generations.
               </p>
               <h2 className="section-title mt-4">Our Mission</h2>
               <p className="section-description">
-                To provide the highest quality pulses through innovative processing techniques, 
-                sustainable farming partnerships, and a commitment to excellence that honors 
-                our rich heritage while embracing modern technology.
+                To deliver premium-quality pulses and grains through modern processing, ethical business practices, and continuous improvement—while expanding our presence across India and international markets.
               </p>
             </div>
           </div>
