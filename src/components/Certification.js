@@ -9,44 +9,30 @@ const Certification = () => {
     {
       id: 1,
       title: "ISO 9001:2015",
-      description: "Quality Management System certification ensuring consistent quality in our products and services.",
-      icon: FaCertificate,
-      category: "Quality Management"
+      fullForm: "Quality Management System",
+      logo: "/ISO 9001.png",
+      useIcon: false
     },
     {
       id: 2,
-      title: "HACCP Certified",
-      description: "Hazard Analysis and Critical Control Points certification for food safety management.",
-      icon: FaShieldAlt,
-      category: "Food Safety"
+      title: "ISO 22000:2018",
+      fullForm: "Food Safety Management",
+      logo: "/ISO 20000.png",
+      useIcon: false
     },
     {
       id: 3,
-      title: "Organic Certification",
-      description: "Certified organic processing facility ensuring natural and chemical-free products.",
-      icon: FaLeaf,
-      category: "Organic Standards"
+      title: "FSSAI",
+      fullForm: "Food Safety Standards Authority of India",
+      logo: "/fssai.png",
+      useIcon: false
     },
     {
       id: 4,
-      title: "Export Excellence",
-      description: "Government recognition for outstanding performance in export of agricultural products.",
-      icon: FaGlobe,
-      category: "Export Quality"
-    },
-    {
-      id: 5,
-      title: "FSSAI License",
-      description: "Food Safety and Standards Authority of India license for food business operations.",
-      icon: FaAward,
-      category: "Food Authority"
-    },
-    {
-      id: 6,
-      title: "Premium Quality",
-      description: "Industry recognition for maintaining premium quality standards in pulse processing.",
-      icon: FaStar,
-      category: "Quality Assurance"
+      title: "APEDA",
+      fullForm: "Agricultural & Processed Food Products Export Development Authority",
+      logo: "/apeda.png",
+      useIcon: false
     }
   ];
 
@@ -76,22 +62,28 @@ const Certification = () => {
             </Col>
           </Row>
           
-          <Row className="g-4">
+          <Row className="g-4 justify-content-center">
             {certifications.map((cert) => (
               <Col lg={4} md={6} sm={12} key={cert.id}>
                 <Card className="certification-card h-100">
                   <Card.Body className="text-center p-4">
                     <div className="certification-icon-container mb-3">
-                      <cert.icon className="certification-icon" />
+                      {cert.useIcon ? (
+                        <cert.icon className="certification-icon" />
+                      ) : (
+                        <img 
+                          src={cert.logo} 
+                          alt={cert.title} 
+                          className="certification-logo"
+                          style={{ width: '80px', height: '80px', objectFit: 'contain' }}
+                        />
+                      )}
                     </div>
                     <Card.Title className="certification-title">
                       {cert.title}
                     </Card.Title>
-                    <div className="certification-category mb-3">
-                      {cert.category}
-                    </div>
                     <Card.Text className="certification-description">
-                      {cert.description}
+                      {cert.fullForm}
                     </Card.Text>
                   </Card.Body>
                 </Card>

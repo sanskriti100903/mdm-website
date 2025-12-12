@@ -84,15 +84,13 @@ const AboutUs = () => {
             <div className="col-lg-6">
               <h2 className="section-title">Our Legacy</h2>
               <p className="section-description">
-                From humble beginnings in 1960 to becoming a leading pulse processing company, 
-                MDM Group has consistently evolved to meet the changing needs of the global market. 
-                Our journey spans over six decades of dedication, innovation, and unwavering commitment 
-                to quality.
+                From a modest start in 1980 to becoming a trusted name in the pulses and grains industry, Manish Dal Mill has steadily grown by embracing quality, innovation, and integrity. What began as a small mill founded by Mr. Munnala Bansal has today evolved into a multi-facility agro-processing group with a strong presence in both domestic and international markets.
               </p>
               <p className="section-description">
-                Today, we operate multiple state-of-the-art manufacturing facilities and export 
-                our premium pulses worldwide, maintaining the trust and quality standards established 
-                by our founder, Ramniwas Ji Agrawal.
+                Over the past four decades, we have expanded our capabilities from traditional milling to advanced processing, sorting, and global trading. With state-of-the-art infrastructure, a skilled team, and a commitment to consistent quality, MDM Group now caters to customers across India and around the world.
+              </p>
+              <p className="section-description">
+                Carrying forward the legacy of our founder, we continue to uphold the core values of purity, trust, and reliability—ensuring that every grain and pulse we deliver meets the highest standards of excellence.
               </p>
             </div>
             <div className="col-lg-6">
