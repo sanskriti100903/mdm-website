@@ -50,7 +50,7 @@ const WhyMDMSection = () => {
                   <div className="highlight-text">Quality Assured</div>
                 </div>
                 <div className="highlight-item">
-                  <div className="highlight-number">50+</div>
+                  <div className="highlight-number">3+</div>
                   <div className="highlight-text">Countries Served</div>
                 </div>
               </div>
