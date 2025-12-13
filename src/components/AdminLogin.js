@@ -3,6 +3,7 @@ import { Container, Row, Col, Card, Form, Button, Alert, Spinner } from 'react-b
 import { FaUser, FaLock, FaEye, FaEyeSlash, FaShieldAlt } from 'react-icons/fa';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
+import { API_ENDPOINTS } from '../config/api';
 
 const AdminLogin = () => {
   const [formData, setFormData] = useState({
@@ -25,7 +26,7 @@ const AdminLogin = () => {
 
   const verifyToken = async (token) => {
     try {
-      const response = await axios.get('http://localhost:5001/api/admin/verify', {
+      const response = await axios.get(`${API_ENDPOINTS.ADMIN_LOGIN}/verify`, {
         headers: { Authorization: `Bearer ${token}` }
       });
       if (response.data.success) {
@@ -52,7 +53,7 @@ const AdminLogin = () => {
     setError('');
 
     try {
-      const response = await axios.post('http://localhost:5001/api/admin/login', formData);
+      const response = await axios.post(API_ENDPOINTS.ADMIN_LOGIN, formData);
       
       if (response.data.success) {
         // Store token and user info

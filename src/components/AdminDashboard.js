@@ -3,6 +3,7 @@ import { Container, Row, Col, Card, Table, Button, Badge, Form, Pagination, Aler
 import { FaUsers, FaEnvelope, FaEye, FaTrash, FaFilter, FaSearch, FaSignOutAlt, FaHome, FaChartBar } from 'react-icons/fa';
 import { useNavigate, Link } from 'react-router-dom';
 import axios from 'axios';
+import API_BASE_URL from '../config/api';
 
 const AdminDashboard = () => {
   const [contacts, setContacts] = useState([]);
@@ -43,7 +44,7 @@ const AdminDashboard = () => {
 
   const fetchDashboardData = async () => {
     try {
-      const response = await axios.get('http://localhost:5001/api/admin/dashboard/stats', {
+      const response = await axios.get(`${API_BASE_URL}/api/admin/dashboard/stats`, {
         headers: getAuthHeaders()
       });
       if (response.data.success) {
@@ -67,7 +68,7 @@ const AdminDashboard = () => {
         ...filters
       });
 
-      const response = await axios.get(`http://localhost:5001/api/admin/contacts?${params}`, {
+      const response = await axios.get(`${API_BASE_URL}/api/admin/contacts?${params}`, {
         headers: getAuthHeaders()
       });
 
@@ -89,7 +90,7 @@ const AdminDashboard = () => {
   const handleStatusChange = async (contactId, newStatus) => {
     try {
       const response = await axios.patch(
-        `http://localhost:5001/api/admin/contacts/${contactId}/status`,
+        `${API_BASE_URL}/api/admin/contacts/${contactId}/status`,
         { status: newStatus },
         { headers: getAuthHeaders() }
       );
@@ -114,7 +115,7 @@ const AdminDashboard = () => {
 
     try {
       const response = await axios.delete(
-        `http://localhost:5001/api/admin/contacts/${contactToDelete._id}`,
+        `${API_BASE_URL}/api/admin/contacts/${contactToDelete._id}`,
         { headers: getAuthHeaders() }
       );
 

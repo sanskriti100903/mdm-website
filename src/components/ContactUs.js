@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Form, Button, Card, Alert, Spinner, InputGroup } from 'react-bootstrap';
 import axios from 'axios';
+import { API_ENDPOINTS } from '../config/api';
 import { 
   FaMapMarkerAlt, 
   FaPhone, 
@@ -54,7 +55,7 @@ const ContactUs = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:5001/api/contact/submit', formData);
+      const response = await axios.post(API_ENDPOINTS.CONTACT_SUBMIT, formData);
       
       if (response.data.success) {
         setAlertType('success');
