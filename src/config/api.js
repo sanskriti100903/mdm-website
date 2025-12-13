@@ -4,7 +4,7 @@ const API_BASE_URL = 'https://mdm-website.onrender.com';
 // API endpoints
 export const API_ENDPOINTS = {
   // Contact endpoints
-  CONTACT_SUBMIT: `${API_BASE_URL}/api/contact`,
+  CONTACT_SUBMIT: `${API_BASE_URL}/api/contact/submit`,
   
   // Admin endpoints
   ADMIN_LOGIN: `${API_BASE_URL}/api/admin/login`,
