@@ -26,10 +26,22 @@ mongoose.connect(MONGODB_URI, {
 app.use('/api/contact', require('./routes/contact'));
 app.use('/api/admin', require('./routes/admin'));
 
-// Health check endpoint
+const mongoose = require("mongoose");
+
 app.get('/api/health', (req, res) => {
-  res.json({ message: 'MDM Website Backend is running!', status: 'OK' });
+  const dbState = mongoose.connection.readyState;
+
+  res.json({
+    backend: "running",
+    mongodb:
+      dbState === 1
+        ? "connected"
+        : dbState === 2
+        ? "connecting"
+        : "not connected"
+  });
 });
+
 
 // Error handling middleware
 app.use((err, req, res, next) => {
