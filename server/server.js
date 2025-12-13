@@ -26,8 +26,6 @@ mongoose.connect(MONGODB_URI, {
 app.use('/api/contact', require('./routes/contact'));
 app.use('/api/admin', require('./routes/admin'));
 
-const mongoose = require("mongoose");
-
 app.get('/api/health', (req, res) => {
   const dbState = mongoose.connection.readyState;
 
