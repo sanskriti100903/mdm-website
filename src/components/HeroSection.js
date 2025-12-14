@@ -54,44 +54,35 @@ const HeroSection = () => {
     }
   ];
 
-  // Preload images for faster loading
+  // Progressive image loading - load first image immediately, others on demand
   useEffect(() => {
-    const preloadImages = async () => {
-      let loadedCount = 0;
-      const totalImages = heroImages.length;
-      
-      const imagePromises = heroImages.map((heroImage, index) => {
-        return new Promise((resolve) => {
-          const img = new Image();
-          img.onload = () => {
-            loadedCount++;
-            console.log(`Image ${index + 1} loaded successfully`);
-            resolve(true);
-          };
-          img.onerror = () => {
-            console.log(`Image ${index + 1} failed to load, using fallback`);
-            resolve(false);
-          };
-          img.src = heroImage.src;
-        });
-      });
-      
-      try {
-        const results = await Promise.all(imagePromises);
-        const successfulLoads = results.filter(Boolean).length;
-        console.log(`${successfulLoads}/${totalImages} images loaded successfully`);
-        setImagesLoaded(successfulLoads > 0); // Set to true if at least one image loads
-      } catch (error) {
-        console.log('Error loading images, using fallbacks');
+    const loadImageProgressively = async () => {
+      // Load first image immediately for faster initial display
+      const firstImg = new Image();
+      firstImg.onload = () => {
+        console.log('First image loaded successfully');
+        setImagesLoaded(true);
+      };
+      firstImg.onerror = () => {
+        console.log('First image failed, using fallback');
         setImagesLoaded(false);
-      }
+      };
+      firstImg.src = heroImages[0].src;
+
+      // Load remaining images in background with delays
+      setTimeout(() => {
+        heroImages.slice(1).forEach((heroImage, index) => {
+          setTimeout(() => {
+            const img = new Image();
+            img.onload = () => console.log(`Background image ${index + 2} loaded`);
+            img.onerror = () => console.log(`Background image ${index + 2} failed`);
+            img.src = heroImage.src;
+          }, index * 1000); // 1 second delay between each image
+        });
+      }, 2000); // Start loading others after 2 seconds
     };
 
-    // Add a small delay to ensure component is mounted
-    const timer = setTimeout(() => {
-      preloadImages();
-    }, 100);
-
+    const timer = setTimeout(loadImageProgressively, 100);
     return () => clearTimeout(timer);
   }, []);
 
