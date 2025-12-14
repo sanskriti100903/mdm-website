@@ -1,7 +1,8 @@
 import React from 'react';
-import { Container, Row, Col, Card, Button } from 'react-bootstrap';
-import { FaCalendarAlt, FaUser, FaArrowRight, FaLeaf } from 'react-icons/fa';
+import { Container, Row, Col, Card } from 'react-bootstrap';
+import { FaLeaf, FaCalendarAlt, FaUser, FaArrowRight } from 'react-icons/fa';
 import OptimizedLogo from './OptimizedLogo';
+import LazyImage from './LazyImage';
 
 const BlogSection = () => {
   const blogPosts = [
@@ -60,16 +61,28 @@ const BlogSection = () => {
             <Col lg={4} md={6} className="mb-4" key={post.id}>
               <Card className="blog-card h-100">
                 <div className="blog-image-container">
-                  <Card.Img 
-                    variant="top" 
+                  <LazyImage 
                     src={post.image}
                     alt={post.title}
                     className="blog-image"
-                    onError={(e) => {
-                      // Fallback to gradient background with logo
-                      e.target.style.display = 'none';
-                      e.target.nextSibling.style.display = 'flex';
-                    }}
+                    style={{ width: '100%', height: '200px', objectFit: 'cover' }}
+                    fallback={
+                      <div className="blog-image-fallback">
+                        <div className="fallback-content">
+                          <OptimizedLogo 
+                            height="60px" 
+                            className="blog-logo"
+                            showText={true}
+                            textSize="1rem"
+                            animate={false}
+                          />
+                          <div className="fallback-category">
+                            <FaLeaf className="me-2" />
+                            {post.category}
+                          </div>
+                        </div>
+                      </div>
+                    }
                   />
                   <div className="blog-image-fallback" style={{display: 'none'}}>
                     <div className="fallback-content">
