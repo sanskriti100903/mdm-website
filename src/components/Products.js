@@ -3,7 +3,6 @@ import { Container, Row, Col, Card } from 'react-bootstrap';
 import { FaLeaf, FaStar, FaGlobe } from 'react-icons/fa';
 import Header from './Header';
 import Footer from './Footer';
-import LazyImage from './LazyImage';
 
 const Products = () => {
   const products = [
@@ -162,25 +161,14 @@ const Products = () => {
               <Col lg={4} md={6} key={index}>
                 <Card className="product-detail-card h-100">
                   <div className="product-detail-image-container">
-                    <LazyImage 
+                    <Card.Img 
+                      variant="top" 
                       src={product.image}
                       alt={product.name}
                       className="product-detail-image"
-                      style={{ width: '100%', height: '250px', objectFit: 'cover' }}
-                      fallback={
-                        <div className="product-image-fallback" style={{
-                          width: '100%',
-                          height: '250px',
-                          backgroundColor: '#f0f0f0',
-                          display: 'flex',
-                          alignItems: 'center',
-                          justifyContent: 'center',
-                          color: '#999',
-                          fontSize: '16px'
-                        }}>
-                          {product.name}
-                        </div>
-                      }
+                      onError={(e) => {
+                        e.target.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjBmMGYwIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzk5OSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPicgKyBwcm9kdWN0Lm5hbWUgKyAnPC90ZXh0Pjwvc3ZnPg==';
+                      }}
                     />
                     <div className="product-varieties-permanent">
                       {product.varieties.map((variety, idx) => (
@@ -221,25 +209,14 @@ const Products = () => {
               <Col lg={4} md={6} key={index}>
                 <Card className="product-detail-card h-100">
                   <div className="product-detail-image-container">
-                    <LazyImage 
+                    <Card.Img 
+                      variant="top" 
                       src={product.image}
                       alt={product.name}
                       className="product-detail-image"
-                      style={{ width: '100%', height: '250px', objectFit: 'cover' }}
-                      fallback={
-                        <div className="product-image-fallback" style={{
-                          width: '100%',
-                          height: '250px',
-                          backgroundColor: '#f0f0f0',
-                          display: 'flex',
-                          alignItems: 'center',
-                          justifyContent: 'center',
-                          color: '#999',
-                          fontSize: '16px'
-                        }}>
-                          {product.name}
-                        </div>
-                      }
+                      onError={(e) => {
+                        e.target.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjBmMGYwIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzk5OSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPicgKyBwcm9kdWN0Lm5hbWUgKyAnPC90ZXh0Pjwvc3ZnPg==';
+                      }}
                     />
                     <div className="product-varieties-permanent">
                       {product.varieties.map((variety, idx) => (

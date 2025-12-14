@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import Header from './components/Header';
-import OptimizedHeroSection from './components/OptimizedHeroSection';
+import HeroSection from './components/HeroSection';
 import WhyMDMSection from './components/WhyMDMSection';
 import ProductsSection from './components/ProductsSection';
 import WhyChooseUs from './components/WhyChooseUs';
@@ -22,7 +22,7 @@ const HomePage = () => {
   return (
     <div className="App">
       <Header />
-      <OptimizedHeroSection />
+      <HeroSection />
       <WhyMDMSection />
       <ProductsSection />
       <WhyChooseUs />

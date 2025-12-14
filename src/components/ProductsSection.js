@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import { FaLeaf, FaStar } from 'react-icons/fa';
-import LazyImage from './LazyImage';
 
 const ProductsSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -128,25 +127,14 @@ const ProductsSection = () => {
               <Col lg={3} md={6} className="mb-3" key={`${currentIndex}-${index}`}>
                 <Card className="product-card h-100">
                   <div className="product-image-container">
-                    <LazyImage 
+                    <Card.Img 
+                      variant="top" 
                       src={product.image}
                       alt={product.name}
                       className="product-image"
-                      style={{ width: '100%', height: '200px', objectFit: 'cover' }}
-                      fallback={
-                        <div className="product-image-fallback" style={{
-                          width: '100%',
-                          height: '200px',
-                          backgroundColor: '#f0f0f0',
-                          display: 'flex',
-                          alignItems: 'center',
-                          justifyContent: 'center',
-                          color: '#999',
-                          fontSize: '14px'
-                        }}>
-                          {product.name}
-                        </div>
-                      }
+                      onError={(e) => {
+                        e.target.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjBmMGYwIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzk5OSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPicgKyBwcm9kdWN0Lm5hbWUgKyAnPC90ZXh0Pjwvc3ZnPg==';
+                      }}
                     />
                     <div className="product-overlay">
                       <div className="product-features">
