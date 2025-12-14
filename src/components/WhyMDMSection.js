@@ -20,7 +20,7 @@ const WhyMDMSection = () => {
             <div className="why-mdm-logo-container">
               <div className="logo-wrapper">
                 <img 
-                  src="/assets/logonew.png"
+                  src="/assets/logonew.jpg"
                   alt="MDM Group Logos" 
                   className="why-mdm-logo"
                   onError={(e) => {

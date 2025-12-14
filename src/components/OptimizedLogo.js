@@ -18,7 +18,7 @@ const OptimizedLogo = ({
       setLogoError(true);
       setLogoLoaded(true);
     };
-    img.src = '/assets/logonew.png';
+    img.src = '/assets/logonew.jpg';
   }, []);
 
   if (!logoLoaded) {
@@ -58,7 +58,7 @@ const OptimizedLogo = ({
   return (
     <div className={`logo-container ${className} ${animate ? 'logo-animate' : ''}`}>
       <img 
-        src="/assets/logonew.png" 
+        src="/assets/logonew.jpg" 
         alt="MDM Group Logos - Premium Quality Pulses Since 1980" 
         className="logo-img"
         style={{ 
