@@ -48,7 +48,7 @@ const Products = () => {
     },
     {
       name: "Masoor Dal (Red Lentils / Lens Culinaris)",
-      image: "/masoor.png",
+      image: "/masoor.jpg",
       varieties: ["Whole Masoor", "Split Masoor", "Indian & Imported"],
       description: "Whole and split varieties available—Indian & imported. Uniform grain, multiple quality options.",
       features: ["Whole & Split", "Uniform Grain", "Multiple Quality Options"],
@@ -166,6 +166,7 @@ const Products = () => {
                       src={product.image}
                       alt={product.name}
                       className="product-detail-image"
+                      loading="lazy"
                       onError={(e) => {
                         e.target.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjBmMGYwIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzk5OSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPicgKyBwcm9kdWN0Lm5hbWUgKyAnPC90ZXh0Pjwvc3ZnPg==';
                       }}
@@ -214,6 +215,7 @@ const Products = () => {
                       src={product.image}
                       alt={product.name}
                       className="product-detail-image"
+                      loading="lazy"
                       onError={(e) => {
                         e.target.src = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzAwIiBoZWlnaHQ9IjIwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSIjZjBmMGYwIi8+PHRleHQgeD0iNTAlIiB5PSI1MCUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgZmlsbD0iIzk5OSIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZHk9Ii4zZW0iPicgKyBwcm9kdWN0Lm5hbWUgKyAnPC90ZXh0Pjwvc3ZnPg==';
                       }}
