@@ -19,11 +19,11 @@ const AboutUs = () => {
     },
     {
       year: "2012",
-      description: "The next generation stepped forward with Raghav Pulses, founded by Mr. Manish Bansal & Mr. Ashish Bansal, introducing modern practices and upgraded infrastructure."
+      description: "The next generation stepped forward with Raghav Pulses, founded by Mr. Manish Bansal, Mr. Ashish Bansal & Mr. Anshul Bansal, introducing modern practices and upgraded infrastructure."
     },
     {
       year: "2024",
-      description: "MDM Proteins Pvt. Ltd. was established by Mr. Manish Bansal & Mr. Ashish Bansal, focusing on advanced technology and large-scale processing."
+      description: "MDM Proteins Pvt. Ltd. was established by Mr. Manish Bansal, Mr. Ashish Bansal & Mr. Anshul Bansal, focusing on advanced technology and large-scale processing."
     },
     {
       year: "2025",
