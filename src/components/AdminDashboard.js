@@ -19,6 +19,8 @@ const AdminDashboard = () => {
   });
   const [showDeleteModal, setShowDeleteModal] = useState(false);
   const [contactToDelete, setContactToDelete] = useState(null);
+  const [showMessageModal, setShowMessageModal] = useState(false);
+  const [selectedMessage, setSelectedMessage] = useState(null);
   const [adminUser, setAdminUser] = useState(null);
   const navigate = useNavigate();
 
@@ -383,9 +385,16 @@ const AdminDashboard = () => {
                       </td>
                       <td>{contact.phone}</td>
                       <td>
-                        <div className="admin-message-preview">
-                          {contact.message.length > 50 
-                            ? `${contact.message.substring(0, 50)}...` 
+                        <div 
+                          className="admin-message-preview clickable"
+                          onClick={() => {
+                            setSelectedMessage(contact);
+                            setShowMessageModal(true);
+                          }}
+                          title="Click to view full message"
+                        >
+                          {contact.message.length > 80 
+                            ? `${contact.message.substring(0, 80)}...` 
                             : contact.message
                           }
                         </div>
@@ -464,6 +473,65 @@ const AdminDashboard = () => {
           </Button>
           <Button variant="danger" onClick={handleDeleteContact}>
             Delete
+          </Button>
+        </Modal.Footer>
+      </Modal>
+
+      {/* Message View Modal */}
+      <Modal show={showMessageModal} onHide={() => setShowMessageModal(false)} size="lg">
+        <Modal.Header closeButton>
+          <Modal.Title>Full Message Details</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          {selectedMessage && (
+            <div>
+              <Row className="mb-3">
+                <Col md={6}>
+                  <strong>Name:</strong> {selectedMessage.name}
+                </Col>
+                <Col md={6}>
+                  <strong>Email:</strong> {selectedMessage.email}
+                </Col>
+              </Row>
+              <Row className="mb-3">
+                <Col md={6}>
+                  <strong>Company:</strong> {selectedMessage.companyName || 'N/A'}
+                </Col>
+                <Col md={6}>
+                  <strong>Designation:</strong> {selectedMessage.designation || 'N/A'}
+                </Col>
+              </Row>
+              <Row className="mb-3">
+                <Col md={6}>
+                  <strong>Customer Type:</strong> {selectedMessage.customerType}
+                </Col>
+                <Col md={6}>
+                  <strong>Phone:</strong> {selectedMessage.countryCode} {selectedMessage.phone}
+                </Col>
+              </Row>
+              <Row className="mb-3">
+                <Col md={6}>
+                  <strong>Status:</strong> {getStatusBadge(selectedMessage.status)}
+                </Col>
+                <Col md={6}>
+                  <strong>Submitted:</strong> {formatDate(selectedMessage.submittedAt)}
+                </Col>
+              </Row>
+              <hr />
+              <div>
+                <strong>Message:</strong>
+                <div className="mt-2 p-3 bg-light rounded">
+                  <p className="mb-0" style={{ whiteSpace: 'pre-wrap' }}>
+                    {selectedMessage.message}
+                  </p>
+                </div>
+              </div>
+            </div>
+          )}
+        </Modal.Body>
+        <Modal.Footer>
+          <Button variant="secondary" onClick={() => setShowMessageModal(false)}>
+            Close
           </Button>
         </Modal.Footer>
       </Modal>

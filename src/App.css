@@ -2773,10 +2773,22 @@ html {
 }
 
 .admin-message-preview {
-  max-width: 200px;
+  max-width: 250px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  cursor: pointer;
+  color: #0066cc;
+  transition: color 0.2s ease;
+}
+
+.admin-message-preview:hover {
+  color: #004499;
+  text-decoration: underline;
+}
+
+.admin-message-preview.clickable {
+  cursor: pointer;
 }
 
 .admin-action-buttons {
