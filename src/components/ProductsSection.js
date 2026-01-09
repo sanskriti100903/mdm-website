@@ -38,7 +38,7 @@ const ProductsSection = () => {
     },
     {
       name: "Masoor Dal",
-      image: "/masoor.jpg",
+      image: "/masoor.webp",
       description: "Red Masoor Dall with rich color and taste. Quick cooking and highly nutritious for healthy meals.",
       features: ["Quick Cooking", "Rich in Iron", "Nutritious"]
     },

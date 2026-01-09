@@ -48,7 +48,7 @@ const Products = () => {
     },
     {
       name: "Masoor Dall (Red Lentils)",
-      image: "/masoor.jpg",
+      image: "/masoor.webp",
       varieties: ["Whole Masoor", "Split Masoor", "Indian & Imported"],
       description: "Whole and split varieties available—Indian & imported. Uniform grain, multiple quality options.",
       features: ["Whole & Split", "Uniform Grain", "Multiple Quality Options"],
@@ -65,9 +65,9 @@ const Products = () => {
     {
       name: "Jowar (Sorghum)",
       image: "/jowar.jpg",
-      varieties: ["All Grades", "Flour Grade", "Industrial Use"],
-      description: "Machine-cleaned grains available in all grades. Suitable for flour and industrial use.",
-      features: ["Machine Cleaned", "All Grades", "Multi-Purpose"],
+      varieties: ["Flour Grade", "Industrial Use"],
+      description: "Machine-cleaned grains available . Suitable for flour and industrial use.",
+      features: ["Machine Cleaned","Multi-Purpose"],
       category: "Grains"
     },
     {
