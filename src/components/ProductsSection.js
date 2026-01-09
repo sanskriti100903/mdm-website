@@ -20,7 +20,7 @@ const ProductsSection = () => {
     },
     {
       name: "Chana Dal",
-      image: "/chana.jpg",
+      image: "/channa.webp",
       description: "Golden yellow Chana Dall with authentic taste and aroma. Sourced from the finest farms and processed with care.",
       features: ["Rich in Protein", "Natural Color", "Farm Fresh"]
     },
@@ -80,7 +80,7 @@ const ProductsSection = () => {
     },
     {
       name: "Lobia",
-      image: "/lobia.jpg",
+      image: "/lobia.webp",
       description: "High-quality Lobia (Black-eyed peas) with rich protein content. Excellent for traditional Indian recipes.",
       features: ["High Protein", "Traditional", "Nutritious"]
     }

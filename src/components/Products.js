@@ -24,7 +24,7 @@ const Products = () => {
     },
     {
       name: "Chana Dall (Split Bengal Gram / Chickpea Split)",
-      image: "/chana.jpg",
+      image: "/channa.webp",
       varieties: ["Consistent Grain Size", "All Qualities", "All Grades"],
       description: "High-quality processed Chana Dall with consistent grain size. All qualities and grades available.",
       features: ["Consistent Size", "All Qualities", "All Grades"],
@@ -96,7 +96,7 @@ const Products = () => {
     },
     {
       name: "Chawla / Lobia (Black-Eyed Beans / Cowpeas)",
-      image: "/lobia.jpg",
+      image: "/lobia.webp",
       varieties: ["Indian Quality", "Imported Quality", "All Grades"],
       description: "High-quality Indian & imported black-eyed beans. All grades available.",
       features: ["Indian & Imported", "All Grades", "High Quality"],
@@ -120,7 +120,7 @@ const Products = () => {
     },
     {
       name: "Desi Chana (Brown Chickpeas / Kala Chana)",
-      image: "/chana.jpg",
+      image: "/channa.webp",
       varieties: ["Machine Sorted", "Premium Grade", "Export Quality"],
       description: "Clean, machine-sorted grains with consistent quality.",
       features: ["Machine Sorted", "Consistent Quality", "Clean Grains"],
