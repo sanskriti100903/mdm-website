@@ -72,12 +72,14 @@ const Footer = () => {
             <Col lg={3} md={6} className="mb-4">
               <h5 className="footer-title">Our Products</h5>
               <ul className="footer-menu">
-                <li><span className="footer-menu-text">Toor Dal</span></li>
-                <li><span className="footer-menu-text">Moong Dal</span></li>
-                <li><span className="footer-menu-text">Chana Dal</span></li>
-                <li><span className="footer-menu-text">Urad Dal</span></li>
+                <li><span className="footer-menu-text">Toor Dall</span></li>
+                <li><span className="footer-menu-text">Moong Dall</span></li>
+                <li><span className="footer-menu-text">Chana Dall</span></li>
+                <li><span className="footer-menu-text">Urad Dall</span></li>
                 <li><span className="footer-menu-text">Kabuli Chana</span></li>
-                <li><span className="footer-menu-text">Masoor Dal</span></li>
+                <li><span className="footer-menu-text">Maize</span></li>
+                <li><span className="footer-menu-text">Chawla</span></li>
+                <li><span className="footer-menu-text">Masoor Dall</span></li>
                 <li><span className="footer-menu-text">Rajma</span></li>
               </ul>
             </Col>
