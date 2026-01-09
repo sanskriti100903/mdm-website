@@ -39,7 +39,7 @@ const Products = () => {
       category: "Pulses"
     },
     {
-      name: "Kabuli Chana (Chickpeas / Garbanzo Beans)",
+      name: "Kabuli Chana (Chickpeas)",
       image: "/kabuli.webp",
       varieties: ["38/40 Count", "40/42 Count", "42/44 Count"],
       description: "Available in all size counts (38/40, 40/42, 42/44, etc.). Premium Indian & imported qualities.",
@@ -47,7 +47,7 @@ const Products = () => {
       category: "Pulses"
     },
     {
-      name: "Masoor Dall (Red Lentils / Lens Culinaris)",
+      name: "Masoor Dall (Red Lentils)",
       image: "/masoor.jpg",
       varieties: ["Whole Masoor", "Split Masoor", "Indian & Imported"],
       description: "Whole and split varieties available—Indian & imported. Uniform grain, multiple quality options.",
@@ -87,7 +87,7 @@ const Products = () => {
       category: "Grains"
     },
     {
-      name: "Wheat (Gehu / Whole Wheat Grain)",
+      name: "Wheat (Gehu)",
       image: "/wheat.webp",
       varieties: ["Milling Grade", "Food Grade", "All Quality Specs"],
       description: "Premium milling-grade and food-grade wheat. Available in all quality specifications.",
@@ -95,7 +95,7 @@ const Products = () => {
       category: "Grains"
     },
     {
-      name: "Chawla / Lobia (Black-Eyed Beans / Cowpeas)",
+      name: "Chawla (Lobia)",
       image: "/lobia.webp",
       varieties: ["Indian Quality", "Imported Quality", "All Grades"],
       description: "High-quality Indian & imported black-eyed beans. All grades available.",
@@ -103,7 +103,7 @@ const Products = () => {
       category: "Pulses"
     },
     {
-      name: "Rice (Chawal / Oryza Sativa)",
+      name: "Rice (Chawal)",
       image: "https://images.unsplash.com/photo-1586201375761-83865001e31c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
       varieties: ["Basmati", "Non-Basmati", "Sona Masoori", "Broken Rice"],
       description: "Basmati, Non-Basmati, Sona Masoori, and Broken Rice. Full range of qualities available.",
@@ -119,7 +119,7 @@ const Products = () => {
       category: "Grains"
     },
     {
-      name: "Desi Chana (Brown Chickpeas / Kala Chana)",
+      name: "Desi Chana (Brown Chickpeas)",
       image: "/channa.webp",
       varieties: ["Machine Sorted", "Premium Grade", "Export Quality"],
       description: "Clean, machine-sorted grains with consistent quality.",
