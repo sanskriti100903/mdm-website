@@ -7,7 +7,7 @@ import Footer from './Footer';
 const Products = () => {
   const products = [
     {
-      name: "Toor Dall (Pigeon Pea / Arhar Dall)",
+      name: "Toor Dall (Pigeon Pea)",
       image: "/toor.webp",
       varieties: ["Desi Toor", "African Toor", "Sortexed Option"],
       description: "Available in Desi Toor and African Toor, all grades and qualities. Sortexed option available.",
@@ -15,7 +15,7 @@ const Products = () => {
       category: "Pulses"
     },
     {
-      name: "Moong Dall (Green Gram / Mung Bean Split)",
+      name: "Moong Dall (Moong Bean Split)",
       image: "/moong.webp", 
       varieties: ["Mogar", "Skinned Split Moong", "Indian & Imported"],
       description: "Available in Mogar and Skinned Split Moong. Indian + imported varieties in all qualities.",
@@ -23,16 +23,16 @@ const Products = () => {
       category: "Pulses"
     },
     {
-      name: "Chana Dall (Split Bengal Gram / Chickpea Split)",
+      name: "Chana Dall ",
       image: "/channa.webp",
-      varieties: ["Consistent Grain Size", "All Qualities", "All Grades"],
+      varieties: [ "All Qualities", "All Grades"],
       description: "High-quality processed Chana Dall with consistent grain size. All qualities and grades available.",
       features: ["Consistent Size", "All Qualities", "All Grades"],
       category: "Pulses"
     },
     {
       name: "Urad Dal",
-      image: "/urad.png",
+      image: "/urad.webp",
       varieties: ["Gota", "White Split", "Black Split"],
       description: "Premium Black Gram (Urad / Black Lentils) available in Gota, White Split, and Black Split varieties. Clean, consistent, and offered in all quality grades.",
       features: ["Multiple Varieties", "Clean & Consistent", "All Quality Grades"],
@@ -88,7 +88,7 @@ const Products = () => {
     },
     {
       name: "Wheat (Gehu / Whole Wheat Grain)",
-      image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "/wheat.webp",
       varieties: ["Milling Grade", "Food Grade", "All Quality Specs"],
       description: "Premium milling-grade and food-grade wheat. Available in all quality specifications.",
       features: ["Milling Grade", "Food Grade", "All Specifications"],

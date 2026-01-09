@@ -26,7 +26,7 @@ const ProductsSection = () => {
     },
     {
       name: "Urad Dal",
-      image: "/urad.png",
+      image: "/urad.webp",
       description: "Pure black Urad Dal, essential for South Indian cuisine. Maintains traditional taste and quality standards.",
       features: ["Traditional Quality", "Pure & Natural", "Export Standard"]
     },
@@ -68,7 +68,7 @@ const ProductsSection = () => {
     },
     {
       name: "Wheat",
-      image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "/wheat.webp",
       description: "Superior quality Wheat grains with high protein content. Carefully selected for optimal nutrition and taste.",
       features: ["High Protein", "Premium Grade", "Nutritious"]
     },
