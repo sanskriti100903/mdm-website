@@ -16,7 +16,7 @@ const Products = () => {
     },
     {
       name: "Moong Dall (Green Gram / Mung Bean Split)",
-      image: "/moong.jpg", 
+      image: "/moong.webp", 
       varieties: ["Mogar", "Skinned Split Moong", "Indian & Imported"],
       description: "Available in Mogar and Skinned Split Moong. Indian + imported varieties in all qualities.",
       features: ["Mogar Available", "Skinned Split", "Indian & Imported"],
@@ -40,7 +40,7 @@ const Products = () => {
     },
     {
       name: "Kabuli Chana (Chickpeas / Garbanzo Beans)",
-      image: "/kabuli.jpg",
+      image: "/kabuli.webp",
       varieties: ["38/40 Count", "40/42 Count", "42/44 Count"],
       description: "Available in all size counts (38/40, 40/42, 42/44, etc.). Premium Indian & imported qualities.",
       features: ["All Size Counts", "Premium Quality", "Indian & Imported"],
@@ -56,7 +56,7 @@ const Products = () => {
     },
     {
       name: "Rajma",
-      image: "/rajma.jpg",
+      image: "/rajma.webp",
       varieties: ["Chitra", "Red", "Jammu"],
       description: "High-quality Kidney Beans available in Chitra, Red, and Jammu variants. Uniform size, well-cleaned, and offered in all grades and qualities.",
       features: ["Multiple Variants", "Uniform Size", "Well-Cleaned"],
@@ -112,7 +112,7 @@ const Products = () => {
     },
     {
       name: "Soybean",
-      image: "https://images.unsplash.com/photo-1574323347407-f5e1ad6d020b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
+      image: "/soyabean.webp",
       varieties: ["Food Grade", "Oil Extraction", "Multiple Quality Grades"],
       description: "High-protein soybeans, ideal for food and oil extraction. Available in multiple quality grades.",
       features: ["High Protein", "Food & Oil Use", "Multiple Grades"],

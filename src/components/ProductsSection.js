@@ -14,7 +14,7 @@ const ProductsSection = () => {
     },
     {
       name: "Moong Dal",
-      image: "/moong.jpg", 
+      image: "/moong.webp", 
       description: "Fresh and pure Moong Dal, perfect for daily cooking. Known for its digestibility and high nutritional content.",
       features: ["Easy to Digest", "Rich in Fiber", "Premium Grade"]
     },
@@ -32,7 +32,7 @@ const ProductsSection = () => {
     },
     {
       name: "Kabuli Chana",
-      image: "/kabuli.jpg",
+      image: "/kabuli.webp",
       description: "Large, premium Kabuli Chana with excellent texture. Perfect for various culinary preparations worldwide.",
       features: ["Large Size", "Premium Quality", "Global Standards"]
     },
@@ -44,7 +44,7 @@ const ProductsSection = () => {
     },
     {
       name: "Rajma",
-      image: "/rajma.jpg",
+      image: "/rajma.webp",
       description: "Premium quality Rajma beans, perfect for traditional recipes. Carefully selected and processed for best taste.",
       features: ["Premium Beans", "Traditional Taste", "Export Quality"]
     },
