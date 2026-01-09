@@ -21,7 +21,7 @@ const ProductsSection = () => {
     {
       name: "Chana Dal",
       image: "/chana.jpg",
-      description: "Golden yellow Chana Dal with authentic taste and aroma. Sourced from the finest farms and processed with care.",
+      description: "Golden yellow Chana Dall with authentic taste and aroma. Sourced from the finest farms and processed with care.",
       features: ["Rich in Protein", "Natural Color", "Farm Fresh"]
     },
     {
@@ -39,7 +39,7 @@ const ProductsSection = () => {
     {
       name: "Masoor Dal",
       image: "/masoor.jpg",
-      description: "Red Masoor Dal with rich color and taste. Quick cooking and highly nutritious for healthy meals.",
+      description: "Red Masoor Dall with rich color and taste. Quick cooking and highly nutritious for healthy meals.",
       features: ["Quick Cooking", "Rich in Iron", "Nutritious"]
     },
     {

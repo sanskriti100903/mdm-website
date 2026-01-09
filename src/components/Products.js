@@ -7,7 +7,7 @@ import Footer from './Footer';
 const Products = () => {
   const products = [
     {
-      name: "Toor Dal (Pigeon Pea / Arhar Dal)",
+      name: "Toor Dall (Pigeon Pea / Arhar Dall)",
       image: "/toor.jpg",
       varieties: ["Desi Toor", "African Toor", "Sortexed Option"],
       description: "Available in Desi Toor and African Toor, all grades and qualities. Sortexed option available.",
@@ -15,7 +15,7 @@ const Products = () => {
       category: "Pulses"
     },
     {
-      name: "Moong Dal (Green Gram / Mung Bean Split)",
+      name: "Moong Dall (Green Gram / Mung Bean Split)",
       image: "/moong.jpg", 
       varieties: ["Mogar", "Skinned Split Moong", "Indian & Imported"],
       description: "Available in Mogar and Skinned Split Moong. Indian + imported varieties in all qualities.",
@@ -23,10 +23,10 @@ const Products = () => {
       category: "Pulses"
     },
     {
-      name: "Chana Dal (Split Bengal Gram / Chickpea Split)",
+      name: "Chana Dall (Split Bengal Gram / Chickpea Split)",
       image: "/chana.jpg",
       varieties: ["Consistent Grain Size", "All Qualities", "All Grades"],
-      description: "High-quality processed Chana Dal with consistent grain size. All qualities and grades available.",
+      description: "High-quality processed Chana Dall with consistent grain size. All qualities and grades available.",
       features: ["Consistent Size", "All Qualities", "All Grades"],
       category: "Pulses"
     },
@@ -47,7 +47,7 @@ const Products = () => {
       category: "Pulses"
     },
     {
-      name: "Masoor Dal (Red Lentils / Lens Culinaris)",
+      name: "Masoor Dall (Red Lentils / Lens Culinaris)",
       image: "/masoor.jpg",
       varieties: ["Whole Masoor", "Split Masoor", "Indian & Imported"],
       description: "Whole and split varieties available—Indian & imported. Uniform grain, multiple quality options.",

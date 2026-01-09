@@ -7,7 +7,7 @@ const AboutUs = () => {
   const timelineData = [
     {
       year: "1980",
-      description: "Manish Dal Mill was established, marking the beginning of our family's journey in pulses processing under the leadership of Mr. Munnalal Bansal."
+      description: "Manish Dall Mill was established, marking the beginning of our family's journey in pulses processing under the leadership of Mr. Munnalal Bansal."
     },
     {
       year: "2002",
@@ -31,7 +31,7 @@ const AboutUs = () => {
     },
     {
       year: "NOW",
-      description: "Group of Companies: Manish Dal Mill, Ashish Pulses, Keshav Pulses, Raghav Pulses, MDM Proteins Pvt. Ltd."
+      description: "Group of Companies: Manish Dall Mill, Ashish Pulses, Keshav Pulses, Raghav Pulses, MDM Proteins Pvt. Ltd."
     }
   ];
 
@@ -84,7 +84,7 @@ const AboutUs = () => {
             <div className="col-lg-6">
               <h2 className="section-title">Our Legacy</h2>
               <p className="section-description">
-                From a modest start in 1980 to becoming a trusted name in the pulses and grains industry, Manish Dal Mill has steadily grown by embracing quality, innovation, and integrity. What began as a small mill founded by Mr. Munnala Bansal has today evolved into a multi-facility agro-processing group with a strong presence in both domestic and international markets.
+                From a modest start in 1980 to becoming a trusted name in the pulses and grains industry, Manish Dall Mill has steadily grown by embracing quality, innovation, and integrity. What began as a small mill founded by Mr. Munnala Bansal has today evolved into a multi-facility agro-processing group with a strong presence in both domestic and international markets.
               </p>
               <p className="section-description">
                 Over the past four decades, we have expanded our capabilities from traditional milling to advanced processing, sorting, and global trading. With state-of-the-art infrastructure, a skilled team, and a commitment to consistent quality, MDM Group now caters to customers across India and around the world.
