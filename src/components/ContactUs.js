@@ -21,6 +21,8 @@ const ContactUs = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    companyName: '',
+    designation: '',
     customerType: '',
     countryCode: '+91',
     phone: '',
@@ -45,7 +47,7 @@ const ContactUs = () => {
     setShowAlert(false);
     
     // Basic validation
-    if (!formData.name || !formData.email || !formData.customerType || !formData.countryCode || !formData.phone || !formData.message) {
+    if (!formData.name || !formData.email || !formData.companyName || !formData.designation || !formData.customerType || !formData.countryCode || !formData.phone || !formData.message) {
       setAlertType('danger');
       setAlertMessage('Please fill in all required fields.');
       setShowAlert(true);
@@ -66,6 +68,8 @@ const ContactUs = () => {
         setFormData({
           name: '',
           email: '',
+          companyName: '',
+          designation: '',
           customerType: '',
           countryCode: '+91',
           phone: '',
@@ -169,6 +173,42 @@ const ContactUs = () => {
                             value={formData.email}
                             onChange={handleInputChange}
                             placeholder="Enter your email address"
+                            className="contact-form-input"
+                            required
+                          />
+                        </Form.Group>
+                      </Col>
+                      
+                      <Col md={6}>
+                        <Form.Group>
+                          <Form.Label className="contact-form-label">
+                            <FaBuilding className="me-2" />
+                            Company Name *
+                          </Form.Label>
+                          <Form.Control
+                            type="text"
+                            name="companyName"
+                            value={formData.companyName}
+                            onChange={handleInputChange}
+                            placeholder="Enter your company name"
+                            className="contact-form-input"
+                            required
+                          />
+                        </Form.Group>
+                      </Col>
+                      
+                      <Col md={6}>
+                        <Form.Group>
+                          <Form.Label className="contact-form-label">
+                            <FaUser className="me-2" />
+                            Designation *
+                          </Form.Label>
+                          <Form.Control
+                            type="text"
+                            name="designation"
+                            value={formData.designation}
+                            onChange={handleInputChange}
+                            placeholder="Enter your designation"
                             className="contact-form-input"
                             required
                           />
@@ -291,17 +331,10 @@ const ContactUs = () => {
                       <div className="contact-info-content">
                         <Button 
                           variant="link" 
-                          className="contact-info-link p-0 me-3 mb-2"
-                          onClick={() => handlePhoneClick('9302501585')}
-                        >
-                          +91 9302501585
-                        </Button>
-                        <Button 
-                          variant="link" 
                           className="contact-info-link p-0 mb-2"
-                          onClick={() => handlePhoneClick('9827030585')}
+                          onClick={() => handlePhoneClick('7880010888')}
                         >
-                          +91 9827030585
+                          +91 7880010888
                         </Button>
                       </div>
                     </div>
@@ -316,20 +349,11 @@ const ContactUs = () => {
                         <Button 
                           variant="success" 
                           size="sm" 
-                          className="contact-whatsapp-btn me-2 mb-2"
-                          onClick={() => handleWhatsAppClick('9893028822')}
-                        >
-                          <FaWhatsapp className="me-1" />
-                          +91 9893028822
-                        </Button>
-                        <Button 
-                          variant="success" 
-                          size="sm" 
                           className="contact-whatsapp-btn mb-2"
-                          onClick={() => handleWhatsAppClick('9300030585')}
+                          onClick={() => handleWhatsAppClick('7880010888')}
                         >
                           <FaWhatsapp className="me-1" />
-                          +91 9300030585
+                          +91 7880010888
                         </Button>
                       </div>
                     </div>

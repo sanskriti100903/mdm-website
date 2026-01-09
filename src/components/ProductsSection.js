@@ -8,7 +8,7 @@ const ProductsSection = () => {
   const products = [
     {
       name: "Toor Dal",
-      image: "/toor.jpg",
+      image: "/toor.webp",
       description: "Premium quality Toor Dal, rich in protein and essential nutrients. Carefully processed to maintain natural taste and nutritional value.",
       features: ["High Protein", "Natural Processing", "Export Quality"]
     },

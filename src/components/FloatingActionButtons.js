@@ -1,9 +1,9 @@
 import React from 'react';
 
 const FloatingActionButtons = () => {
-  // Replace with actual phone number and WhatsApp number
-  const phoneNumber = '+919876543210'; // Replace with actual phone number
-  const whatsappNumber = '+919876543210'; // Replace with actual WhatsApp number
+  // Using actual phone number and WhatsApp number from Footer
+  const phoneNumber = '+917880010888'; // Actual phone number
+  const whatsappNumber = '+917880010888'; // Actual WhatsApp number
   
   const handleCall = () => {
     window.open(`tel:${phoneNumber}`, '_self');
