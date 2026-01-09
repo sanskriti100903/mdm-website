@@ -73,8 +73,8 @@ const Products = () => {
     {
       name: "Bajra (Pearl Millet)",
       image: "/bajra.png",
-      varieties: ["Uniform Grain Size", "All Qualities", "Indian Quality"],
-      description: "High-quality Indian bajra with uniform grain size. All qualities available.",
+      varieties: [, "All Qualities", "Indian Quality"],
+      description: "High-quality Indian bajra. All qualities available.",
       features: ["Uniform Size", "Indian Quality", "All Qualities"],
       category: "Grains"
     },
@@ -89,7 +89,7 @@ const Products = () => {
     {
       name: "Wheat (Gehu)",
       image: "/wheat.webp",
-      varieties: ["Milling Grade", "Food Grade", "All Quality Specs"],
+      varieties: ["Milling Grade", "Food Grade"],
       description: "Premium milling-grade and food-grade wheat. Available in all quality specifications.",
       features: ["Milling Grade", "Food Grade", "All Specifications"],
       category: "Grains"
@@ -105,17 +105,17 @@ const Products = () => {
     {
       name: "Rice (Chawal)",
       image: "https://images.unsplash.com/photo-1586201375761-83865001e31c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      varieties: ["Basmati", "Non-Basmati", "Sona Masoori", "Broken Rice"],
-      description: "Basmati, Non-Basmati, Sona Masoori, and Broken Rice. Full range of qualities available.",
+      varieties: ["Basmati", "Non-Basmati", "Sona Masoori"],
+      description: "Basmati, Non-Basmati, Sona Masoori. Full range of qualities available.",
       features: ["Full Range", "All Qualities", "Multiple Varieties"],
       category: "Grains"
     },
     {
       name: "Soybean",
       image: "/soyabean.webp",
-      varieties: ["Food Grade", "Oil Extraction", "Multiple Quality Grades"],
+      varieties: ["Food Grade", "Oil Extraction"],
       description: "High-protein soybeans, ideal for food and oil extraction. Available in multiple quality grades.",
-      features: ["High Protein", "Food & Oil Use", "Multiple Grades"],
+      features: ["High Protein", "Food & Oil Use"],
       category: "Grains"
     },
     {
