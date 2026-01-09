@@ -20,7 +20,7 @@ const HeroSection = () => {
       alt: 'Variety of pulses and legumes in sacks and containers'
     },
     {
-      src: '/hero3.png',
+      src: '/hero3.jpg',
       fallback: 'radial-gradient(circle at 50% 50%, #8B0000 0%, #DC143C 30%, #FF6347 60%, #FFA07A 100%)',
       alt: 'Different types of red beans and kidney beans'
     },
