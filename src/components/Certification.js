@@ -8,20 +8,34 @@ const Certification = () => {
   const certifications = [
     {
       id: 1,
+      title: "ISO 9001:2015",
+      fullForm: "Quality Management System",
+      logo: "/ISO 9001-2005.png",
+      useIcon: false
+    },
+    {
+      id: 2,
+      title: "ISO 22000:2018",
+      fullForm: "Food Safety Management System",
+      logo: "/ISO 22000-2018.png",
+      useIcon: false
+    },
+    {
+      id: 3,
       title: "HACCP",
       fullForm: "Hazard Analysis and Critical Control Points",
       logo: "/haccp.png",
       useIcon: false
     },
     {
-      id: 2,
+      id: 4,
       title: "FSSAI",
       fullForm: "Food Safety Standards Authority of India",
       logo: "/fssai.png",
       useIcon: false
     },
     {
-      id: 3,
+      id: 5,
       title: "APEDA",
       fullForm: "Agricultural & Processed Food Products Export Development Authority",
       logo: "/apeda.png",
