@@ -1,25 +1,25 @@
 {
   "short_name": "MDM Group",
-  "name": "MDM Group - Premium Quality Pulses & Grains",
+  "name": "MDM Group - Premium Pulses & Grains Exporter",
   "icons": [
     {
-      "src": "assets/logonew.png",
+      "src": "favicon.png",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/png"
+      "type": "image/x-icon"
     },
     {
-      "src": "assets/logonew.png",
+      "src": "favicon.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "assets/logonew.png",
+      "src": "favicon.png",
       "type": "image/png",
       "sizes": "512x512"
     }
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#16a34a",
+  "theme_color": "#000000",
   "background_color": "#ffffff"
 }

@@ -8,27 +8,20 @@ const Certification = () => {
   const certifications = [
     {
       id: 1,
-      title: "ISO 9001:2015",
-      fullForm: "Quality Management System",
-      logo: "/ISO 9001.png",
+      title: "HACCP",
+      fullForm: "Hazard Analysis and Critical Control Points",
+      logo: "/haccp.png",
       useIcon: false
     },
     {
       id: 2,
-      title: "ISO 22000:2018",
-      fullForm: "Food Safety Management",
-      logo: "/ISO 20000.png",
-      useIcon: false
-    },
-    {
-      id: 3,
       title: "FSSAI",
       fullForm: "Food Safety Standards Authority of India",
       logo: "/fssai.png",
       useIcon: false
     },
     {
-      id: 4,
+      id: 3,
       title: "APEDA",
       fullForm: "Agricultural & Processed Food Products Export Development Authority",
       logo: "/apeda.png",
@@ -67,7 +60,7 @@ const Certification = () => {
               <Col lg={4} md={6} sm={12} key={cert.id}>
                 <Card className="certification-card h-100">
                   <Card.Body className="text-center p-4">
-                    <div className="certification-icon-container mb-3">
+                    <div className="certification-logo-container mb-3">
                       {cert.useIcon ? (
                         <cert.icon className="certification-icon" />
                       ) : (
@@ -75,7 +68,7 @@ const Certification = () => {
                           src={cert.logo} 
                           alt={cert.title} 
                           className="certification-logo"
-                          style={{ width: '80px', height: '80px', objectFit: 'contain' }}
+                          style={{ width: '150px', height: '150px', objectFit: 'contain' }}
                         />
                       )}
                     </div>
