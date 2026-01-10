@@ -8,7 +8,7 @@ const ProductsSection = () => {
   const products = [
     {
       name: "Toor Dal",
-      image: "/toor.JPG",
+      image: "/toor.jpg",
       description: "Premium quality Toor Dal, rich in protein and essential nutrients. Carefully processed to maintain natural taste and nutritional value.",
       features: ["High Protein", "Natural Processing", "Export Quality"]
     },
@@ -20,7 +20,7 @@ const ProductsSection = () => {
     },
     {
       name: "Chana Dal",
-      image: "/chana.JPG",
+      image: "/chana.jpg",
       description: "Golden yellow Chana Dall with authentic taste and aroma. Sourced from the finest farms and processed with care.",
       features: ["Rich in Protein", "Natural Color", "Farm Fresh"]
     },
