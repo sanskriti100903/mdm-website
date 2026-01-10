@@ -8,7 +8,7 @@ const Products = () => {
   const products = [
     {
       name: "Toor Dall (Pigeon Pea)",
-      image: "/toor.jpg",
+      image: "/toor.webp",
       varieties: ["Desi Toor", "African Toor", "Sortexed Option"],
       description: "Available in Desi Toor and African Toor, all grades and qualities. Sortexed option available.",
       features: ["Desi & African", "All Grades", "Sortexed Available"],
@@ -24,7 +24,7 @@ const Products = () => {
     },
     {
       name: "Chana Dall ",
-      image: "/chana.jpg",
+      image: "/chana.webp",
       varieties: [ "All Qualities", "All Grades"],
       description: "High-quality processed Chana Dall with consistent grain size. All qualities and grades available.",
       features: ["Consistent Size", "All Qualities", "All Grades"],
