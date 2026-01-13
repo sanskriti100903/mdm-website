@@ -97,10 +97,17 @@ const Footer = () => {
                 <div className="phone-numbers">
                   <Button 
                     variant="link" 
-                    className="phone-link p-0 mb-2"
+                    className="phone-link p-0 mb-2 d-block"
                     onClick={() => handlePhoneClick('7880010888')}
                   >
                     +91 7880010888
+                  </Button>
+                  <Button 
+                    variant="link" 
+                    className="phone-link p-0 mb-2 d-block"
+                    onClick={() => handlePhoneClick('9302501585')}
+                  >
+                    +91 9302501585
                   </Button>
                 </div>
               </div>
@@ -115,11 +122,20 @@ const Footer = () => {
                   <Button 
                     variant="success" 
                     size="sm" 
-                    className="whatsapp-btn mb-2"
+                    className="whatsapp-btn mb-2 d-block"
                     onClick={() => handleWhatsAppClick('7880010888')}
                   >
                     <FaWhatsapp className="me-1" />
                     +91 7880010888
+                  </Button>
+                  <Button 
+                    variant="success" 
+                    size="sm" 
+                    className="whatsapp-btn mb-2 d-block"
+                    onClick={() => handleWhatsAppClick('9302501585')}
+                  >
+                    <FaWhatsapp className="me-1" />
+                    +91 9302501585
                   </Button>
                 </div>
               </div>

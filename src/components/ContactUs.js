@@ -331,10 +331,17 @@ const ContactUs = () => {
                       <div className="contact-info-content">
                         <Button 
                           variant="link" 
-                          className="contact-info-link p-0 mb-2"
+                          className="contact-info-link p-0 mb-2 d-block"
                           onClick={() => handlePhoneClick('7880010888')}
                         >
                           +91 7880010888
+                        </Button>
+                        <Button 
+                          variant="link" 
+                          className="contact-info-link p-0 mb-2 d-block"
+                          onClick={() => handlePhoneClick('9302501585')}
+                        >
+                          +91 9302501585
                         </Button>
                       </div>
                     </div>
@@ -349,11 +356,20 @@ const ContactUs = () => {
                         <Button 
                           variant="success" 
                           size="sm" 
-                          className="contact-whatsapp-btn mb-2"
+                          className="contact-whatsapp-btn mb-2 d-block"
                           onClick={() => handleWhatsAppClick('7880010888')}
                         >
                           <FaWhatsapp className="me-1" />
                           +91 7880010888
+                        </Button>
+                        <Button 
+                          variant="success" 
+                          size="sm" 
+                          className="contact-whatsapp-btn mb-2 d-block"
+                          onClick={() => handleWhatsAppClick('9302501585')}
+                        >
+                          <FaWhatsapp className="me-1" />
+                          +91 9302501585
                         </Button>
                       </div>
                     </div>

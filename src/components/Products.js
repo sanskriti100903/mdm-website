@@ -15,7 +15,7 @@ const Products = () => {
       category: "Pulses"
     },
     {
-      name: "Moong Dall (Moong Bean Split)",
+      name: "Moong Dall",
       image: "/moong.webp", 
       varieties: ["Mogar", "Skinned Split Moong", "Indian & Imported"],
       description: "Available in Mogar and Skinned Split Moong. Indian + imported varieties in all qualities.",
