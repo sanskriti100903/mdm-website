@@ -35,12 +35,12 @@ Create the following hero images for the dynamic slideshow:
 ### Product Images
 Create individual product images:
 
-1. `toor-dal.jpg` - Toor Dal
-2. `moong-dal.jpg` - Moong Dal
-3. `chana-dal.jpg` - Chana Dal
-4. `urad-dal.jpg` - Urad Dal
+1. `toor-dal.jpg` - Toor Dall
+2. `moong-dal.jpg` - Moong Dall
+3. `chana-dal.jpg` - Chana Dall
+4. `urad-dal.jpg` - Urad Dall
 5. `kabuli-chana.jpg` - Kabuli Chana
-6. `masoor-dal.jpg` - Masoor Dal
+6. `masoor-dal.jpg` - Masoor Dall
 7. `rajma.jpg` - Rajma
 
 **Product image specifications:**

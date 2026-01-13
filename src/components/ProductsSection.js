@@ -7,27 +7,27 @@ const ProductsSection = () => {
   
   const products = [
     {
-      name: "Toor Dal",
+      name: "Toor Dall",
       image: "/toor.webp",
-      description: "Premium quality Toor Dal, rich in protein and essential nutrients. Carefully processed to maintain natural taste and nutritional value.",
+      description: "Premium quality Toor Dall, rich in protein and essential nutrients. Carefully processed to maintain natural taste and nutritional value.",
       features: ["High Protein", "Natural Processing", "Export Quality"]
     },
     {
-      name: "Moong Dal",
+      name: "Moong Dall",
       image: "/moong.webp", 
-      description: "Fresh and pure Moong Dal, perfect for daily cooking. Known for its digestibility and high nutritional content.",
+      description: "Fresh and pure Moong Dall, perfect for daily cooking. Known for its digestibility and high nutritional content.",
       features: ["Easy to Digest", "Rich in Fiber", "Premium Grade"]
     },
     {
-      name: "Chana Dal",
+      name: "Chana Dall",
       image: "/chana.webp",
       description: "Golden yellow Chana Dall with authentic taste and aroma. Sourced from the finest farms and processed with care.",
       features: ["Rich in Protein", "Natural Color", "Farm Fresh"]
     },
     {
-      name: "Urad Dal",
+      name: "Urad Dall",
       image: "/urad.webp",
-      description: "Pure black Urad Dal, essential for South Indian cuisine. Maintains traditional taste and quality standards.",
+      description: "Pure black Urad Dall, essential for South Indian cuisine. Maintains traditional taste and quality standards.",
       features: ["Traditional Quality", "Pure & Natural", "Export Standard"]
     },
     {
@@ -37,7 +37,7 @@ const ProductsSection = () => {
       features: ["Large Size", "Premium Quality", "Global Standards"]
     },
     {
-      name: "Masoor Dal",
+      name: "Masoor Dall",
       image: "/masoor.webp",
       description: "Red Masoor Dall with rich color and taste. Quick cooking and highly nutritious for healthy meals.",
       features: ["Quick Cooking", "Rich in Iron", "Nutritious"]
