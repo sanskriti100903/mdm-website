@@ -3,7 +3,7 @@ import { Container, Row, Col, Card } from 'react-bootstrap';
 import { FaLeaf, FaStar, FaGlobe } from 'react-icons/fa';
 import Header from './Header';
 import Footer from './Footer';
-import UltraFastImage from './UltraFastImage';
+import FastLoadImage from './FastLoadImage';
 
 const Products = () => {
   const products = [
@@ -25,7 +25,7 @@ const Products = () => {
     },
     {
       name: "Chana Dall ",
-      image: "/chana.webp",
+      image: "/chana.jpg",
       varieties: [ "All Qualities", "All Grades"],
       description: "High-quality processed Chana Dall with consistent grain size. All qualities and grades available.",
       features: ["Consistent Size", "All Qualities", "All Grades"],
@@ -33,7 +33,7 @@ const Products = () => {
     },
     {
       name: "Urad Dal",
-      image: "/urad.webp",
+      image: "/urad.jpg",
       varieties: ["Gota", "White Split", "Black Split"],
       description: "Premium Black Gram (Urad / Black Lentils) available in Gota, White Split, and Black Split varieties. Clean, consistent, and offered in all quality grades.",
       features: ["Multiple Varieties", "Clean & Consistent", "All Quality Grades"],
@@ -73,8 +73,8 @@ const Products = () => {
     },
     {
       name: "Bajra (Pearl Millet)",
-      image: "/bajra.png",
-      varieties: [, "All Qualities", "Indian Quality"],
+      image: "/bajra.jpg",
+      varieties: ["Premium Grade", "All Qualities", "Indian Quality"],
       description: "High-quality Indian bajra. All qualities available.",
       features: ["Uniform Size", "Indian Quality", "All Qualities"],
       category: "Grains"
@@ -121,7 +121,7 @@ const Products = () => {
     },
     {
       name: "Desi Chana (Brown Chickpeas)",
-      image: "/channa.webp",
+      image: "/channa.jpg",
       varieties: ["Machine Sorted", "Premium Grade", "Export Quality"],
       description: "Clean, machine-sorted grains with consistent quality.",
       features: ["Machine Sorted", "Consistent Quality", "Clean Grains"],
@@ -162,7 +162,7 @@ const Products = () => {
               <Col lg={4} md={6} key={index}>
                 <Card className="product-detail-card h-100">
                   <div className="product-detail-image-container">
-                    <UltraFastImage 
+                    <FastLoadImage 
                       src={product.image}
                       alt={product.name}
                       className="product-detail-image"
@@ -210,7 +210,7 @@ const Products = () => {
               <Col lg={4} md={6} key={index}>
                 <Card className="product-detail-card h-100">
                   <div className="product-detail-image-container">
-                    <UltraFastImage 
+                    <FastLoadImage 
                       src={product.image}
                       alt={product.name}
                       className="product-detail-image"

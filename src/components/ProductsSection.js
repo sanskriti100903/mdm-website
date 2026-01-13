@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
 import { FaLeaf, FaStar } from 'react-icons/fa';
-import UltraFastImage from './UltraFastImage';
+import FastLoadImage from './FastLoadImage';
 
 const ProductsSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -21,13 +21,13 @@ const ProductsSection = () => {
     },
     {
       name: "Chana Dall",
-      image: "/chana.webp",
+      image: "/chana.jpg",
       description: "Golden yellow Chana Dall with authentic taste and aroma. Sourced from the finest farms and processed with care.",
       features: ["Rich in Protein", "Natural Color", "Farm Fresh"]
     },
     {
       name: "Urad Dall",
-      image: "/urad.webp",
+      image: "/urad.jpg",
       description: "Pure black Urad Dall, essential for South Indian cuisine. Maintains traditional taste and quality standards.",
       features: ["Traditional Quality", "Pure & Natural", "Export Standard"]
     },
@@ -128,13 +128,12 @@ const ProductsSection = () => {
               <Col lg={3} md={6} className="mb-3" key={`${currentIndex}-${index}`}>
                 <Card className="product-card h-100">
                   <div className="product-image-container">
-                    <UltraFastImage 
+                    <FastLoadImage 
                       src={product.image}
                       alt={product.name}
                       className="product-image"
                       loading="lazy"
                       priority={index < 4}
-                      quality="medium"
                       style={{ height: '250px', width: '100%', objectFit: 'cover' }}
                     />
                     <div className="product-overlay">
