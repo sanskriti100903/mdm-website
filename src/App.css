@@ -3550,6 +3550,48 @@ html {
   text-align: right;
 }
 
+/* UltraFastImage optimizations */
+.ultra-fast-image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.ultra-fast-image {
+  transition: opacity 0.15s ease-out;
+}
+
+.ultra-fast-image.loaded {
+  opacity: 1;
+}
+
+.ultra-fast-image.loading {
+  opacity: 0;
+}
+
+.ultra-fast-image-placeholder {
+  background: linear-gradient(90deg, #f8f9fa 25%, #e9ecef 50%, #f8f9fa 75%);
+  background-size: 200% 100%;
+  animation: ultraFastShimmer 0.8s infinite;
+}
+
+@keyframes ultraFastShimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+@keyframes ultraFastSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .floating-action-buttons {
@@ -3566,6 +3608,11 @@ html {
   .fab-button svg {
     width: 22px;
     height: 22px;
+  }
+  
+  /* Ultra-fast animations on mobile */
+  .ultra-fast-image-placeholder {
+    animation: ultraFastShimmer 0.6s infinite;
   }
 }
 
