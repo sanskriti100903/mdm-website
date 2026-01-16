@@ -17,7 +17,7 @@ const Products = () => {
     },
     {
       name: "Moong Dall",
-      image: "/moong.webp", 
+      image: "/moong.jpg", 
       varieties: ["Mogar", "Skinned Split Moong", "Indian & Imported"],
       description: "Available in Mogar and Skinned Split Moong. Indian + imported varieties in all qualities.",
       features: ["Mogar Available", "Skinned Split", "Indian & Imported"],

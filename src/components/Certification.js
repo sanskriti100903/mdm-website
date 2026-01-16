@@ -31,7 +31,7 @@ const Certification = () => {
       id: 4,
       title: "FSSAI",
       fullForm: "Food Safety Standards Authority of India",
-      logo: "/fssai.png",
+      logo: "/fssai.jpg",
       useIcon: false
     },
     {
