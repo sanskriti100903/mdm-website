@@ -2562,6 +2562,7 @@ html {
 @media (max-width: 768px) {
   .products-hero-section {
     padding: 2rem 0;
+    margin-top: 8rem;
   }
   
   .products-hero-title {

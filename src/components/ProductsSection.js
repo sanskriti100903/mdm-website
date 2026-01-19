@@ -9,7 +9,7 @@ const ProductsSection = () => {
   const products = [
     {
       name: "Toor Dall",
-      image: "/toor.webp",
+      image: "/toor.webp?v=3",
       description: "Premium quality Toor Dall, rich in protein and essential nutrients. Carefully processed to maintain natural taste and nutritional value.",
       features: ["High Protein", "Natural Processing", "Export Quality"]
     },
@@ -33,19 +33,19 @@ const ProductsSection = () => {
     },
     {
       name: "Kabuli Chana",
-      image: "/kabuli.webp",
+      image: "/kabuli.webp?v=3",
       description: "Large, premium Kabuli Chana with excellent texture. Perfect for various culinary preparations worldwide.",
       features: ["Large Size", "Premium Quality", "Global Standards"]
     },
     {
       name: "Masoor Dall",
-      image: "/masoor.webp",
+      image: "/masoor.webp?v=3",
       description: "Red Masoor Dall with rich color and taste. Quick cooking and highly nutritious for healthy meals.",
       features: ["Quick Cooking", "Rich in Iron", "Nutritious"]
     },
     {
       name: "Rajma",
-      image: "/rajma.webp",
+      image: "/rajma.webp?v=3",
       description: "Premium quality Rajma beans, perfect for traditional recipes. Carefully selected and processed for best taste.",
       features: ["Premium Beans", "Traditional Taste", "Export Quality"]
     },
@@ -80,9 +80,9 @@ const ProductsSection = () => {
       features: ["Aromatic", "Premium Quality", "Export Standard"]
     },
     {
-      name: "Lobia",
-      image: "/lobia.webp",
-      description: "High-quality Lobia (Black-eyed peas) with rich protein content. Excellent for traditional Indian recipes.",
+      name: "Chawla",
+      image: "/lobia.webp?v=3",
+      description: "High-quality Chawla (Lobia/Black-eyed peas) with rich protein content. Excellent for traditional Indian recipes.",
       features: ["High Protein", "Traditional", "Nutritious"]
     }
   ];

@@ -9,7 +9,7 @@ const Products = () => {
   const products = [
     {
       name: "Toor Dall (Pigeon Pea)",
-      image: "/toor.webp",
+      image: "/toor.webp?v=3",
       varieties: ["Desi Toor", "African Toor", "Sortexed Option"],
       description: "Available in Desi Toor and African Toor, all grades and qualities. Sortexed option available.",
       features: ["Desi & African", "All Grades", "Sortexed Available"],
@@ -32,7 +32,7 @@ const Products = () => {
       category: "Pulses"
     },
     {
-      name: "Urad Dal",
+      name: "Urad Dall",
       image: "/urad.jpg",
       varieties: ["Gota", "White Split", "Black Split"],
       description: "Premium Black Gram (Urad / Black Lentils) available in Gota, White Split, and Black Split varieties. Clean, consistent, and offered in all quality grades.",
@@ -41,7 +41,7 @@ const Products = () => {
     },
     {
       name: "Kabuli Chana (Chickpeas)",
-      image: "/kabuli.webp",
+      image: "/kabuli.webp?v=3",
       varieties: ["38/40 Count", "40/42 Count", "42/44 Count"],
       description: "Available in all size counts (38/40, 40/42, 42/44, etc.). Premium Indian & imported qualities.",
       features: ["All Size Counts", "Premium Quality", "Indian & Imported"],
@@ -49,7 +49,7 @@ const Products = () => {
     },
     {
       name: "Masoor Dall (Red Lentils)",
-      image: "/masoor.webp",
+      image: "/masoor.webp?v=3",
       varieties: ["Whole Masoor", "Split Masoor", "Indian & Imported"],
       description: "Whole and split varieties available—Indian & imported. Uniform grain, multiple quality options.",
       features: ["Whole & Split", "Uniform Grain", "Multiple Quality Options"],
@@ -57,7 +57,7 @@ const Products = () => {
     },
     {
       name: "Rajma",
-      image: "/rajma.webp",
+      image: "/rajma.webp?v=3",
       varieties: ["Chitra", "Red", "Jammu"],
       description: "High-quality Kidney Beans available in Chitra, Red, and Jammu variants. Uniform size, well-cleaned, and offered in all grades and qualities.",
       features: ["Multiple Variants", "Uniform Size", "Well-Cleaned"],
@@ -89,7 +89,7 @@ const Products = () => {
     },
     {
       name: "Wheat (Gehu)",
-      image: "/wheat.webp",
+      image: "/wheat.webp?v=3",
       varieties: ["Milling Grade", "Food Grade"],
       description: "Premium milling-grade and food-grade wheat. Available in all quality specifications.",
       features: ["Milling Grade", "Food Grade", "All Specifications"],
@@ -97,7 +97,7 @@ const Products = () => {
     },
     {
       name: "Chawla (Lobia)",
-      image: "/lobia.webp",
+      image: "/lobia.webp?v=3",
       varieties: ["Indian Quality", "Imported Quality", "All Grades"],
       description: "High-quality Indian & imported black-eyed beans. All grades available.",
       features: ["Indian & Imported", "All Grades", "High Quality"],
@@ -113,7 +113,7 @@ const Products = () => {
     },
     {
       name: "Soybean",
-      image: "/soyabean.webp",
+      image: "/soyabean.webp?v=3",
       varieties: ["Food Grade", "Oil Extraction"],
       description: "High-protein soybeans, ideal for food and oil extraction. Available in multiple quality grades.",
       features: ["High Protein", "Food & Oil Use"],
