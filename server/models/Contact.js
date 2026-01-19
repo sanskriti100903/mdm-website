@@ -12,10 +12,28 @@ const contactSchema = new mongoose.Schema({
     trim: true,
     lowercase: true
   },
+  companyName: {
+    type: String,
+    required: false,
+    trim: true,
+    default: ''
+  },
+  designation: {
+    type: String,
+    required: false,
+    trim: true,
+    default: ''
+  },
   customerType: {
     type: String,
     required: true,
     enum: ['Retailer', 'Wholesaler', 'Exporters', 'Modern Trade']
+  },
+  countryCode: {
+    type: String,
+    required: true,
+    trim: true,
+    default: '+91'
   },
   phone: {
     type: String,

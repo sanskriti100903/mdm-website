@@ -34,7 +34,7 @@ const Products = () => {
     {
       name: "Urad Dall",
       image: "/urad.jpg",
-      varieties: ["udad whole","Skinned split udad", "Unskinned split udad", "Unskinned whole(Gota)"],
+      varieties: ["urad whole","Skinned split urad", "Unskinned split urad", "Unskinned whole(Gota)"],
       description: "Sortex-cleaned Urad Whole and Urad Dall, available in all qualities and types.",
       features: ["Sortex-cleaned", "All Qualities", "All Types"],
       category: "Pulses"

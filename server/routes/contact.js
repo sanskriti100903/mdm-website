@@ -5,12 +5,12 @@ const Contact = require('../models/Contact');
 // Submit contact form
 router.post('/submit', async (req, res) => {
   try {
-    const { name, email, customerType, phone, message } = req.body;
+    const { name, email, companyName, designation, customerType, countryCode, phone, message } = req.body;
 
-    // Validation
-    if (!name || !email || !customerType || !phone || !message) {
+    // Validation - companyName and designation are now optional
+    if (!name || !email || !customerType || !countryCode || !phone || !message) {
       return res.status(400).json({ 
-        message: 'All fields are required',
+        message: 'Required fields are missing',
         success: false 
       });
     }
@@ -34,14 +34,18 @@ router.post('/submit', async (req, res) => {
     }
 
     // Create new contact submission
-    const newContact = new Contact({
+    const contactData = {
       name: name.trim(),
       email: email.trim().toLowerCase(),
+      companyName: companyName ? companyName.trim() : '',
+      designation: designation ? designation.trim() : '',
       customerType,
+      countryCode: countryCode.trim(),
       phone: phone.trim(),
       message: message.trim()
-    });
-
+    };
+    
+    const newContact = new Contact(contactData);
     await newContact.save();
 
     res.status(201).json({
@@ -112,5 +116,6 @@ router.get('/stats', async (req, res) => {
     });
   }
 });
+
 
 module.exports = router;
