@@ -25,7 +25,7 @@ const HeroSection = () => {
       alt: 'Different types of red beans and kidney beans'
     },
     {
-      src: '/hero4.jpg',
+      src: '/hero4.jpg?v=3',
       fallback: 'radial-gradient(circle at 40% 60%, #228B22 0%, #32CD32 30%, #90EE90 60%, #98FB98 100%)',
       alt: 'Glass jar filled with green lentils and mixed pulses'
     }

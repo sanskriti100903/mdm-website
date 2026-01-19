@@ -73,7 +73,7 @@ const Products = () => {
     },
     {
       name: "Bajra (Pearl Millet)",
-      image: "/bajra.jpg",
+      image: "/bajra.jpg?v=3",
       varieties: ["Premium Grade", "All Qualities", "Indian Quality"],
       description: "High-quality Indian bajra. All qualities available.",
       features: ["Uniform Size", "Indian Quality", "All Qualities"],
