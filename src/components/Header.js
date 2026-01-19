@@ -24,19 +24,6 @@ const Header = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const handleSectionNavClick = (sectionId) => {
-    setExpanded(false);
-    // If we're not on the home page, navigate to home first
-    if (window.location.pathname !== '/') {
-      window.location.href = `/#${sectionId}`;
-    } else {
-      // If we're on the home page, scroll to the section
-      const element = document.getElementById(sectionId);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
-    }
-  };
 
   const handleBrandClick = () => {
     setExpanded(false);

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
-import { FaCertificate, FaAward, FaShieldAlt, FaLeaf, FaGlobe, FaStar } from 'react-icons/fa';
 import Header from './Header';
 import Footer from './Footer';
 

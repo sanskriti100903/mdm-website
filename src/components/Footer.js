@@ -1,17 +1,12 @@
 import React from 'react';
-import { Container, Row, Col, Button } from 'react-bootstrap';
+import { Row, Col, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { 
   FaMapMarkerAlt, 
   FaPhone, 
   FaWhatsapp, 
-  FaEnvelope, 
-  FaFacebook, 
-  FaTwitter, 
-  FaLinkedin,
-  FaInstagram
+  FaEnvelope
 } from 'react-icons/fa';
-import OptimizedLogo from './OptimizedLogo';
 
 const Footer = () => {
   const handleWhatsAppClick = (number) => {
@@ -23,18 +18,6 @@ const Footer = () => {
     window.open(`tel:+91${number}`, '_self');
   };
 
-  const handleSectionNavClick = (sectionId) => {
-    // If we're not on the home page, navigate to home first then scroll to section
-    if (window.location.pathname !== '/') {
-      window.location.href = `/#${sectionId}`;
-    } else {
-      // If we're on the home page, scroll to the section
-      const element = document.getElementById(sectionId);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
-    }
-  };
 
   const handleHomeClick = () => {
     // Scroll to top when home is clicked

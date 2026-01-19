@@ -10,7 +10,6 @@ import {
   FaMapMarkerAlt, 
   FaAward 
 } from 'react-icons/fa';
-import OptimizedLogo from './OptimizedLogo';
 
 const WhyChooseUs = () => {
   const features = [
