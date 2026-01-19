@@ -15,7 +15,7 @@ const ProductsSection = () => {
     },
     {
       name: "Moong Dall",
-      image: "/moong.jpg?v=5", 
+      image: "/moong.jpg", 
       description: "Fresh and pure Moong Dall, perfect for daily cooking. Known for its digestibility and high nutritional content.",
       features: ["Easy to Digest", "Rich in Fiber", "Premium Grade"]
     },
@@ -27,7 +27,7 @@ const ProductsSection = () => {
     },
     {
       name: "Urad Dall",
-      image: "/urad.jpg?v=5",
+      image: "/urad.jpg",
       description: "Pure black Urad Dall, essential for South Indian cuisine. Maintains traditional taste and quality standards.",
       features: ["Traditional Quality", "Pure & Natural", "Export Standard"]
     },
@@ -57,7 +57,7 @@ const ProductsSection = () => {
     },
     {
       name: "Bajra",
-      image: "/bajra.jpg?v=5",
+      image: "/bajra.jpg?v=3",
       description: "Premium Bajra (Pearl Millet) with excellent nutritional value. Rich in protein and essential minerals.",
       features: ["High Protein", "Rich in Iron", "Mineral Rich"]
     },
@@ -136,6 +136,16 @@ const ProductsSection = () => {
                       priority={index < 4}
                       style={{ height: '250px', width: '100%', objectFit: 'cover' }}
                     />
+                    <div className="product-overlay">
+                      <div className="product-features">
+                        {product.features.map((feature, idx) => (
+                          <span key={idx} className="feature-badge">
+                            <FaLeaf className="me-1" />
+                            {feature}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
                   </div>
                   
                   <Card.Body className="d-flex flex-column">
