@@ -364,6 +364,8 @@ const AdminDashboard = () => {
                     <th>Date</th>
                     <th>Name</th>
                     <th>Email</th>
+                    <th>Company</th>
+                    <th>Designation</th>
                     <th>Customer Type</th>
                     <th>Phone</th>
                     <th>Message</th>
@@ -379,6 +381,8 @@ const AdminDashboard = () => {
                       </td>
                       <td>{contact.name}</td>
                       <td>{contact.email}</td>
+                      <td>{contact.companyName || 'N/A'}</td>
+                      <td>{contact.designation || 'N/A'}</td>
                       <td>
                         <Badge bg="light" text="dark">
                           {contact.customerType}

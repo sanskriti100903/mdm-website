@@ -136,16 +136,6 @@ const ProductsSection = () => {
                       priority={index < 4}
                       style={{ height: '250px', width: '100%', objectFit: 'cover' }}
                     />
-                    <div className="product-overlay">
-                      <div className="product-features">
-                        {product.features.map((feature, idx) => (
-                          <span key={idx} className="feature-badge">
-                            <FaLeaf className="me-1" />
-                            {feature}
-                          </span>
-                        ))}
-                      </div>
-                    </div>
                   </div>
                   
                   <Card.Body className="d-flex flex-column">

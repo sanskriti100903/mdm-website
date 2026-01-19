@@ -10,7 +10,7 @@ const Products = () => {
     {
       name: "Toor Dall (Pigeon Pea)",
       image: "/toor.webp?v=3",
-      varieties: ["Desi Toor", "African Toor", "Sortexed Option"],
+      varieties: ["Indian Toor Dall", "African Toor Dall"],
       description: "Available in Desi Toor and African Toor, all grades and qualities. Sortexed option available.",
       features: ["Desi & African", "All Grades", "Sortexed Available"],
       category: "Pulses"
@@ -18,7 +18,7 @@ const Products = () => {
     {
       name: "Moong Dall",
       image: "/moong.jpg", 
-      varieties: ["Mogar", "Skinned Split Moong", "Indian & Imported"],
+      varieties: ["Moong Whole","Unskinned Split Moong", "Skinned Split Moong"],
       description: "Available in Mogar and Skinned Split Moong. Indian + imported varieties in all qualities.",
       features: ["Mogar Available", "Skinned Split", "Indian & Imported"],
       category: "Pulses"
@@ -26,7 +26,7 @@ const Products = () => {
     {
       name: "Chana Dall ",
       image: "/chana.jpg",
-      varieties: [ "All Qualities", "All Grades"],
+      varieties: [],
       description: "High-quality processed Chana Dall with consistent grain size. All qualities and grades available.",
       features: ["Consistent Size", "All Qualities", "All Grades"],
       category: "Pulses"
@@ -34,7 +34,7 @@ const Products = () => {
     {
       name: "Urad Dall",
       image: "/urad.jpg",
-      varieties: ["Gota", "White Split", "Black Split"],
+      varieties: ["udad whole","Skinned split udad", "Unskinned split udad", "Unskinned whole(Gota)"],
       description: "Premium Black Gram (Urad / Black Lentils) available in Gota, White Split, and Black Split varieties. Clean, consistent, and offered in all quality grades.",
       features: ["Multiple Varieties", "Clean & Consistent", "All Quality Grades"],
       category: "Pulses"
@@ -42,7 +42,7 @@ const Products = () => {
     {
       name: "Kabuli Chana (Chickpeas)",
       image: "/kabuli.webp?v=3",
-      varieties: ["38/40 Count", "40/42 Count", "42/44 Count"],
+      varieties: ["42/44 Count", "44/46 Count", "58/60 Count"],
       description: "Available in all size counts (38/40, 40/42, 42/44, etc.). Premium Indian & imported qualities.",
       features: ["All Size Counts", "Premium Quality", "Indian & Imported"],
       category: "Pulses"
@@ -58,7 +58,7 @@ const Products = () => {
     {
       name: "Rajma",
       image: "/rajma.webp?v=3",
-      varieties: ["Chitra", "Red", "Jammu"],
+      varieties: ["Chitra", "Red"],
       description: "High-quality Kidney Beans available in Chitra, Red, and Jammu variants. Uniform size, well-cleaned, and offered in all grades and qualities.",
       features: ["Multiple Variants", "Uniform Size", "Well-Cleaned"],
       category: "Pulses"
@@ -66,7 +66,7 @@ const Products = () => {
     {
       name: "Jowar (Sorghum)",
       image: "/jowar.jpg",
-      varieties: ["Flour Grade", "Industrial Use"],
+      varieties: ["Flour Grade", "Feed Grade"],
       description: "Machine-cleaned grains available . Suitable for flour and industrial use.",
       features: ["Machine Cleaned","Multi-Purpose"],
       category: "Grains"
@@ -74,7 +74,7 @@ const Products = () => {
     {
       name: "Bajra (Pearl Millet)",
       image: "/bajra.jpg?v=3",
-      varieties: ["Premium Grade", "All Qualities", "Indian Quality"],
+      varieties: ["Premium Grade", "Feed Grade"],
       description: "High-quality Indian bajra. All qualities available.",
       features: ["Uniform Size", "Indian Quality", "All Qualities"],
       category: "Grains"
@@ -82,7 +82,7 @@ const Products = () => {
     {
       name: "Maize (Corn / Makka)",
       image: "/corn.jpg",
-      varieties: ["Food Grade", "Feed Grade", "Industrial Grade"],
+      varieties: ["Corn Meal ", "Gacked Corn", "Feed Quality"],
       description: "Food-grade, feed-grade, and industrial maize available. Clean, machine-sorted, all quality options.",
       features: ["Multi-Grade", "Machine Sorted", "All Quality Options"],
       category: "Grains"
@@ -90,7 +90,7 @@ const Products = () => {
     {
       name: "Wheat (Gehu)",
       image: "/wheat.webp?v=3",
-      varieties: ["Milling Grade", "Food Grade"],
+      varieties: [],
       description: "Premium milling-grade and food-grade wheat. Available in all quality specifications.",
       features: ["Milling Grade", "Food Grade", "All Specifications"],
       category: "Grains"
@@ -122,7 +122,7 @@ const Products = () => {
     {
       name: "Desi Chana (Brown Chickpeas)",
       image: "/channa.jpg",
-      varieties: ["Machine Sorted", "Premium Grade", "Export Quality"],
+      varieties: ["India Origin"],
       description: "Clean, machine-sorted grains with consistent quality.",
       features: ["Machine Sorted", "Consistent Quality", "Clean Grains"],
       category: "Pulses"
