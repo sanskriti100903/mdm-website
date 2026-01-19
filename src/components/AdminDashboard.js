@@ -24,6 +24,7 @@ const AdminDashboard = () => {
   const [adminUser, setAdminUser] = useState(null);
   const navigate = useNavigate();
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     // Check authentication
     const token = localStorage.getItem('adminToken');
@@ -37,7 +38,7 @@ const AdminDashboard = () => {
     setAdminUser(JSON.parse(user));
     fetchDashboardData();
     fetchContacts();
-  }, [currentPage, filters, navigate]);
+  }, [currentPage, filters, navigate]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const getAuthHeaders = () => {
     const token = localStorage.getItem('adminToken');

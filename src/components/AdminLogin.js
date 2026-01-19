@@ -16,13 +16,14 @@ const AdminLogin = () => {
   const navigate = useNavigate();
 
   // Check if already logged in
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     const token = localStorage.getItem('adminToken');
     if (token) {
       // Verify token with backend
       verifyToken(token);
     }
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   const verifyToken = async (token) => {
     try {

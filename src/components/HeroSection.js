@@ -55,6 +55,7 @@ const HeroSection = () => {
   ];
 
   // Progressive image loading - load first image immediately, others on demand
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     const loadImageProgressively = async () => {
       // Load first image immediately for faster initial display
@@ -84,7 +85,7 @@ const HeroSection = () => {
 
     const timer = setTimeout(loadImageProgressively, 100);
     return () => clearTimeout(timer);
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -92,7 +93,7 @@ const HeroSection = () => {
     }, 6000); // Increased to 6 seconds for better readability
 
     return () => clearInterval(interval);
-  }, [heroImages.length]);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <section id="home" className="hero-section">
