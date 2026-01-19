@@ -61,11 +61,9 @@ const HeroSection = () => {
       // Load first image immediately for faster initial display
       const firstImg = new Image();
       firstImg.onload = () => {
-        console.log('First image loaded successfully');
         setImagesLoaded(true);
       };
       firstImg.onerror = () => {
-        console.log('First image failed, using fallback');
         setImagesLoaded(false);
       };
       firstImg.src = heroImages[0].src;
@@ -75,8 +73,8 @@ const HeroSection = () => {
         heroImages.slice(1).forEach((heroImage, index) => {
           setTimeout(() => {
             const img = new Image();
-            img.onload = () => console.log(`Background image ${index + 2} loaded`);
-            img.onerror = () => console.log(`Background image ${index + 2} failed`);
+            img.onload = () => {};
+            img.onerror = () => {};
             img.src = heroImage.src;
           }, index * 1000); // 1 second delay between each image
         });

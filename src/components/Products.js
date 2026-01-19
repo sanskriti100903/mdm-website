@@ -11,72 +11,72 @@ const Products = () => {
       name: "Toor Dall (Pigeon Pea)",
       image: "/toor.webp?v=3",
       varieties: ["Indian Toor Dall", "African Toor Dall"],
-      description: "Available in Desi Toor and African Toor, all grades and qualities. Sortexed option available.",
-      features: ["Desi & African", "All Grades", "Sortexed Available"],
+      description: "Sortex-cleaned Toor Dall of Indian and African origin, available in all qualities.",
+      features: ["Indian & African Origin", "Sortex-cleaned", "All Qualities"],
       category: "Pulses"
     },
     {
       name: "Moong Dall",
       image: "/moong.jpg", 
       varieties: ["Moong Whole","Unskinned Split Moong", "Skinned Split Moong"],
-      description: "Available in Mogar and Skinned Split Moong. Indian + imported varieties in all qualities.",
-      features: ["Mogar Available", "Skinned Split", "Indian & Imported"],
+      description: "Indian origin sortex-cleaned Moong Whole and Moong Dall, available in all qualities.",
+      features: ["Indian Origin", "Sortex-cleaned", "All Qualities"],
       category: "Pulses"
     },
     {
       name: "Chana Dall ",
       image: "/chana.jpg",
       varieties: [],
-      description: "High-quality processed Chana Dall with consistent grain size. All qualities and grades available.",
-      features: ["Consistent Size", "All Qualities", "All Grades"],
+      description: "Sortex-cleaned Chana Dall of Indian origin, available in all quality grades.",
+      features: ["Indian Origin", "Sortex-cleaned", "All Quality Grades"],
       category: "Pulses"
     },
     {
       name: "Urad Dall",
       image: "/urad.jpg",
       varieties: ["udad whole","Skinned split udad", "Unskinned split udad", "Unskinned whole(Gota)"],
-      description: "Premium Black Gram (Urad / Black Lentils) available in Gota, White Split, and Black Split varieties. Clean, consistent, and offered in all quality grades.",
-      features: ["Multiple Varieties", "Clean & Consistent", "All Quality Grades"],
+      description: "Sortex-cleaned Urad Whole and Urad Dall, available in all qualities and types.",
+      features: ["Sortex-cleaned", "All Qualities", "All Types"],
       category: "Pulses"
     },
     {
       name: "Kabuli Chana (Chickpeas)",
       image: "/kabuli.webp?v=3",
       varieties: ["42/44 Count", "44/46 Count", "58/60 Count"],
-      description: "Available in all size counts (38/40, 40/42, 42/44, etc.). Premium Indian & imported qualities.",
-      features: ["All Size Counts", "Premium Quality", "Indian & Imported"],
+      description: "Sortex-cleaned Kabuli Chana, available in all count grades.",
+      features: ["Sortex-cleaned", "All Count Grades", "Premium Quality"],
       category: "Pulses"
     },
     {
       name: "Masoor Dall (Red Lentils)",
       image: "/masoor.webp?v=3",
       varieties: ["Whole Masoor", "Split Masoor", "Indian & Imported"],
-      description: "Whole and split varieties available—Indian & imported. Uniform grain, multiple quality options.",
-      features: ["Whole & Split", "Uniform Grain", "Multiple Quality Options"],
+      description: "Sortex-cleaned Masoor Whole and Masoor Dall, available in all quality grades.",
+      features: ["Sortex-cleaned", "Whole & Split", "All Quality Grades"],
       category: "Pulses"
     },
     {
       name: "Rajma",
       image: "/rajma.webp?v=3",
       varieties: ["Chitra", "Red"],
-      description: "High-quality Kidney Beans available in Chitra, Red, and Jammu variants. Uniform size, well-cleaned, and offered in all grades and qualities.",
-      features: ["Multiple Variants", "Uniform Size", "Well-Cleaned"],
+      description: "Sortex-cleaned Rajma of Indian origin, available in all grades.",
+      features: ["Indian Origin", "Sortex-cleaned", "All Grades"],
       category: "Pulses"
     },
     {
       name: "Jowar (Sorghum)",
       image: "/jowar.jpg",
-      varieties: ["Flour Grade", "Feed Grade"],
-      description: "Machine-cleaned grains available . Suitable for flour and industrial use.",
-      features: ["Machine Cleaned","Multi-Purpose"],
+      varieties: ["Flour Grade", "Feed Grade", "Whole"],
+      description: "Sortex-cleaned Jowar available in Flour, Feed, and Whole forms, across all quality grades.",
+      features: ["Sortex-cleaned", "Multiple Forms", "All Quality Grades"],
       category: "Grains"
     },
     {
       name: "Bajra (Pearl Millet)",
       image: "/bajra.jpg?v=3",
-      varieties: ["Premium Grade", "Feed Grade"],
-      description: "High-quality Indian bajra. All qualities available.",
-      features: ["Uniform Size", "Indian Quality", "All Qualities"],
+      varieties: ["Flour Grade", "Feed Grade"],
+      description: "Sortex-cleaned Bajra available in Flour Grade and Feed Grade, in all qualities.",
+      features: ["Sortex-cleaned", "Flour & Feed Grade", "All Qualities"],
       category: "Grains"
     },
     {
@@ -99,8 +99,8 @@ const Products = () => {
       name: "Chawla (Lobia)",
       image: "/lobia.webp?v=3",
       varieties: ["Indian Quality", "Imported Quality", "All Grades"],
-      description: "High-quality Indian & imported black-eyed beans. All grades available.",
-      features: ["Indian & Imported", "All Grades", "High Quality"],
+      description: "Sortex-cleaned Lobia, available in all quality grades.",
+      features: ["Sortex-cleaned", "All Quality Grades", "High Quality"],
       category: "Pulses"
     },
     {
@@ -123,8 +123,8 @@ const Products = () => {
       name: "Desi Chana (Brown Chickpeas)",
       image: "/channa.jpg",
       varieties: ["India Origin"],
-      description: "Clean, machine-sorted grains with consistent quality.",
-      features: ["Machine Sorted", "Consistent Quality", "Clean Grains"],
+      description: "Sortex-cleaned Whole Chana of Indian origin, available in all quality grades.",
+      features: ["Indian Origin", "Sortex-cleaned", "All Quality Grades"],
       category: "Pulses"
     }
   ];

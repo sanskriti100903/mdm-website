@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
-import { FaLeaf, FaStar } from 'react-icons/fa';
+import { FaStar } from 'react-icons/fa';
 import FastLoadImage from './FastLoadImage';
 
 const ProductsSection = () => {
