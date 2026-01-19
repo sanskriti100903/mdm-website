@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { FaLeaf, FaStar, FaGlobe } from 'react-icons/fa';
+import { FaLeaf } from 'react-icons/fa';
 
 const WhyMDMSection = () => {
   return (

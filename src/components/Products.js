@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col, Card } from 'react-bootstrap';
-import { FaLeaf, FaStar, FaGlobe } from 'react-icons/fa';
+import { FaLeaf, FaStar } from 'react-icons/fa';
 import Header from './Header';
 import Footer from './Footer';
 import FastLoadImage from './FastLoadImage';
