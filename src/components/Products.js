@@ -66,7 +66,7 @@ const Products = () => {
     {
       name: "Jowar (Sorghum)",
       image: "/jowar.jpg",
-      varieties: ["Flour Grade", "Feed Grade", "Whole"],
+      varieties: ["Flour Grade", "Feed Grade", "Whole Grain"],
       description: "Sortex-cleaned Jowar available in Flour, Feed, and Whole forms, across all quality grades.",
       features: ["Sortex-cleaned", "Multiple Forms", "All Quality Grades"],
       category: "Grains"
@@ -98,16 +98,16 @@ const Products = () => {
     {
       name: "Chawla (Lobia)",
       image: "/lobia.webp?v=3",
-      varieties: ["Indian Quality", "Imported Quality", "All Grades"],
-      description: "Sortex-cleaned Lobia, available in all quality grades.",
+      varieties: ["Indian Quality", "Imported Quality"],
+      description: "Sortex-cleaned Lobia available",
       features: ["Sortex-cleaned", "All Quality Grades", "High Quality"],
       category: "Pulses"
     },
     {
       name: "Rice (Chawal)",
       image: "https://images.unsplash.com/photo-1586201375761-83865001e31c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80",
-      varieties: ["Basmati", "Non-Basmati", "Sona Masoori"],
-      description: "Basmati, Non-Basmati, Sona Masoori. Full range of qualities available.",
+      varieties: ["Basmati", "Non-Basmati"],
+      description: "Basmati, Non-Basmati. Full range of qualities available.",
       features: ["Full Range", "All Qualities", "Multiple Varieties"],
       category: "Grains"
     },
